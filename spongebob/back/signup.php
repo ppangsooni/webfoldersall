@@ -27,14 +27,14 @@ $result = $conn->query(($sql));
 if ($result){
     echo"
     <script>
-        location.href='./main.html';
+        location.href='./main.php';
     </script> 
     ";
-} else{
-    echo"
-    <script>
-    location.back();
-    </script> 
-";
-}
+    } else{
+        echo"
+        <script>
+        location.back();
+        </script> 
+    ";
+    }
 ?>
