@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 해더폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>index</title>
+</head>
+<style>
+
+        *{
+        background-color: #F9B233;
+        font-family: 'Indie Flower', cursive;
+    }
+    /* <!-- reset CSS 부분 --> */
+        #nav{padding: 0;margin: 0;        }
+        #nav>.menu>li,.subemenu>li{list-style:none}
+        #nav>.menu>li>a,.subemenu>li>a{text-decoration:none;font-size:14px}
+        .text{
+        color: #F9B233;
+        }
+
+        .menu{
+            width: 100%;
+            overflow: hidden;
+            margin: 10px auto;
+        }
+
+        .menu>li{
+            width: 15%;
+            float: left;
+            text-align: center;
+        }
+
+        .subemenu{
+            height: 0px; 
+            overflow: hidden;
+
+        }
+        .menu>li:hover {
+            background-color: #D5CABD;
+            transition-duration: 0.5s;
+        }
+
+        .menu:hover #subemenu{
+            height: 200px;
+            transition-duration: 1s;
+        }
+        </style>
+<body>
+    <nav id="nav">
+        <ul class="menu">
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#myskills">SKISLLS</a></li>
+            <li>
+                <a class="menuhover" href="#portfolio"> PORTFOLIO</a>           
+                <ul class="subemenu" id="subemenu">
+                    <li ><a href="#portfolio"> PORTFOLIO.1</a></li>
+                    <li><a href="#portfolio2"> PORTFOLIO.2</a></li>
+                    <li ><a href="#portfolio3"> PORTFOLIO.3</a></li>
+                    <li ><a href="#portfolio4"> PORTFOLIO.4</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <center>
+            <div>
+                <img src="./imgs/img_spongebab7.jpg">
+            </div>
+            <div class="text">
+                <a href="./The Krusty Krab.html" >The Krusty Krab</a>
+            </div>
+        </center>
+    </div>
+
+</body>
+</html>

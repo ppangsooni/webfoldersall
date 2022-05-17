@@ -1,0 +1,22 @@
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+}
+
+html,
+body{
+    height: 100%;
+}
+
+.header_content{
+    background-color: rgb(226, 120, 34);
+    display: flex;
+    flex-direction: column;
+    align-items:baseline
+    
+}
+.header_contentTop{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+}
