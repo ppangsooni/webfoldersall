@@ -9,14 +9,14 @@ $name=$_POST['name'];
 $location=$_POST['location'];
 $age=$_POST['age'];
 $sex=$_POST['sex'];
-$email=$_POST['email'];
 
-$sql="inser into member set
-email = '$id'
-password = '$pw'
-name = '$name'
-age = '$age'
-sex = '$sex'
+
+$sql="insert into member set
+id = '$id',
+password = '$pw',
+name = '$name',
+age = '$age',
+sex = '$sex',
 location = '$location'
 
 ";
@@ -24,5 +24,17 @@ echo $sql;
 
 $result = $conn->query(($sql));
 
-echo $result;
+if ($result){
+    echo"
+    <script>
+        location.href='./main.html';
+    </script> 
+    ";
+} else{
+    echo"
+    <script>
+    location.back();
+    </script> 
+";
+}
 ?>
