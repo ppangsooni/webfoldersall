@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./stylesheet_H_search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/h_logo1.png">
+    <title>hoogle</title>
+</head>
+<style>
+
+</style>
+<body>
+    <header class="topHeader">
+        <div class="topleft">
+            <div class="topleftitem">
+                <div class="topleftCh">
+                    <a href="">Hoogle정보</a>
+                </div>
+                <div class="topleftCh">
+                    <a href="">스토어</a>
+                </div>
+            </div>
+        </div>
+        <div class="topright">
+            <div class="toprightitem">
+                <div class="toprightCh">
+                    <a href="./hoogle_Hmail.html">Hmail</a>
+                </div>
+                <div class="toprightCh">
+                    <a href="#">이미지</a>
+                </div>
+                <div class="toprightCh" onclick="popuplayer()">
+                    <a href="javascript: void(0)"><img src="./img/hoogle_main_appB.png" class="topB"></a>
+                </div>
+            
+                <div class="toprightCh" >
+                    <a href="./hoogle_login.html" class="toplogin">로그인</a>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="mainsection">
+            <div class="logoWrap">
+                <a href="./index_hoogle.html"><img src="./img/hoogle_main_logo.png" class="mainLogo"></a>
+            </div>
+            <div class="searchbarWrap">
+                <div class="searchbarchild"><img src="./img/hoogle_main_inputF.png" class="searchbarIconF" ></div>
+                <div class="searchbarchild"><input type="text" placeholder="  Hoogle 검색 또는 URL 입력" autocomplete="on"></div>
+                <div class="searchbarchild"><img src="./img/hoogle_kyeb.png" clasdd="searchbarIconb" width="" alt="voiceSupport"data-toggle="tooltip" title="입력도구!"> </div>
+                <div class="searchbarchild"><img src="./img/hoogle_main_inputM.png" clasdd="searchbarIconM" alt="voiceSupport" > </div>
+            </div>
+            <div class="container">
+                <div class="containermein">
+                    <input type="button" class="" value="Hoogle 검색">
+                    <input type="button" class="" value="I'm Feeling Lucky">
+                </div>                                                                                                 
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+           <div class="footer1">
+                <div class="footerl"><a>대한민국</a></div>
+           </div>
+           <div class="footer2">
+                <div class="footer2Grid1">
+                    <a href="">광고</a>
+                    <a href="">비즈니스</a>
+                    <a href="">검색의 원리</a>
+                </div>
+                <div class="footer2Grid2">
+                    <a href="">개인정보처리방침  </a>
+                    <a href="">약관  </a>
+                    <div class="setting"style="display:inline-flex;">설정  </div>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <div class="popup_layer" id="popup_layer" style="display: none;">
+        <div class="popup_box">
+              <!-- <a href="javascript:closePop();"> -->
+            <!--팝업 컨텐츠 영역-->
+            <div class="popup_cont">
+                <div class="popupWrap">
+                    <div class="popupitem">
+                        <a href="./hoogle_account.html" ><img src="./img/h_account.png" title="Hoogle 계정">Hoogle 계..</a>
+                    </div>
+                    <div class="popupitem">
+                        <a href="./hoogle.html"><img src="./img/h_logo1.png" title="검색">검색</a>
+                    </div>
+                    <div class="popupitem">
+                        <a href="#"><img src="./img/h_map.png" title="지도">지도</a>
+                    </div>
+                    <div class="popupitem">
+                        <a href="#"><img src="./img/h_Doutube.png" title="DouTube">DouTube</a>
+                    </div>
+                    <div class="popupitem">                  
+                        <a href="#"><img src="./img/h_play.png" title="play">play</a>
+                    </div>
+                    <div class="popupitem">                  
+                        <a href="#"><img src="./img/h_news.png" title="뉴스">뉴스</a>
+                    </div>
+                    <div class="popupitem">                  
+                        <a href="#"><img src="./img/h_mail.png" title="Hmail">Hmail</a>
+                    </div>
+                    <div class="popupitem">
+                        <a href="#"><img src="./img/h_meet.png" title="Meet">Meet</a>
+                    </div>
+                    <div class="popupitem">
+                        <a href="#"><img src="./img/h_chatting.png" title="채팅">채팅</a>
+                    </div>
+                    <div class="popupitem">
+                        <a href="#"><img src="./img/h_addr.png" title="주소록">주소록</a>
+                    </div>
+                    <div class="popupitem">
+                        <a href="#"><img src="./img/h_drive.png" title="드라이브">드라이브</a>
+                    </div>
+                    <div class="popupitem">
+                        <a href="#"><img src="./img/h_calendar.png" title="캘린더">캘린더</a>
+                    </div>
+                </div>
+      
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector('.popup_layer').addEventListener('click', closePop )
+
+    function popuplayer() {
+        document.querySelector('#popup_layer').setAttribute("style", "display:block;");
+    }
+    function closePop(e) {
+        console.log(e.target);
+        if (e.target == document.querySelector('#popup_layer')) {
+            console.log('밖');  
+            document.getElementById("popup_layer").setAttribute("style", "display:none;");
+        } else {
+          console.log('안');
+        }
+    }
+
+    </script>
+</html>
+

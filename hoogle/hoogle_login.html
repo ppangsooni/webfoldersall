@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./stylesheet_H_Hmail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/h_logo1.png">
+    <title>Hoogle Login</title>
+    <mata name="description" content="accounts.hoogle.com"></mata>
+</head>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    }
+    html,
+    body{
+    height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .h_login_container_wrap{
+        border: 1px rgb(192, 190, 190) solid;
+        border-radius: 10px;
+        width: 450px;
+        height: 500px;
+        display: flex;
+        margin: 0 38%;
+        align-items: center; 
+    }
+    .h_login_container{
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center; 
+    }
+    .h_login_item1 img{
+        width: 200px;
+        margin: 1em;
+    }
+    .h_login_item2{
+        font-size: 24px;
+        margin-bottom: 1em;
+    }
+    .h_login_item3 {
+        margin-bottom: 1em;
+    }
+    .h_login_item3 a{
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        padding-bottom: 3px;
+        text-decoration: none;
+        color: #226AB4;
+        font-size:16px;
+    }
+    .h_login_item3 a:after {
+        background: #226AB4;
+        content: '';
+        height: 2px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        transform: translate3d(-100%, 0, 0);
+        width: 100%;
+    }
+    .h_login_item3 a:hover::after {
+        animation: link-hoverstate .5s linear forwards;
+        animation-timing-function: linear;
+        animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    @keyframes link-hoverstate {
+    0% {
+    opacity:1;
+    transform:translate3d(-100%, 0, 0)
+    }
+    55% {
+    transform:translate3d(100%, 0, 0)
+    }
+    56% {
+    transform:translate3d(100%, calc(0.5rem + 4px), 0)
+    }
+    100% {
+    opacity:1;
+    transform:translate3d(0, calc(0.5rem + 4px), 0)
+    }
+    }
+    .h_login_item4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    .h_login_item4_input {
+        margin:2em 2em auto;
+        padding:15px; 
+        max-width:420px; 
+        border:1px solid #999; 
+        border-radius:6px;
+    }
+    .h_login_item4_input .inputBox {
+        position:relative; 
+        height:50px;
+        width: 20em;
+    }
+    .h_login_item4_input .inputBox input[type="text"] {
+        padding:0 10px; 
+        width:100%; 
+        height:50px; 
+        font-size:14px; 
+        box-sizing:border-box; 
+        border:1px solid #999; 
+        outline:none;
+    }
+    .h_login_item4_input .inputBox label {
+        position:absolute; 
+        left:0; bottom:0; 
+        padding:0 6px; 
+        color:#999; 
+        font-size:14px; 
+        font-weight:normal; 
+        background:#fff; 
+        transform:scale(1) translate(4px, -18px); 
+        transition:all .15s; pointer-events:none;
+    }
+    .h_login_item4_input .inputBox input[type="text"]:focus,
+    .h_login_item4_input.existence .inputBox input[type="text"] {
+        border:2px solid #226AB4;
+    }
+    .h_login_item4_input .inputBox input[type="text"]:focus + label,
+    .h_login_item4_input.existence .inputBox label {
+        color:#226AB4; transform:scale(.85) translate(-10px, -48px);
+    }
+    .inputBoxsub{
+        margin-top: 1em;
+        margin-bottom: 2em;
+        
+    }
+    .inputBoxsub a{
+        font-size: 12px;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        padding-bottom: 3px;
+        text-decoration: none;
+        color: #226AB4;
+        
+    }
+
+    .inputBoxsub a:after {
+        background: #226AB4;
+        content: '';
+        height: 2px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        transform: translate3d(-100%, 0, 0);
+        width: 100%;
+    }
+    .inputBoxsub a:hover::after {
+        animation: link-hoverstate .5s linear forwards;
+        animation-timing-function: linear;
+        animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    @keyframes link-hoverstate {
+    0% {
+    opacity:1;
+    transform:translate3d(-100%, 0, 0)
+    }
+    55% {
+    transform:translate3d(100%, 0, 0)
+    }
+    56% {
+    transform:translate3d(100%, calc(0.5rem + 4px), 0)
+    }
+    100% {
+    opacity:1;
+    transform:translate3d(0, calc(0.5rem + 4px), 0)
+    }
+    }
+
+    .h_login_item4_guestmode{
+        text-align:justify;
+        font-size: 16px;
+        padding: 0 2em;
+        color: rgb(128, 127, 127);
+        margin-bottom: 2em;
+    }
+    .h_login_item4_guestmode a{
+        background-color: #7577e5;
+        text-decoration: none;
+        color: white;
+        letter-spacing: .15em;
+        transition: 0.35s;
+    }
+
+    .h_login_item4_guestmode a:hover {
+        background-color: transparent;
+        text-shadow: 1px -1px 0 #7577e5, -1px 2px 1px #7577e5, -2px 4px 1px #7577e5, -3px 6px 1px #7577e5, -4px 8px 1px #7577e5, -5px 10px 1px #7577e5, -6px 12px 1px #7577e5, -7px 14px 1px #7577e5, -8px 16px 1px #7577e5, -9px 18px 1px #7577e5, -10px 20px 1px #7577e5, -11px 22px 1px #7577e5, -12px 24px 1px #7577e5;
+    }
+    .h_login_item4_footer{
+        margin-bottom: 2em;
+    }
+    
+    </style>
+    
+<body class="body">
+    <div class="header">
+    </div>
+    <div class="h_login_container_wrap">
+        <div class="h_login_container">
+            <div class="h_login_item1">
+                <img src="./img/hoogle_main_logo.png" >
+            </div>
+            <div class="h_login_item2">
+                로그인
+            </div>
+            <div class="h_login_item3">
+                <a href="./hoogle_search.html">Hoogle 메인으로 이동</a> 
+            </div>
+            <div class="h_login_item4">
+                <div class="h_login_item4_input">
+                    <div class="inputBox">
+                        <input type="text" id="sampleId" name="">
+                        <label for="sampleId">이메일 또는 휴대전화</label>
+                    </div>
+                </div>
+                <div class="inputBoxsub">
+                    <a href="#">이메일을 잊으셨나요?</a>
+                </div>
+                <div class="h_login_item4_guestmode">
+                    내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로 로그인하세요.<a href="#"> 자세히 알아보기</a>
+                </div>
+                <div class="h_login_item4_footer">
+                    <a href="./hoogle_signup.html">계정만들기</a>
+                    <input type="submit" value="다음">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div>
+    </div>
+</body>
+<script>
+    var loginBox = document.querySelector('.outBox');
+    var loginInputBox = document.querySelector('#sampleId');
+    loginInputBox.addEventListener('keyup', function(){
+        if(!loginInputBox.value == ''){
+            loginBox.classList.add('existence');   
+        }else{
+            loginBox.classList.remove('existence');   
+        }
+    });
+</script>
+</html>

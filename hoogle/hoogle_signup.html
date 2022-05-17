@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./stylesheet_H_Hmail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/h_logo1.png">
+    <title>Hoogle 계정 만들기</title>
+    <mata name="description" content="Hmail은 사용하기 쉽고 효율적이며 유용한 이메일입니다. 15GB의 저장용량, 강력한 스팸 차단 및 모바일 액세스 기능을 제공합니다."></mata>
+</head>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    }
+    html,
+    body{
+    height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+    }
+    .h_signup_container_wrap{
+        border: 1px rgb(160, 159, 159) solid;
+        border-radius: 7px;
+        width: 750px;
+        height: 500px;
+        display: flex;
+        margin: 0 25%;
+        /* justify-content: center; */
+        align-items: center; 
+    }
+    .h_signup_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 38px 40px;
+    }
+    .h_signup_cont_tb_logo img{
+        width: 78px;
+ 
+    }
+    .h_signup_cont_textbox h1{
+        padding-top: 10px;
+    }
+    .h_signup_cont_textbox>h1>span{
+        font-size: 24px;
+    }
+    .htmailgo{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+    }
+    .h_signup_cont_tb{
+        border: 1px solid transparent;
+        padding-top: 10px;
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .h_signup_cont_tb_ip_name{
+        margin-top: 15px;
+
+    }
+    .h_signup_cont_tb_ip_name input{
+        height: 2.5em;
+        width: 11em;
+        border: 1px rgb(168, 168, 168) solid;
+        border-radius: 4px;
+        color: rgb(107, 107, 107);
+    }
+    .h_signup_cont_tb_ip_id{
+        margin-top: 15px;
+        width: 18.7em;
+        border: 1px rgb(168, 168, 168) solid;    
+        border-radius: 4px;        
+    }
+    .h_signup_cont_tb_ip_id input{
+        height: 2.5em;
+        width: 15em;
+        border: 1px transparent solid;
+        border-radius: 4px;
+        color: rgb(107, 107, 107);
+    }
+    .h_signup_cont_tb_ip_id span{
+        font-size: 16px;
+        margin: 0;
+    }
+    .h_signup_cont_tb_ip_idAlt{
+        font-size: 12px;
+        color: rgb(107, 107, 107);
+    }
+    .h_signup_cont_tb_pw{
+        margin-top: 15px;
+    
+    }
+    .h_signup_cont_tb_pw input{
+        height: 2.5em;
+        width: 11em;
+        border: 1px rgb(168, 168, 168) solid;
+        border-radius: 4px;
+        color: rgb(107, 107, 107);
+    }
+    .h_signup_cont_tb_ft{
+        margin-top: 15px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        /* background-color: yellow; */
+    }
+    .h_signup_cont_tb_login{
+        /* border: 1px red solid; */
+        border-radius: 4px;
+        margin-right: 110px;
+
+    }
+    .h_signup_cont_tb_login a{  
+        color: #226AB4;
+        text-decoration: none;
+    }
+    .h_signup_cont_tb_next{
+        /* border: 1px red solid; */
+        border-radius: 4px;
+    
+    }
+
+    .h_signup_cont_tb_next{
+        padding: 0.1em 0.8em;
+        background-color: #226AB4;
+        border: 1px seagreen solid;
+        border-radius: 4px;
+    }
+ 
+    .h_signup_cont_tb_nextB input{
+        background-color: #226AB4;
+        color: antiquewhite;
+        text-decoration: none;
+        border: 1px transparent solid;
+    }
+
+    .h_signup_cont_imgbox{
+        padding-right: 48px;
+        margin-left: 10px;
+    }
+    .figcaption{
+        text-align: center;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        /* margin: 0 20%; */
+    }
+    .footerbox{
+        margin-top: 1%;
+        width: 50%;
+        /* margin: 0 10%; */
+        display: flex;
+        flex-direction: row;
+    }
+    .footer_right{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+    }
+    .footer_left{
+        margin-right: 30%;
+    }
+    .footer_right_b {
+        margin-left: 1.5em;
+    }
+    .footer_right_b span{
+        color: rgb(107, 107, 107);
+        font-size: smaller;
+    }
+    .detect_language{
+        border: 1px transparent solid;
+    }
+
+</style>
+<body class="body">
+    <div class="header">
+    </div>
+    <div class="h_signup_container_wrap">
+        <div class="h_signup_container">
+            <div class="h_signup_cont_textbox">
+                <div class="h_signup_cont_tb_logo">
+                    <img src="./img/hoogle_main_logo.png">
+                </div>
+                <h1>
+                    <span>Hoogle 계정 만들기</span> 
+                </h1>
+                <a href="./hoogle_Hmail.html" class="htmailgo"><span>Hmail로 이동</span></a>
+                <div class="h_signup_cont_tb">
+                    <div class="h_signup_cont_tb_input">
+                        <div class="h_signup_cont_tb_ip_name">
+                            <input type="text" alt="성" placeholder="성" required />
+                            <input type="text" alt="이름" placeholder="이름" required />
+                        </div>
+                        <div class="h_signup_cont_tb_ip_idwrap">
+                            <div class="h_signup_cont_tb_ip_id">
+                                <input type="id" alt="id" placeholder="사용자이름" maxlength="12" required />
+                                <span>@hmail.com</span>
+                            </div>
+                            <div class="h_signup_cont_tb_ip_idAlt">
+                                문자,숫자,마침표를 사용할 수 없습니다.
+                            </div>
+                        </div>
+                        <div class="h_signup_cont_tb_pw">
+                                <input type="password" alt="password" placeholder="비밀번호" id="key" required  />
+                                <input type="passwordCk" alt="passwordCk" placeholder="확인" required />    
+                                <div class="h_signup_cont_tb_ip_idAlt">
+                                    문자, 숫자, 기호를 조합하여 8자 이상을 사용하세요
+                                </div>
+                        </div>
+                        <input type="checkbox" alt="비밀번호표시" id="keyShow" onclick="myFunction()">
+                        <label for="passwordlook" id="keyShow">비밀번호 표시
+                    </div>
+                    <div class="h_signup_cont_tb_ft">
+                        <div class="h_signup_cont_tb_login">
+                            <a href="#" alt="login">대신 로그인하기</a>
+                        </div>
+                        <div class="h_signup_cont_tb_next">
+                            <div class="h_signup_cont_tb_nextB">
+                                <input type="submit" value="다음">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_signup_cont_imgbox">
+                <img src="./img/h_signup_cont_imgbox.png">
+                <figcaption class="figcaption">
+                    하나의 계정으로 모든 Google 서비스를 이용할 수 있습니다.
+                </figcaption>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerbox">
+            <div class="footer_left">
+                <select class="detect_language">
+                    <option value="">한국어</option>
+                    <option value="">English</option>
+                    <option value="">中國人</option>
+                    <option value="">日本語</option>
+                    <option value="">Deutsch</option>
+                    <option value="">Nederlands</option>
+                    <option value="">español</option>
+                    <option value="">Latinus</option>
+                    <option value="">Россия</option>
+                    <option value="">ไทย</option>
+                    <option value="">Монгол</option>
+                    <option value="">Tiếng Việt</option>
+                </select>
+            </div>
+            <div  class="footer_right">
+                <div class="footer_right_b">
+                    <span>도움말</span>
+                </div>
+                <div class="footer_right_b">
+                    <span>개인정보처리방침</span>
+                </div>
+                <div class="footer_right_b">
+                    <span>약관</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>

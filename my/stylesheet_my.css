@@ -1,0 +1,318 @@
+/* haeder영역 */
+
+.custom-shape-divider-top-1651106131 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    position:fixed;
+
+    }
+    
+    
+.custom-shape-divider-top-1651106131 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 137px;
+    }
+    
+.custom-shape-divider-top-1651106131 .shape-fill {
+    fill: transparent;
+}
+#headerColor:hover .shape-fill{
+    fill: #3A001E;
+    opacity: 0.8;
+}
+
+/* nav menu영역 */
+#nav{
+    padding: 0;
+    width: 100%; 
+    height: 100px;   
+/* background-color: #845EC2; */
+    position:fixed
+    }
+.menu{
+
+    width: 100%;
+    overflow:visible;
+    margin: 10px auto;
+    }
+
+.menu>  li a{
+    color: #EDE9D0;
+    text-decoration:none;
+    font-size:14px;
+    font-weight: bold;
+    }
+    
+.menu>li{
+    width: 25%;
+    height: 50px;
+    position: relative;
+    float: left;
+    text-align: center;
+    list-style:none;
+    }
+    
+#PORTFOLIOUL:hover .submenu{
+    display: block;
+}
+.submenu {
+    display: none;
+}
+    
+.submenu>li {
+    list-style:none
+    }
+.submenu> li> a{
+    text-decoration: none;
+    font-size:14px;
+    display: block;
+    }
+
+
+    
+    
+.menuhover a:hover{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    }
+.submenu a:hover{
+    background-color: #3A001E;
+    opacity: 0.7;
+    }
+
+ 
+/* * TOP영역 */ */
+#top{
+    padding: 150px;
+    }
+        
+.container{
+    margin: 30px;
+    height: 700px;
+    }
+.topimg{    
+    margin-top: 200px;
+    padding: 50px;
+    }
+.mainimg{
+    border-radius: 50%;
+    }
+.toptext{
+    margin-top: 200px;
+}
+    
+
+/* skills영역 */
+#myskillsabout{
+    padding: 150px;
+}
+#myskillsabout>.title{
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 500px;
+    margin-bottom: 40px;
+
+}
+#myskillsabout>.skills{
+    font-family: 'Oswald', sans-serif;
+    width: 600px;
+
+}
+#myskillsabout>.skills>.skillname{
+    display: inline-block;
+    width: 300px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+#myskillsabout>.skills>.skillgauge>.progressbar{
+    display: inline-block;
+    width: 520px;
+    height: 21px;
+    margin-bottom: 10px;
+    background-color: #EDE9D0;
+    border-radius: 10px;
+    }
+#myskillsabout>.skills>.skillgauge>.progressbar>.gaugeHtml{
+    display: inline-block;
+    width: 70%;
+    height: 21px;
+    margin-bottom: 10px;
+    background-color: #CF0000 ;
+    border-radius: 10px;
+    }
+#myskillsabout>.skills>.skillgauge>.progressbar>.gaugeCss{
+    display: inline-block;
+    width: 50%;
+    height: 21px;
+    margin-bottom: 10px;
+    background-color: #CF0000 ;
+    border-radius: 10px;
+    }
+#myskillsabout>.skills>.skillgauge>.progressbar>.gaugeJavaScript{
+    display: inline-block;
+    width: 30%;
+    height: 21px;
+    margin-bottom: 10px;
+    background-color: #CF0000 ;
+    border-radius: 10px;
+    }
+#myskillsabout>.skills>.skillgauge>.progressbar>.gaugePhotoshop{
+    display: inline-block;
+    width: 80%;
+    height: 21px;
+    margin-bottom: 10px;
+    background-color: #CF0000 ;
+    border-radius: 10px;
+    }
+#myskillsabout>.skills>.skillgauge>.progressbar>.gaugeIllustrator{
+    display: inline-block;
+    width: 80%;
+    height: 21px;
+    margin-bottom: 10px;
+    background-color: #CF0000 ;
+    border-radius: 10px;
+    }
+    
+#myskillsabout>.skills>.skillgauge>.skillper{
+    display: inline-block;
+    width: 50px;
+    height: 21px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 100;
+    border: 2px #CF0000 solid; 
+}
+
+#myskills > .skills:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+.skillgauge {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/* PORTFOLIO영역 */
+.title2 {
+    font-size: larger;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* contact영역 */
+#contact{
+    width: auto;
+}
+
+.title5{
+    font-family: 'Oswald', sans-serif;
+    text-align:center;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 500px;
+    margin-bottom: 40px;
+
+}
+#contact>.contactbox{
+    display: flex;
+    justify-content: center;
+    
+
+}
+#contact>.contactbox>.contactInfo{
+    
+    margin-left: 50px;
+    width: 250px;
+    height: 550px;
+    background-color: #C8AEAC;
+}
+#contact>.contactbox>.contactInfo>.contactIT{
+    font-size: 120%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.inquifies{
+    margin-left: 10px;
+}
+
+#contact>.contactbox>.contactInfo>.line{
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background-color: #EDE9D0;
+}
+
+#contact>.contactbox>.contactForm{
+    margin-left: 10px;
+    margin-right: 50px;
+    width: 500px;
+    height: 550px;
+    background-color: #C8AEAC;
+    align-content: 100px;
+}
+.contactL{
+    display: inline-block;
+    width: 15%;
+    height: 30px;
+    font-size: 80%;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.contactText{
+    width: 80%;
+    height: 8%;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-color:#EDE9D0;
+    vertical-align: top;
+    background-color: #EDE9D0;
+       
+}
+.contactform{
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 80%;
+    height: 100%;
+}
+.contactTextarea{
+    width: 80%;
+    height: 40%;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-color:#EDE9D0;
+    vertical-align: top;
+    background-color: #EDE9D0;
+}
+
+
+#topButton {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    z-index: 999;
+}
+
+#footer{
+    background-color: #3A001E;
+    color: #EDE9D0;
+    width: 100%;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    line-height: 50px;
+}
