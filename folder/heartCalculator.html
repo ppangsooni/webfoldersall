@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <title>Shopping cart plan::Calculator</title>
+</head>
+<style>
+    .html,
+    body{
+        height: 100%;
+        background-color: #56423E;
+        font-family: 'Gowun Dodum', sans-serif;
+    }
+    .cantainer{
+        margin: 30% 10% 2% 10%;
+        padding: 10% 30%;
+
+    }
+    .heart{
+        width: 350px;
+        height: 350px;
+        background-color: rgb(173, 24, 24);
+        position: relative;
+        transform: rotate(45deg);
+
+    }
+    .heart::before{
+        content: "";
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        background-color: rgb(173, 24, 24);
+        border-radius: 50%;
+        left: -50%;
+
+    }
+    .heart::after{
+        content: "";
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        background-color: rgb(173, 24, 24);
+        border-radius: 50%;
+        top: -50%;
+
+    }
+    .calculatorwerp{
+        position: absolute;
+        width: 380px;
+        height: 300px;
+        /* background-color: rgb(190, 146, 146); */
+        padding: 2%;
+        transform: rotate(-45deg);
+        z-index: 2;
+        top: -35px;
+        left: -75px;
+    }
+    .resultwerp{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5em;
+    }
+    .resultwerp input{
+        width: 150px;
+        height: 80px;
+        left: -20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(173, 24, 24);
+        background-color: #FFF4EE;
+        border: 1pm transparent ridge;
+        border-radius: 50%;
+        margin: 2px 3px 4px 2px;
+        text-align:center;
+        word-break:break-all;
+    }
+    .resultwerp textarea{
+        width: 250px;
+        height: 80px;
+        left: -20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #FFF4EE;
+        background-color: rgb(173, 24, 24);
+        border: 1px transparent ridge;
+        border-radius: 8px;
+        margin: 2px 3px 4px 2px;
+        text-align: end;
+        word-break:break-all;
+    }
+
+    .buttonwerp{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0.3em;
+    }
+    .buttonwerp .b{
+        width: 60px;
+        height: 60px;
+        background-color: #FFF4EE;
+        font-size: 20px;
+        color: rgb(173, 24, 24);
+        border: 1em transparent solid;
+        border: 50px;
+        border-radius: 50%;
+        /* border-radius: 90px 30px 50px 50px ; */
+    }
+    .b_plus{
+        width: 60px;
+        height: 60px;
+        background-color: #FF9F87;
+        font-size: 20px;
+        color: rgb(173, 24, 24);
+        border: 1em transparent solid;
+        border: 50px;
+        border-radius: 50%;
+    }
+    .b_minus{
+        width: 60px;
+        height: 60px;
+        background-color: #00BDBE;
+        font-size: 20px;
+        color: rgb(173, 24, 24);
+        border: 1em transparent solid;
+        border: 50px;
+        border-radius: 50%;
+    }
+    .c{
+        width: 140px;
+        height: 70px;
+        background-color: #FFF4EE;
+        font-size: 20px;
+        color: rgb(173, 24, 24);
+        border: 1em transparent solid;
+        border: 50px;
+        border-radius: 50%;
+        /* border-radius: 90px 30px 50px 50px ; */
+    }
+    .resultmemo{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5em;
+        width: auto;
+    }
+    .resultmemo label{
+        font-size: 18px;
+    }
+    .resultmemo textarea{
+        width: 460px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        padding:0%;
+        color: rgb(173, 24, 24);
+        background-color: #FFF4EE;
+        border: 1em transparent solid;
+        border-radius: 8px;
+        margin-bottom: 4px;
+        text-align: center;
+        word-break:break-all;
+    }
+
+    .memo{
+        width: 800px;
+        height: auto;
+        margin: 0% 10% 0% 10%;
+        padding: 5% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(173, 24, 24);
+        font-weight: bold;
+        background-color: #BEA6A1;   
+        
+    }
+
+    .memotextbox{
+        display: flex;
+        align-items: flex-end;
+        justify-content:flex-end;
+    }
+    .memotext{
+        font-family: 'Gowun Dodum', sans-serif;
+        width: 700px;
+        overflow: visible;
+        height: 300px;
+        background-color: #FFF4EE;
+        color: #BEA6A1;
+        border: 1px red outset;
+        border-radius: 0 0 50px ;
+    }
+    .memotextbox{
+        width: 520px;
+        height: auto;
+        font-size: 80px;
+    }
+    .pullPoint{ 
+        width: 50px;
+        height: 50px;
+        background-color: rgb(173, 24, 24);
+        font-family: 'Gowun Dodum', sans-serif;
+  
+    }
+    
+
+    .subtext{
+        position: absolute;
+        top: 300px;
+        left: -120px;
+        transform: rotate(-45deg);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 10%;
+        /* background-color: #00BDBE; */
+        width: 700px;
+    }
+    .clockbox{
+        width: 100px;
+        background-color: #d6afa8;
+    }
+    .placebox{
+        width: 100px;
+    }
+    .placebox label{
+        font-size: 20px;
+        color: #FFF4EE;
+
+    }
+    .place{
+        width: 200px;
+        height: 80px;
+        font-size: 30px;
+        font-family: 'Gowun Dodum', sans-serif;
+        background-color: transparent;
+        border: 2px rgb(172, 29, 29) groove;
+        color: rgb(252, 248, 248);
+    }
+
+    @media (max-width: 450px) {
+        
+        .cantainer{
+            width: 400px;
+            margin-bottom: 25%;
+        }
+        .resultwerp input{
+            width: 150px;
+            height: 80px;
+            margin-right: 10px;
+        }
+        .resultwerp textarea{
+            width: 300px;
+            height: 80px;
+        }
+        .buttonwerp .b{
+            width: 60px;
+            height: 60px;
+        }
+        .c{
+            width: 100px;
+            height: 50px;
+        }
+        .b_plus{
+            width: 60px;
+            height: 60px;
+        }
+        .b_minus{
+            width: 60px;
+            height: 60px;
+        }
+        .resultmemo textarea{
+            height: 80px;
+        }
+
+        .calculatorwerp{
+        top: -55px;
+        left: -85px;
+        }
+        .subtext{
+        top: 300px;
+        left: 10px;
+        width: 500px;
+        }
+        .memo{
+        padding: 1% 10%;
+        width: 500px;
+        height: 600px;
+        }
+        .memotext{
+            width: 400px;
+        }
+
+    }
+</style>
+<body>
+    <div class="cantainer" >
+        <div class="heart">
+            <div class="calculatorwerp">
+                <div class="resultwerp">
+                    <input  type="number" id="result">
+                    <textarea id="numberdisplay"></textarea>
+
+                </div>
+                <div class="buttonwerp">
+                    <button class="b" onclick="reset()" type="button">C</button>
+                    <button class="b" onclick="del()" type="button">DEL</button>
+                    <button class="b" onclick="addOutput('7')" type="button">7</button>
+                    <button class="b" onclick="addOutput('8')" type="button">8</button>
+                    <button class="b" onclick="addOutput('9')" type="button">9</button>
+                    <button class="b" onclick="addOutput('*')" type="button">*</button>
+                    <button class="b" onclick="addOutput('/')" type="button">/</button>
+                </div>
+                <div class="buttonwerp">
+                    <button class="b" onclick="addOutput('%')" type="button">%</button>
+                    <button class="b" onclick="addOutput('.')" type="button">.</button>
+                    <button class="b" onclick="addOutput('4')" type="button">4</button>
+                    <button class="b" onclick="addOutput('5')" type="button">5</button>
+                    <button class="b" onclick="addOutput('6')" type="button">6</button>
+                    <button class="b_plus" onclick="addOutput('+')" type="button">+</button>
+                    <button class="b_minus" onclick="addOutput('-')" type="button">-</button>
+                </div>
+                <div class="buttonwerp">
+                    <button class="b" onclick="addOutput('0')" type="button">0</button>
+                    <button class="b" onclick="addOutput('1')" type="button">1</button>
+                    <button class="b" onclick="addOutput('2')" type="button">2</button>
+                    <button class="b" onclick="addOutput('3')" type="button">3</button>
+                    <button class="b" onclick="addOutput('00')" type="button">00</button>
+                </div>
+                <div class="buttonwerp">
+                    <button class="c" onclick="calculate()" type="button">=</button>
+                </div>
+                
+            </div>
+            <div class="subtext">
+                <div id="clockbox" style="font-size: 20px; color: antiquewhite;" > 
+                    Record date <p id="clock" style="font-size: 28px;">00:00</p>
+                </div>
+                <div class="placebox">
+                    <label for="place">Place&category</label>
+                    <input id="place" class="place" type="text"placeholder="place to shop!">
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <div class="memo">
+        <div class="resultmemo">
+            <label for="numberdisplaylist">Calculation history</label>
+            <textarea id="numberdisplaylist"></textarea>
+        </div>
+        <div class="memotextbox">
+            <textarea id="memotext" class="memotext" placeholder="
+            Write the item!"></textarea>
+            <div class="pullPoint">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // function addOutput(number){
+    //     console.log(number);
+    // }
+    numberdisplaylist
+    var numberdisplay = document.getElementById("numberdisplay");
+    var numberdisplaylist = document.getElementById("numberdisplaylist");
+    var numberdisplayResult=document.getElementById("result");
+    
+
+    function addOutput(number){
+        numberdisplay.value = numberdisplay.value + number;
+        numberdisplaylist.value = numberdisplaylist.value + number;
+    }
+
+    function calculate(){
+        var result = eval(numberdisplay.value);   
+        numberdisplay.value=result;
+        // numberdisplaylist.value=result;
+        numberdisplayResult.value=result;
+        
+
+    }
+    function reset(){
+        var numberdisplay=document.getElementById("numberdisplay");
+        numberdisplay.value="";
+        var numberdisplayResult=document.getElementById("result");
+        numberdisplayResult.value=""
+
+    }
+    // function del() {
+    //     var numberdisplay=document.getElementById("numberdisplay").value;
+    //     numberdisplay = numberdisplay.slice(0,-1);        
+    //     document.getElementById("numberdisplay").value = numberdisplay        
+    // }
+        function del(){
+            var numberdisplay=document.getElementById("numberdisplay");
+            var numberdisplaylist = document.getElementById("numberdisplaylist");
+            numberdisplay.value=numberdisplay.value.substring(0,numberdisplay.value.length-1);
+            numberdisplaylist.value=numberdisplaylist.value.substring(0,numberdisplay.value.length-1);
+        }
+    // --------------------------메모부분----------------------------
+        document.getElementById("memotext").style.fontSize = '40px';
+    //--------------------------실시간-------------------------------
+        var colockTarget=document.getElementById("clock")
+        
+
+        function clock(){
+            var date=new Date();
+            var month=date.getMonth();
+            var clockDate=date.getDate();
+            var day=date.getDay();
+            var week=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+            var hours=date.getHours();
+            var minutes=date.getMinutes();
+            colockTarget.innerText = `${month+1}월 ${clockDate}일 ${week[day]} `+
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }`;
+        // 월은 0부터 1월이기때문에 +1일을 해주고 
+        // 시간 분 초는 한자리수이면 시계가 어색해보일까봐 10보다 작으면 앞에0을 붙혀주는 작업을 3항연산 
+
+        }
+        init();
+        function init(){
+            clock();
+            //최초에 함수를 한번실행
+            setInterval(clock, 1000);
+            // setInterval이라는 함수로 매초마다 실행을 해줍니다.
+            // setInterval은 첫번째 파라메터는 함수이고 두번째는 시간인데 밀리초단위로 받습니다. 1000 = 1초 
+        }
+
+        // function init() {
+        //     getTime();
+        //     setInterval(getTime, 1000);
+        // }
+    
+</script>
+

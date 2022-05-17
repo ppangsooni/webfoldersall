@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    .html,
+    body{
+        height: 100%;
+    }
+    .cantainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 30%;
+
+    }
+    .calculatorwerp{
+        width: 320px;
+        height: 480px;
+        background-color: rgb(173, 24, 24);
+        padding: 2%;
+        /* display: flex;
+         */
+    }
+    .resultwerp{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5em;
+    }
+    .resultwerp input{
+        width: 280px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding:0%;
+        color: rgb(173, 24, 24);
+        background-color: rgb(241, 234, 225);
+        border: 1em transparent solid;
+        border-radius: 8px;
+        margin-bottom: 4px;
+        text-align: end;
+    }
+    .buttonwerp{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 0.3em;
+    }
+    .buttonwerp .b{
+        width: 56px;
+        height: 68px;
+        background-color: rgb(241, 234, 225);
+        font-size: 18px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding:0%;
+        color: rgb(173, 24, 24);
+        border: 1em transparent solid;
+        border-radius: 90px 30px 50px 50px ;
+        
+    }
+
+    .c{
+        width: 112px;
+        height: 68px;
+        background-color: rgb(241, 234, 225);
+        font-size: 18px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding:0%;
+        color: rgb(173, 24, 24);
+        border: 1em transparent solid;
+        border-radius: 90px 30px 50px 50px ;
+    }
+</style>
+<body>
+    <div class="cantainer" >
+        <div class="calculatorwerp">
+            <div class="resultwerp">
+                <input typ="number" type="text" value="0" id="numberdisplay">
+                <input typ="number" type="number" value="0" id="result">
+            </div>
+            <div class="buttonwerp">
+                <button class="b" onclick="addOutput('9')" type="button">9</button>
+                <button class="b" onclick="addOutput('8')" type="button">8</button>
+                <button class="b" onclick="addOutput('7')" type="button">7</button>
+                <button class="b" onclick="reset()" type="button">C</button>
+                <button class="b" onclick="del()" type="button">DEL</button>
+            </div>
+            <div class="buttonwerp">
+                <button class="b" onclick="addOutput('6')" type="button">6</button>
+                <button class="b" onclick="addOutput('5')" type="button">5</button>
+                <button class="b" onclick="addOutput('4')" type="button">4</button>
+                <button class="b" onclick="addOutput('*')" type="button">*</button>
+                <button class="b" onclick="addOutput('/')" type="button">/</button>
+            </div>
+            <div class="buttonwerp">
+                <button class="b" onclick="addOutput('3')" type="button">3</button>
+                <button class="b" onclick="addOutput('2')" type="button">2</button>
+                <button class="b" onclick="addOutput('1')" type="button">1</button>
+                <button class="b" onclick="addOutput('+')" type="button">+</button>
+                <button class="b" onclick="addOutput('-')" type="button">-</button>
+            </div>
+            <div class="buttonwerp">
+                <button class="b" onclick="addOutput('%')" type="button">%</button>
+                <button class="b" onclick="addOutput('.')" type="button">.</button>
+                <button class="b" onclick="addOutput('0')" type="button">0</button>
+                <button class="c" onclick="calculate()" type="button">=</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // function addOutput(number){
+    //     console.log(number);
+    // }
+    function addOutput(number){
+        var numberdisplay = document.getElementById("numberdisplay");
+        numberdisplay.value = numberdisplay.value + number;
+    }
+
+    function calculate(){
+        var numberdisplay=document.getElementById("numberdisplay");
+        var result = eval(numberdisplay.value);   
+        var numberdisplayResult=document.getElementById("result");
+        numberdisplayResult.value=result;
+    }
+    function reset(){
+        var numberdisplay=document.getElementById("numberdisplay");
+        numberdisplay.value="";
+        var numberdisplayResult=document.getElementById("result");
+        numberdisplayResult.value=""
+
+    }
+    // function del() {
+    //     var numberdisplay=document.getElementById("numberdisplay").value;
+    //     numberdisplay = numberdisplay.slice(0,-1);        
+    //     document.getElementById("numberdisplay").value = numberdisplay        
+    // }
+        function del(){
+            var numberdisplay=document.getElementById("numberdisplay");
+            numberdisplay.value=numberdisplay.value.substring(0,numberdisplay.value.length-1);
+        }
+</script>
+
