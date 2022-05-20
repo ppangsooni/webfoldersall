@@ -80,19 +80,5 @@ h1 {
 
 
 
-/* bottom 부분 */
+/* bottom 부분 */			
 
-.bottom{
-	background: rgb(1,0,6);
-    background: linear-gradient(347deg, rgba(1,0,6,1) 0%, rgba(26,9,121,1) 31%, rgba(16,177,132,0.8575805322128851) 100%);
-}
-
-#canvas{
-	margin:0 auto;
-	display:block;
-	filter:url('#shadowed-goo');
-}
-
-svg{
-  display:none;
-}
