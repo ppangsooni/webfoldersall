@@ -2,17 +2,26 @@
 
 html,
 body{
-	margin:0;
+	/* margin:0;
 	padding:0;
     width: 100%;
 	height: auto;
 	background: rgb(1,0,6);
-    background: linear-gradient(347deg, rgba(1,0,6,1) 0%, rgba(26,9,121,1) 31%, rgba(16,177,132,0.8575805322128851) 100%);
-    
+    background: linear-gradient(347deg, rgba(1,0,6,1) 0%, rgba(26,9,121,1) 31%, rgba(16,177,132,0.8575805322128851) 100%); */
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/223219/pexels-photo-932638%20(1).jpeg")
+    no-repeat center center fixed;
+ 	 overflow-x: hidden;
+  	background-size: cover;
+	  width: auto;
+	  height: auto;
 }
+.top{
+	width: auto;
+	height: auto;
+}
+
 .center{
-    /* height: 30%;
-	width: 100%; */
+	height: 600px;
 }
 
 h1 {
@@ -75,8 +84,251 @@ h1 {
 	}
 	
 }
+/*메인 물고기*/
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	/* background-color: green; */
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent; 
+	
+  
+	border-right:100px solid rgba(16,177,132,0.8575805322128851); 
+  }
+  .arrow-left1 {
+	width: 0; 
+	height: 0; 
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent; 
+	margin-top:-70px;
+	margin-left:70px;  
+	border-right:70px solid rgba(16,177,132,0.8575805322128851); 
+	z-index:2;
+	
+  }
+  .arrow-left2 {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent; 
+	margin-top:-45px;
+  margin-left:140px;  
+	border-right:25px solid rgba(16,177,132,0.8575805322128851); 
+	z-index:-3;
+  }
+  .arrow-right {
+	width: 10px;
+	height:10px;
+	border-radius:100%;
+	background:#F5F2E9;
+	margin-left:35px;
+	margin-top:-10px;
+	animation: blink 3s linear infinite;
+  }
+  .arrow-right1 {
+	width: 0; 
+	margin-top:10px;
+	
+  margin-left:80px;  height: 0; 
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	  position: absolute;
+	  left: 0px;
+	  top: 0px;
+	  z-index: 1;
+	border-left: 55px solid #F5F2E9;
+  }
+.center-div
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  transform: perspective(100px) rotateY(45deg);
+	/* z-index: 1; */
+  
+animation: brow-turn 10s ease infinite;
+  animation-duration: 3s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  border-radius: 3px;
+}
+.center-div1
+{
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  right:50%;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  transform: perspective(100px) rotateY(45deg);
+
+  
+animation: brow-turn 10s ease infinite;
+  animation-duration: 3s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  border-radius: 3px;
+}
+@keyframes move {
+  0% {
+    transform: perspective(100px) rotateY(10deg);
+  }
+  50% {
+    transform: perspective(100px) rotateY(-10deg);
+  }
+  100% {
+    transform: perspective(100px) rotateY(10deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: perspective(150px) rotateY(10deg);
+  }
+  50% {
+    transform: perspective(150px) rotateY(-10deg);
+  }
+  100% {
+    transform: perspective(150px) rotateY(10deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    box-shadow: inset 0 0 0 black, inset -3px 3px 0 5px white, inset 0 -5px 0 25px black;
+  }
+  5% {
+    box-shadow: inset 0 25px 0 black, inset 0 0px 0 5px white, inset 0 -5px 0 25px black;
+  }
+  10% {
+    box-shadow: inset 0 0 0 black, inset 0 3px 0 5px white, inset 0 -5px 0 25px black;
+  }
+  75% {
+    box-shadow: inset 0 0 0 black, inset 3px 3px 0 5px white, inset 0 -5px 0 25px black;
+  }
+  100% {
+    box-shadow: inset 0 0 0 black, inset -3px 3px 0 5px white, inset 0 -5px 0 25px black;
+  }
+}
 
 
+
+.fish {
+	width:100px;
+	height:100px;
+	top:50%;
+	right:50%;
+	background:rgb(144, 144, 192);
+	position:absolute;
+	animation:10s fly infinite linear;
+	transform:translateX(-50%);
+  }
+
+  .shadow {
+	width:100px;
+	height:20px;
+	background:rgba(0,0,0,.15);
+	position:absolute;
+	top:350px;
+	animation:10s fly2 infinite linear; 
+	border-radius:50%;
+	
+  }
+  span:nth-of-type(1) {
+	width:30px;
+	height:30px;
+	background:white;
+	border-radius:40% 90% 40% 20%;
+	/* z-index:1; */
+	display:inline-block;
+	position:absolute;
+	top: 40%;
+	left: 40%;
+
+  }
+  span:nth-of-type(2) {
+	width:40px;
+	height:40px;
+	background:rgb(64, 0, 94);
+	position:absolute;
+	top:-15px;
+	left:70px;
+  }
+  /* span:nth-of-type(3) {
+	width:80px;
+	height:80px;
+	background: transparent;
+	border-radius:90% 10% 90% 10%;
+	position:absolute;
+	top:-70px;
+	left:85px; 
+  } */
+  /* Fish fly */
+  @keyframes fly{
+	0%,
+	100% {
+	  right:10%;
+	  transform:rotateY(180deg) rotate(45deg);
+	  top:150px;
+	}
+	1% {
+	  transform:rotateY(0deg) rotate(45deg);
+	}
+	25% {
+	  top:180px;
+	}
+	49% {
+	  transform:rotateY(0deg) rotate(45deg);
+	}
+	50% {
+	  right:90%;
+	  top:150px;
+	  transform:rotateY(180deg) rotate(45deg);
+	}
+	75% {
+	  top:180px;
+	}
+  }
+
+
+
+/* Shadow fly */
+/* @keyframes fly2 {
+  0%,
+  100% {
+    right:10%;
+    transform:rotateY(180deg);
+    width:60px;
+    height:10px;
+  }
+  1% {
+    transform:rotateY(0deg);
+  }
+  25% {
+    width:100px;
+    height:20px;
+  }
+  49% {
+    transform:rotateY(0deg);
+  }
+  50% {
+    right:90%;
+    transform:rotateY(180deg);
+    width:60px;
+    height:10px;
+  }
+  75% {
+    width:100px;
+    height:20px;    
+  }
+} */
 
 
 
@@ -89,7 +341,7 @@ h1 {
 .bottom {
 	height: 650px;
 	position: relative;
-	display: flex;
+	/* display: flex; */
 	align-content: center;	
 	justify-content: center;
 	/* height: 70%;
@@ -110,7 +362,7 @@ h1 {
 
 .bubbles {
 
-	z-index: 1;
+	/* z-index: 1; */
 	width: 100%;
 	height: auto;	
 }
