@@ -57,6 +57,7 @@ h1 {
 	position: relative;
     align-self: center;
     padding: 3rem 0;
+	background-color: yellow;
 }
 
 .snow .svg {
