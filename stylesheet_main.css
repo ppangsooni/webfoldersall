@@ -363,12 +363,12 @@ h4{
 	
     /* justify-content: space-between;
     background-repeat: no-repeat; */
-    height: auto;
+    height: 100%;
     width: 100vw;
     color: lightblue;
     /* padding: calc(40vh - 20px) 8% 0 8%; */
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-repeat: no-repeat;
     animation: blink 2s infinite ease-in-out;
 	position: relative;
@@ -454,8 +454,16 @@ h4{
 	}
 }
 @media only screen and (max-width: 680px){
+	.bottom_fish{
+
+		background: radial-gradient(circle at 55% 10vh,
+		rgba(255, 255, 170, var(--light-opacity)) 5px,
+		rgba(85, 85, 153, var(--light-opacity)) 35px,
+		rgba(85, 85, 153, var(--light-opacity)) 70px,
+		transparent 20%);
+	}
 	.bigfish{
-		margin-top: 320px;
+		margin-top: 90px;
 		margin-left: 24px;
 		
 	}
@@ -467,8 +475,16 @@ h4{
 	}
 }
 @media only screen and (max-width: 580px){
+	.bottom_fish{
+
+		background: radial-gradient(circle at 55% 10vh,
+		rgba(255, 255, 170, var(--light-opacity)) 5px,
+		rgba(85, 85, 153, var(--light-opacity)) 35px,
+		rgba(85, 85, 153, var(--light-opacity)) 70px,
+		transparent 20%);
+	}
 	.bigfish{
-		margin-top: 300px;
+		margin-top: 90px;
 		margin-left: 20px;
 	}
 	h1,h2 {
