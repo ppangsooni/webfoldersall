@@ -20,7 +20,8 @@ body{
 	padding:0;
 	text-transform:uppercase;
 	font-family: 'Corben', cursive;
-	font-weight: bold;
+	letter-spacing: 0.1rem;
+	text-shadow: 0px 10px 10px rgba(25, 3, 54, 0.66);
 	font-size:8em;
 	color:rgba(255,255,255,0.1);
 	background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/223219/pexels-photo-932638%20(1).jpeg");
