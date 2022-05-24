@@ -414,8 +414,8 @@ h4{
 	margin-top: 370px;
 	margin-left: 74px;
 	overflow:auto;
-	width: 40%;
-	height: 100%;
+	width: auto;
+	height: auto;
 }
 @media only screen and (max-width: 1680px){
 	.bigfish{
@@ -443,13 +443,13 @@ h4{
 }
 @media only screen and (max-width: 900px){
 	.bigfish{
-		margin-top: 370px;
+		margin-top: 360px;
 		margin-left: 34px;
 	}
 }
 @media only screen and (max-width: 800px){
 	.bigfish{
-		margin-top: 370px;
+		margin-top: 350px;
 		margin-left: 28px;
 	}
 }
