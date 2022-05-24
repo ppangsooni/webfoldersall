@@ -407,7 +407,6 @@ h4{
 	/* border: red 1px solid; */
     display: flex;
     flex-direction: column;
-    /* margin: 0 -1.5vw 0 0; */
     transform: scale(0.7);
     transform-origin: 0 0;
     animation: float 4s infinite alternate ease-out;
