@@ -58,7 +58,7 @@ body{
   @media only screen and (max-width: 680px){
 	.loader{
 		top:15%;
-		left:15%;
+		left:20%;
 		transform:translate(-15%,-15%);
 	  }
 	  .loader h2{
@@ -68,8 +68,8 @@ body{
   }
   @media only screen and (max-width: 580px){
 	.loader{
-		top:10%;
-		left:10%;
+		top:15%;
+		left:15%;
 		transform:translate(-10%,-10%);
 	  }
 	  .loader h2{
