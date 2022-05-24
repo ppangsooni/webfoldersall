@@ -24,6 +24,7 @@ a{
 	background-color: #33a;
 	width: auto;
 	height: auto;
+	position: relative;
 }
 /*물고기*/
 :root {
@@ -35,14 +36,15 @@ a{
   }
 
   .fish {
-	/* position: fixed; */
+	position: absolute;
 	width: 100%;
-	height: 80%;
+	height: 100%;
 	filter: drop-shadow(
 	  calc(var(--coilSize) * 4) calc(var(--coilSize) / 3) 5px rgba(0, 0, 0, 0.3)
 	);
   }
   .fish .koiCoil {
+	
 	position: absolute;
 	width: var(--coilSize);
 	height: var(--coilSize);
@@ -210,8 +212,8 @@ a{
   }
   
 .center{
-	background-color: yellow;
-	height: auto;
+	/* background-color: yellow; */
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -400,7 +402,7 @@ h4{
     }
 }
 
-.fish {
+.bigfish {
 	position: absolute;
 	border: red 1px solid;
     display: flex;
@@ -413,57 +415,64 @@ h4{
 	margin-left: 74px;
 	overflow:auto;
 	width: auto;
-	height: auto;
+	height: 100%;
 }
 @media only screen and (max-width: 1680px){
-	.fish{
+	.bigfish{
 		margin-top: 360px;
 		margin-left: 68px;
 	}
 }
 @media only screen and (max-width: 1480px){
-	.fish{
+	.bigfish{
 		margin-top: 360px;
 		margin-left: 60px;
 	}
 }
 @media only screen and (max-width: 1280px){
-	.fish{
+	.bigfish{
 		margin-top: 370px;
 		margin-left: 50px;
 	}
 }
 @media only screen and (max-width: 1080px){
-	.fish{
+	.bigfish{
 		margin-top: 370px;
 		margin-left: 38px;
 	}
 }
 @media only screen and (max-width: 900px){
-	.fish{
+	.bigfish{
 		margin-top: 370px;
 		margin-left: 34px;
 	}
 }
 @media only screen and (max-width: 800px){
-	.fish{
+	.bigfish{
 		margin-top: 370px;
 		margin-left: 28px;
 	}
 }
 @media only screen and (max-width: 680px){
-	.fish{
+	.bigfish{
 		margin-top: 320px;
 		margin-left: 24px;
+		
+	}
+	.h1,h2 {
+		font-size: 1.5rem;
+	}
+	.h4 {
+		font-size: 1rem;
 	}
 }
 @media only screen and (max-width: 580px){
-	.fish{
+	.bigfish{
 		margin-top: 300px;
 		margin-left: 20px;
 	}
 }
-.fish .rest {
+.bigfish .rest {
     width: 36vw;
     height: 22vw;
     display: flex;
