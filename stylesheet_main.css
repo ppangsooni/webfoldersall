@@ -21,7 +21,7 @@ a{
 	text-decoration: none;
 }
 .top{
-	background-color: #33a;
+	/* background-color: #33a; */
 	width: auto;
 	height: auto;
 	position: relative;
@@ -648,7 +648,7 @@ h4{
 
 
 .bottom {
-	background-color: palevioletred;
+	/* background-color: palevioletred; */
 	height: auto;
 	content: "";
 	position: relative;
