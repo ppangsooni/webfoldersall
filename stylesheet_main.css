@@ -459,10 +459,10 @@ h4{
 		margin-left: 24px;
 		
 	}
-	.h1,h2 {
+	h1,h2 {
 		font-size: 1.5rem;
 	}
-	.h4 {
+	h4 {
 		font-size: 1rem;
 	}
 }
@@ -471,10 +471,10 @@ h4{
 		margin-top: 300px;
 		margin-left: 20px;
 	}
-	.h1,h2 {
+	h1,h2 {
 		font-size: 1.5rem;
 	}
-	.h4 {
+	h4 {
 		font-size: 1rem;
 	}
 }
