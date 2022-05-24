@@ -409,8 +409,9 @@ h4{
     transform: scale(0.7);
     transform-origin: 0 0;
     animation: float 4s infinite alternate ease-out;
-	margin-top: 370px;
+	margin-top: 400px;
 	margin-left: 74px;
+	overflow:auto;
 	width: auto;
 	height: auto;
 }
@@ -452,13 +453,13 @@ h4{
 }
 @media only screen and (max-width: 680px){
 	.fish{
-		margin-top: 360px;
+		margin-top: 320px;
 		margin-left: 24px;
 	}
 }
 @media only screen and (max-width: 580px){
 	.fish{
-		margin-top: 340px;
+		margin-top: 300px;
 		margin-left: 20px;
 	}
 }
