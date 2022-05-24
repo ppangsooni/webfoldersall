@@ -464,8 +464,8 @@ h4{
 	}
 }
 .fish .rest {
-    width: 40vw;
-    height: 25vw;
+    width: 36vw;
+    height: 22vw;
     display: flex;
     filter: drop-shadow(0 0 5px #33a);
     position: relative;
