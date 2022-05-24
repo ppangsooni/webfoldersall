@@ -350,7 +350,7 @@ h4{
 }
 
 .bottom_fish {
-	border: #87f5fb 1px solid;
+	/* border: #87f5fb 1px solid; */
     margin: 0;
     background: radial-gradient(circle at 55% 40vh,
             rgba(255, 255, 170, var(--light-opacity)) 5px,
@@ -404,7 +404,7 @@ h4{
 
 .bigfish {
 	position: absolute;
-	border: red 1px solid;
+	/* border: red 1px solid; */
     display: flex;
     flex-direction: column;
     /* margin: 0 -1.5vw 0 0; */
