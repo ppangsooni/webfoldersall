@@ -220,6 +220,9 @@ a{
 	align-items: center;
 
 }
+a{
+	z-index: 10;
+}
 h1 {
 	font-family: 'Corben', cursive;
 	font-size: 8rem;
