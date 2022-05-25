@@ -23,12 +23,14 @@ html {
 	margin-top: -200px;
   }
   .iphone-l {
+	padding: 20px;
 	width: 640px;
 	height: 1136px;
 	margin: 0 auto;
 	margin-top: 50px;
 	background: transparent url("https://s.cdpn.io/6859/iphone.png") no-repeat center center;
 	position: relative;
+	background-size: contain;
   }
   .iphone-l > .screen-ll {
 	position: absolute;
@@ -55,27 +57,49 @@ html {
 
 	}
 } */
-@media all and (max-width:930px) {
+@media all and (max-width:650px) {
 	.suggest-l {
 	  margin-left: -150px;
 	  top: 0;
 	  margin-top: 0;
 	}
 	.iphone-l {
-	  margin: 0 auto;
-	  margin-top: 250px;
+		width: 550px;
+		height: 1036px;
+		margin-top: 250px;
 	}
   }
-@media only screen and (max-width: 680px){
+@media all and (max-width:550px) {
+.suggest-l {
+	margin-left: -150px;
+	top: 0;
+	margin-top: 0;
+}
+.iphone-l {
+	width: 450px;
+	height: 936px;
+	margin-top: 250px;
+}
+}
+@media all and (max-width:480px) {
+.suggest-l {
+	margin-left: -150px;
+	top: 0;
+	margin-top: 0;
+}
+.iphone-l {
+	width: 350px;
+	height: 836px;
+	margin-top: 250px;
+}
+}
+/* @media only screen and (max-width: 680px){
 	.suggest-l {
 		margin-left: -150px;
 		top: 0;
 		margin-top: 0;
 	}
-	/* .box{
-		object-fit: cover;
-		width: 300px;
-	} */
+	
 	.iphone-l {
 		background-size:cover;
 		background-position:center;
@@ -100,7 +124,7 @@ html {
 		margin: 0 auto;
 		margin-top: 250px;
 	}
-}
+} */
 
 .path-0{
 	animation:pathAnim-0 4s;
