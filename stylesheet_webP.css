@@ -355,7 +355,7 @@ h4{
 .bottom_fish {
 	/* border: #87f5fb 1px solid; */
     margin: 0;
-    background: radial-gradient(circle at 55% 40vh,
+    background: radial-gradient(circle at 55% 30vh,
             rgba(255, 255, 170, var(--light-opacity)) 5px,
             rgba(85, 85, 153, var(--light-opacity)) 35px,
             rgba(85, 85, 153, var(--light-opacity)) 70px,
