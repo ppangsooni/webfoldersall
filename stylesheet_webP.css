@@ -367,7 +367,7 @@ h4{
     /* justify-content: space-between;
     background-repeat: no-repeat; */
     height: 100%;
-    width: 100vw;
+    width: 100%;
     color: lightblue;
     /* padding: calc(40vh - 20px) 8% 0 8%; */
     box-sizing: border-box;
