@@ -355,7 +355,7 @@ h4{
 .bottom_fish {
 	/* border: #87f5fb 1px solid; */
     margin: 0;
-    background: radial-gradient(circle at 55% 30vh,
+    background: radial-gradient(circle at 55% 20vh,
             rgba(255, 255, 170, var(--light-opacity)) 5px,
             rgba(85, 85, 153, var(--light-opacity)) 35px,
             rgba(85, 85, 153, var(--light-opacity)) 70px,
@@ -444,12 +444,21 @@ h4{
 	}
 }
 @media only screen and (max-width: 900px){
+	
 	.bigfish{
 		margin-top: 400px;
 		margin-left: 34px;
 	}
 }
 @media only screen and (max-width: 800px){
+	.bottom_fish{
+
+		background: radial-gradient(circle at 55% 15vh,
+		rgba(255, 255, 170, var(--light-opacity)) 5px,
+		rgba(85, 85, 153, var(--light-opacity)) 35px,
+		rgba(85, 85, 153, var(--light-opacity)) 70px,
+		transparent 20%);
+	}
 	.bigfish{
 		margin-top: 360px;
 		margin-left: 28px;
