@@ -413,7 +413,7 @@ h4{
     transform: scale(0.7);
     transform-origin: 0 0;
     animation: float 4s infinite alternate ease-out;
-	margin-top: 500px;
+	margin-top: 480px;
 	margin-left: 74px;
 	overflow:auto;
 	width: auto;
@@ -421,7 +421,7 @@ h4{
 }
 @media only screen and (max-width: 1680px){
 	.bigfish{
-		margin-top: 500px;
+		margin-top: 480px;
 		margin-left: 68px;
 	}
 }
