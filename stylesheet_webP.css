@@ -413,7 +413,7 @@ h4{
     transform: scale(0.7);
     transform-origin: 0 0;
     animation: float 4s infinite alternate ease-out;
-	margin-top: 370px;
+	/* margin-top: 370px; */
 	margin-left: 74px;
 	overflow:auto;
 	width: auto;
