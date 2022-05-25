@@ -19,7 +19,7 @@ html {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: 200px;
+	margin-left: 220px;
 	margin-top: -200px;
   }
   .iphone-l {
@@ -34,29 +34,14 @@ html {
   }
   .iphone-l > .screen-ll {
 	position: absolute;
-	top: 185px;
+	padding: 20px;
+	top: 190px;
 	left: 91px;
-	width: 416px;
-	height: 713px;
-	overflow: hidden;
+	width: 455px;
   }
 
 
 
-/* 
-  @media only screen and (max-width: 1680px){
-	.suggest-l {
-
-	}
-
-	.iphone-l {
-		width: 640px;
-		height: 1136px;
-		margin: 0 auto;
-		margin-top: 0px;
-
-	}
-} */
 @media all and (max-width:650px) {
 	.suggest-l {
 	  margin-left: -150px;
@@ -68,30 +53,48 @@ html {
 		height: 1036px;
 		margin-top: 250px;
 	}
+	.iphone-l > .screen-ll {
+		padding: 20px 10px;
+		top: 190px;
+		left: 81px;
+		width: 405px;
+	  }
   }
 @media all and (max-width:550px) {
-.suggest-l {
-	margin-left: -150px;
-	top: 0;
-	margin-top: 0;
-}
-.iphone-l {
-	width: 450px;
-	height: 936px;
-	margin-top: 250px;
-}
+	.suggest-l {
+		margin-left: -150px;
+		top: 0;
+		margin-top: 0;
+	}
+	.iphone-l {
+		width: 450px;
+		height: 936px;
+		margin-top: 250px;
+	}
+	.iphone-l > .screen-ll {
+		padding: 20px 10px;
+		top: 190px;
+		left: 71px;
+		width: 325px;
+	}
 }
 @media all and (max-width:480px) {
-.suggest-l {
-	margin-left: -150px;
-	top: 0;
-	margin-top: 0;
-}
-.iphone-l {
-	width: 350px;
-	height: 836px;
-	margin-top: 250px;
-}
+	.suggest-l {
+		margin-left: -150px;
+		top: 0;
+		margin-top: 0;
+	}
+	.iphone-l {
+		width: 350px;
+		height: 836px;
+		margin-top: 250px;
+	}
+	.iphone-l > .screen-ll {
+		padding: 20px 5px;
+		top: 200px;
+		left: 61px;
+		width: 255px;
+	}
 }
 /* @media only screen and (max-width: 680px){
 	.suggest-l {
