@@ -75,10 +75,10 @@ html {
 	.suggest-l {
 		display: none;
 	}
-	/* .box{
+	.box{
 		object-fit: cover;
 		width: 300px;
-	} */
+	}
 	.iphone-l {
 		background-size:cover;
 		background-position:center;
