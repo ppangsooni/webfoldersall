@@ -25,41 +25,43 @@ html {
   .iphone-l {
 	padding: 20px;
 	width: 640px;
-	height: 1136px;
+	height: 880px;
 	margin: 0 auto;
 	margin-top: 50px;
 	background: transparent url("https://s.cdpn.io/6859/iphone.png") no-repeat center center;
 	position: relative;
 	background-size: contain;
+	border: 1px yellow solid;
   }
   .iphone-l > .screen-ll {
 	position: absolute;
-	padding: 20px;
-	top: 190px;
-	left: 91px;
-	width: 455px;
+	padding: 10px 5px;
+	top: 140px;
+	left: 160px;
+	width: 340px;
+	height: 600px;
+	border: yellowgreen 1px solid;
   }
   .iphone-l > .screen-ll> .center {
 	position: relative;
-	padding: 20px;
 	/* top: 190px;
 	left: 91px; */
-	width: 415px;
-	height: 742px;
-	background-color: aqua;
-	overflow-x: scroll;
+	width: 280px;
+	height: 580px;
+	/* background-color: aqua; */
+	overflow-y: scroll;
   }
 .item1{
-	width: 100%;
+	width: 280px;
 	height: 206px;
 	border: red 1px solid;
 
 }
 .wrapper{
-	width: 415px;
+	width: 350px;
 	height: 200px;;
 	position: fixed;	
-	bottom: 50px;
+	bottom: 145px;
 }
 
 @media all and (max-width:650px) {
@@ -234,8 +236,10 @@ html {
 
 .keybutton{
 	content: "";
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	background-color: gray;
-	
+}
+.key{
+	margin-top: 810px;
 }
