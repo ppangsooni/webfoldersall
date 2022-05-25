@@ -421,44 +421,44 @@ h4{
 }
 @media only screen and (max-width: 1680px){
 	.bigfish{
-		margin-top: 360px;
+		margin-top: 500px;
 		margin-left: 68px;
 	}
 }
 @media only screen and (max-width: 1480px){
 	.bigfish{
-		margin-top: 360px;
+		margin-top: 460px;
 		margin-left: 60px;
 	}
 }
 @media only screen and (max-width: 1280px){
 	.bigfish{
-		margin-top: 370px;
+		margin-top: 440px;
 		margin-left: 50px;
 	}
 }
 @media only screen and (max-width: 1080px){
 	.bigfish{
-		margin-top: 370px;
+		margin-top: 420px;
 		margin-left: 38px;
 	}
 }
 @media only screen and (max-width: 900px){
 	.bigfish{
-		margin-top: 360px;
+		margin-top: 400px;
 		margin-left: 34px;
 	}
 }
 @media only screen and (max-width: 800px){
 	.bigfish{
-		margin-top: 350px;
+		margin-top: 360px;
 		margin-left: 28px;
 	}
 }
 @media only screen and (max-width: 680px){
 	.bottom_fish{
 
-		background: radial-gradient(circle at 55% 10vh,
+		background: radial-gradient(circle at 55% 12vh,
 		rgba(255, 255, 170, var(--light-opacity)) 5px,
 		rgba(85, 85, 153, var(--light-opacity)) 35px,
 		rgba(85, 85, 153, var(--light-opacity)) 70px,
