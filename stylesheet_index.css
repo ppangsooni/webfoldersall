@@ -142,10 +142,10 @@ html {
 		padding: 5px 0%;
 	}
 	.wrapper{
-		width: 342px;
-		height: 200px;;
-		position: fixed;
-		margin: 562px 0px 0% 50px;
+		width: 270px;
+		height: 120px;;
+		position: sticky;
+		margin: 290px 0px 0% 38px;
 	}
 	.key{
 		margin: 782px 0px 0px 180px;
@@ -184,7 +184,7 @@ html {
 		width: 270px;
 		height: 120px;;
 		position: sticky;
-		margin: 538px 0px 0% 38px;
+		margin: 290px 0px 0% 38px;
 	}
 	.key{
 		margin: 120px 0px 0px 148px;
