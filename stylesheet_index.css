@@ -67,12 +67,52 @@ html {
 	box-shadow: inset 2px 2px 5px 0 rgba(#f4e0f7, 0.5);
   }
 
-.item1{
+.items{
 	width: 320px;
 	height: 206px;
 	border: red 1px solid;
 	padding: 0%;
+
 }
+a{
+	text-decoration: none;
+}
+.item1{
+	background-color: #f0d7b4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item1 h2{
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-family: 'Corben', cursive;
+	letter-spacing: 0.1rem;
+	text-shadow: 0px 10px 10px rgba(25, 3, 54, 0.66);
+	font-size:5.5em;
+	color:rgba(255,255,255,0.1);
+	background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/223219/pexels-photo-932638%20(1).jpeg");
+	background-repeat:repeat-x;
+	-webkit-background-clip:text;
+	-webkit-animation: animate 15s linear infinite;
+
+  }
+  @-webkit-keyframes animate {
+	0%{
+	  background-position:left 0px top 80px;
+	}
+	40%{
+	  background-position:left 800px top -50px;
+	}
+	  80%{
+	  background-position:left 1600px top -50px;
+	}
+	100%{
+	  background-position:left 2400px top 80px;
+	}
+  }
+
 .wrapper{
 	width: 362px;
 	height: 200px;;
@@ -115,7 +155,7 @@ html {
 		position: sticky;
 		margin: 640px 0px 0% 140px;
 	}
-	  .item1{
+	  .items{
 		width: 320px;
 		height: 206px;	
 	}
@@ -142,7 +182,7 @@ html {
 	.center::-webkit-scrollbar {
 		display: none;
 	  }
-	.item1{
+	.items{
 		width: 320px;
 		height: 206px;
 		padding: 5px 0%;
@@ -181,11 +221,12 @@ html {
 	.iphone-l > .screen-ll>.center{
 		height: 445px;
 	}
-	.item1{
+	.items{
 		width: 250px;
 		height: 206px;
 		padding: 0%;
 	}
+	
 	.wrapper{
 		width: 270px;
 		height: 120px;;
@@ -205,6 +246,7 @@ html {
 	
 	}
 }
+
 @media all and (max-width:440px) {
 	.suggest-l {
 		margin-left: -150px;
@@ -215,6 +257,12 @@ html {
 	.center::-webkit-scrollbar {
 		display: none;
 	  }
+	.item1{
+		background-color: #f0d7b4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	.wrapper{
 		width: 270px;
 		height: 120px;;
@@ -243,10 +291,12 @@ html {
 		height: 380px;
 	}
 	.item1{
-		width: 220px;
-		height: 206px;
-		padding: 0%;
+		/* height: 206px;
+		width: 100%; */
 	}
+	.item1 h2{
+		font-size:4em;	
+	  }
 	.wrapper{
 		width: 236px;
 		height: 120px;;
@@ -290,17 +340,6 @@ html {
 	bottom:0;
 	z-index: 1;
   }
-  @media all and (max-width:440px) {
-	.center::-webkit-scrollbar {
-		display: none;
-	  }
-	.wrapper{
-		width: 270px;
-		height: 120px;;
-		position: sticky;
-		margin: 536px 0px 0% 40px;
-	}
-}
 
 .wave1 {
 	position: absolute;
