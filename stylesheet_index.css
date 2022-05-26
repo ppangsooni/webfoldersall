@@ -148,13 +148,13 @@ html {
 		padding: 5px 0%;
 	}
 	.wrapper{
-		width: 270px;
+		width: 336px;
 		height: 120px;;
 		position: sticky;
-		margin: 564px 0px 0% 38px;
+		margin: 648px 0px 0% 53px;
 	}
 	.key{
-		margin: 782px 0px 0px 180px;
+		margin: 14px 0px 0px 182px;
 	}
 }
 @media all and (max-width:480px) {
@@ -193,12 +193,12 @@ html {
 		margin: 560px 0px 0% 50px;
 	}
 	.key{
-		margin: 120px 0px 0px 148px;
+		margin: 14px 0px 0px 148px;
 	}
 	.keybutton{
 		content: "";
-		width: 58px;
-		height: 58px;
+		width: 60px;
+		height: 60px;
 		/* border: #1d7177 1px solid; */
 		border-radius: 50%;
 		background-color: rgb(231, 229, 226);
