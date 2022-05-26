@@ -172,13 +172,31 @@ html {
 	.center::-webkit-scrollbar {
 		display: none;
 	  }
-	  .iphone-l > .screen-ll>.center{
+	.iphone-l > .screen-ll>.center{
 		height: 445px;
 	}
 	.item1{
 		width: 250px;
 		height: 206px;
 		padding: 0%;
+	}
+	.wrapper{
+		width: 270px;
+		height: 120px;;
+		position: fixed;
+		margin: 538px 0px 0% 38px;
+	}
+	.key{
+		margin: 668px 0px 0px 144px;
+	}
+	.keybutton{
+		content: "";
+		width: 62px;
+		height: 62px;
+		border: #1d7177 1px solid;
+		border-radius: 50%;
+		/* background-color: rgb(231, 229, 226); */
+	
 	}
 }
 
