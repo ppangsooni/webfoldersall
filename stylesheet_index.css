@@ -31,7 +31,7 @@ html {
 	background: transparent url("https://s.cdpn.io/6859/iphone.png") no-repeat center center;
 	position: relative;
 	background-size: contain;
-	border: 1px yellow solid;
+	/* border: 1px yellow solid; */
   }
   .iphone-l > .screen-ll {
 	position: absolute;
@@ -40,7 +40,7 @@ html {
 	left: 160px;
 	width: 340px;
 	height: 600px;
-	border: yellowgreen 1px solid;
+	/* border: yellowgreen 1px solid; */
   }
 .iphone-l > .screen-ll> .center {
 	/* position: relative; */
