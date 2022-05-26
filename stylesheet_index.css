@@ -44,9 +44,10 @@ html {
 	/* border: yellowgreen 1px solid; */
   }
 .iphone-l > .screen-ll> .center {
-	/* position: relative; */
+
 	/* top: 190px;
 	left: 91px; */
+	margin-top: 10px;
 	width: 340px;
 	height: 580px;
 	/* background-color: aqua; */
@@ -73,7 +74,6 @@ html {
 	height: 206px;
 	border: red 1px solid;
 	padding: 0%;
-
 }
 a{
 	text-decoration: none;
