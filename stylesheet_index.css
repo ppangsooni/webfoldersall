@@ -79,7 +79,6 @@ html {
 	height: 200px;;
 	position: fixed;
 	margin: 560px 136px 0% 138px;
-	/* bottom: 85px; */
 }
 .keybutton{
 	content: "";
@@ -91,7 +90,6 @@ html {
 
 }
 .key{
-	margin-top: 810px;
 	margin: 782px 0px 0px 280px;
 }
 @media all and (max-width:650px) {
@@ -143,6 +141,15 @@ html {
 		width: 320px;
 		height: 206px;
 		padding: 5px 0%;
+	}
+	.wrapper{
+		width: 342px;
+		height: 200px;;
+		position: fixed;
+		margin: 562px 0px 0% 50px;
+	}
+	.key{
+		margin: 782px 0px 0px 180px;
 	}
 }
 @media all and (max-width:480px) {
