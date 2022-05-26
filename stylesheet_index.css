@@ -9,6 +9,7 @@ html {
   font-family: monospace;
   background-color: #eeebf0;
   position: relative;
+  font-family: 'Permanent Marker', cursive;
 }
 
 
@@ -79,6 +80,8 @@ a{
 }
 .item1{
 	background-color: #f0d7b4;
+	width: 320px;
+	height: 206px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -87,8 +90,9 @@ a{
 	margin:0;
 	padding:0;
 	text-transform:uppercase;
-	font-family: 'Corben', cursive;
-	letter-spacing: 0.1rem;
+	text-align: justify;
+	line-height: 98%;
+	/* letter-spacing: 0.1rem; */
 	text-shadow: 0px 10px 10px rgba(25, 3, 54, 0.66);
 	font-size:5.5em;
 	color:rgba(255,255,255,0.1);
@@ -226,7 +230,18 @@ a{
 		height: 206px;
 		padding: 0%;
 	}
-	
+	.item1{
+		width: 250px;
+		height: 206px;
+	}
+	.item4{
+		width: 250px;
+		height: 206px;
+	}
+	.single-person-pool svg{
+		
+		viewBox: "80 100 440 380";
+	}
 	.wrapper{
 		width: 270px;
 		height: 120px;;
@@ -367,6 +382,93 @@ a{
 	bottom:0;
 	z-index: 1;
   }  
+
+
+
+
+
+
+
+
+
+
+  /* ------------------------item4  */
+  .item4{
+	  /* width: auto;
+	  height: 206px; */
+  }
+
+  .single-person-pool{
+	  background-color:#52d0e0;
+	  height: 206px;
+	  width: 320px;
+	}
+  .pool0{fill:#52D0E0;}
+  .pool1{fill:#3EA6C5;}
+  .pool2{fill:#ff8ce1;}
+  .pool3{fill:#10e6ca;}
+  .pool4{fill:#07997b;}
+  .pool5{fill:#13cdc5;}
+  .pool6{fill:none;stroke:#7B8E9E;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+  .pool7{fill:none;stroke:#BBD7C4;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+  .pool8{fill:none;stroke:#8e8aff;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+  .pool9{fill:none;stroke:#D5DFE2;stroke-width:7;stroke-linecap:round;stroke-miterlimit:10;}
+  .pool13{fill:none;stroke:#D5DFE2;stroke-width:9;stroke-linecap:round;stroke-miterlimit:10;}
+  .pool15{fill:#ad68d5;}
+  .pool16{fill:#D5DFE2;}
+  .pool17{fill:none;stroke:#ad68d5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  
+  
+  
+  #r-arm-2, #r-arm-3, #r-arm-4,#r-arm-5{
+  opacity:0;
+  }
+  
+  #l-arm-2, #l-arm-3, #l-arm-4,#l-arm-5{
+  opacity:0;
+  }
+  
+  
+  #r-leg-2, #r-leg-3, #r-leg-4,#r-leg-5{
+  opacity:0;
+  }
+  
+  #l-leg-2, #l-leg-3, #l-leg-4,#l-leg-5{
+  opacity:0;
+  }
+  
+  #head{  
+	transform-origin:241px 276px;
+	animation: head 2.25s ease infinite;
+  }
+  
+  @keyframes head{
+	0%{transform:rotate(30deg);
+	} 
+	50%{transform:rotate(0deg);
+	} 
+	70%{transform:rotate(0deg);}
+	90%,100%{transform:rotate(30deg);}
+	
+  }
+  
+  #spiral{
+	animation:spiral 2.25s ease infinite;
+  }
+  
+  @keyframes spiral{
+  
+	0%{stroke-dasharray:200;
+	  stroke-dashoffset:200;}
+  
+	100%{
+	  stroke-dasharray:200;
+	  stroke-dashoffset:-200;
+	 }
+	}
+  
+
+
 
 /* .path-0{
 	animation:pathAnim-0 4s;
