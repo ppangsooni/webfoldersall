@@ -109,6 +109,12 @@ html {
 		width: 330px;
 		height: 600px;
 	  }
+	.wrapper{
+		width: 270px;
+		height: 120px;;
+		position: sticky;
+		margin: 568px 0px 0% 38px;
+	}
 	  .item1{
 		width: 320px;
 		height: 206px;	
@@ -145,7 +151,7 @@ html {
 		width: 270px;
 		height: 120px;;
 		position: sticky;
-		margin: 290px 0px 0% 38px;
+		margin: 564px 0px 0% 38px;
 	}
 	.key{
 		margin: 782px 0px 0px 180px;
