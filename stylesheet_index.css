@@ -49,22 +49,22 @@ html {
 	width: 340px;
 	height: 580px;
 	/* background-color: aqua; */
-	-webkit-overflow-y: auto;
-	-webkit-scrollbar-color: #d4aa70 #e4e4e4;
-	-webkit-scrollbar-width: thin;
+	overflow-y: auto;
+	scrollbar-color: #d4aa70 #e4e4e4;
+	scrollbar-width: thin;
   }
 /*----- center의 overflow-y: scroll Custom ----*/
 .center::-webkit-scrollbar {
-	-webkit-width: 10px;
+	width: 10px;
   }
 .center::-webkit-scrollbar-track {
-	-webkit-background-color: transparent;
-	-webkit-border-radius: 100px;
+	background-color: transparent;
+	border-radius: 100px;
   }
 .center::-webkit-scrollbar-thumb {
-	-webkit-border-radius: 100px;
-	-webkit-background-image: linear-gradient(180deg, #38df8b 0%, #1d7177 99%);
-	-webkit-box-shadow: inset 2px 2px 5px 0 rgba(#f4e0f7, 0.5);
+	border-radius: 100px;
+	background-image: linear-gradient(180deg, #38df8b 0%, #1d7177 99%);
+	box-shadow: inset 2px 2px 5px 0 rgba(#f4e0f7, 0.5);
   }
 
 .item1{
@@ -75,12 +75,25 @@ html {
 
 }
 .wrapper{
-	width: 350px;
+	width: 362px;
 	height: 200px;;
-	position: fixed;	
-	bottom: 145px;
+	position: fixed;
+	margin: 560px 136px 0% 138px;
+	/* bottom: 85px; */
 }
+.keybutton{
+	content: "";
+	width: 79px;
+	height: 79px;
+	border: #1d7177 1px solid;
+	border-radius: 50%;
+	background-color: rgb(231, 229, 226);
 
+}
+.key{
+	margin-top: 810px;
+	margin: 782px 0px 0px 280px;
+}
 @media all and (max-width:650px) {
 	.suggest-l {
 	  margin-left: -150px;
@@ -88,18 +101,24 @@ html {
 	  margin-top: 0;
 	}
 	.iphone-l {
-		width: 550px;
-		height: 1036px;
+		width: 640px;
+		height: 880px;
 		margin-top: 250px;
 	}
 	.iphone-l > .screen-ll {
 		padding: 20px 10px;
-		top: 190px;
-		left: 81px;
-		width: 405px;
+		top: 140px;
+		left: 160px;
+		width: 330px;
+		height: 600px;
 	  }
+	  .item1{
+		width: 320px;
+		height: 206px;	
+	}
   }
 @media all and (max-width:550px) {
+	
 	.suggest-l {
 		margin-left: -150px;
 		top: 0;
@@ -112,9 +131,18 @@ html {
 	}
 	.iphone-l > .screen-ll {
 		padding: 20px 10px;
-		top: 190px;
+		top: 180px;
 		left: 71px;
 		width: 325px;
+		height: 565px;
+	}
+	.center::-webkit-scrollbar {
+		display: none;
+	  }
+	.item1{
+		width: 320px;
+		height: 206px;
+		padding: 5px 0%;
 	}
 }
 @media all and (max-width:480px) {
@@ -133,6 +161,18 @@ html {
 		top: 200px;
 		left: 61px;
 		width: 255px;
+		height: 425px;
+	}
+	.center::-webkit-scrollbar {
+		display: none;
+	  }
+	  .iphone-l > .screen-ll>.center{
+		height: 445px;
+	}
+	.item1{
+		width: 250px;
+		height: 206px;
+		padding: 0%;
 	}
 }
 
@@ -251,12 +291,3 @@ html {
 	}
 } */
 
-.keybutton{
-	content: "";
-	width: 50px;
-	height: 50px;
-	background-color: gray;
-}
-.key{
-	margin-top: 810px;
-}
