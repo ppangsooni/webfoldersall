@@ -71,7 +71,7 @@ html {
 .items{
 	width: 320px;
 	height: 206px;
-	border: red 1px solid;
+	/* border: red 1px solid; */
 	padding: 0%;
 }
 a{

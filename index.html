@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./stylesheet_index.css">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./folder/folderlogo.png">
+    <title>DESIGN WORK BOOK: WEB/APP and STORAGE</title>
 </head>
 <body>
     <div class="suggest-l"></div>
@@ -191,10 +192,10 @@
     speed: .15
   
   });
-
+  $('#svg').attr( 'viewBox', "130 100 500 480" );
   var mySVG = document.getElementById('svg');
-    if ($(window).width() >480) {
-   mySVG.setAttribute("viewBox", "0 100 400 300"); 
+    if ($(window).width() <480) {        
+   mySVG.setAttribute("viewBox", "130 100 500 480"); 
 }
 
 var svg = document.getElementById("swimming-girl");
