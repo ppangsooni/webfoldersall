@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/common.css"> -->
+    <title>주소체계</title>
+</head>
+<style>
+    *{
+       font-family: 'Gowun Dodum', sans-serif;
+       font-size: medium;
+    }
+    .wrap{
+    width: 80%;
+    margin: 15px auto 0;
+    }
+    table{
+        border: 4px blueviolet solid;
+    }
+    table td{
+        border: 1px rgb(140, 107, 172) double;
+    }
+
+</style>   
+<body>
+    <div class="wrap">
+        <h1>주소체계</h1>
+        <p> 절대주소 : 고정된 주소 (불변)</p>
+        <p> 상대주소 : 적용된 파일에 따라 변경되는 주소</p>
+
+        <p> 절대 주소: https://www.google.co.kr/imghp?hl=ko&tab=ri&ogbl</p>
+        <p> 상대 주소 : 파일 기준으로 작성</p>
+        <table>
+            <tr>
+                <td>불러지는 파일이 같은 폴더에 있을 경우</td>
+                <td>주소의 시작부분에 붙이는 것이 없이 사용
+                    (폴더나 파일명)<br> 
+                    ./파일명 (.은 같은폴더에 있다는 것)
+                    <a href="./02.html">02</a>
+                </td>
+            </tr>
+            <tr>
+                <td>상위 폴더로 이동</td>
+                <td>..<a href="../css/common.css">common.css</a></td>
+            </tr>
+            <tr>
+                <td>루트폴더(ex 드라이브)</td>
+                <td><b>/</b>로 시작<a href="/rwb/css/common.css">common.css</a></td>
+            </tr>
+        </table>
+
+        <br>
+        <hr>
+    
+    </div>
+    
+    <div class="wrap" style="border: black;">
+        <h3>p105_doit</h3>
+        <div class="ex3_1" style="display:flex; flex-direction: row;">
+            <div style="background-color:darkgrey; padding: 0.5% 2% 4%;">
+                <div class="yellowbox" style="border: orange 1px solid; padding: 3% 3% 0;">
+                    <img src="https://w.namu.la/s/0c6301df01fc4f180ec65717bad3d0254258abf0be33299e55df7c261040f517518eb9008a1a2cd3d7b8b7777d70182c185bc891b1054dc57b11cc46fd29130a3474f1b75b816024dfdc16b692a0c77c" alt="뚱이그림">
+                    <h1>KYUNGHEE Ko</h1>
+                    <br>
+                    <P>오늘은 남은 인생이 시작되는 첫째날</P>
+                </div>
+            </div>
+            <div style="padding: 2% 2% 0;">
+                <div style="padding: 5% 5%; ">
+                    <h2>Who am I?</h2>
+                    <p><mark>프론트엔드 웹기술(Front-end Web Tech.)</mark>에 관심이 많습니다.<br>
+                        현재 제주의 한 시골마을에서 코딩 중 입니다.</p>
+                </div>
+                <hr>
+                <div style="padding: 5% 5%;">
+                    <h2>Experience</h2>
+                    <ul>
+                        <li>프론트엔드 개발</li>
+                        <ul>
+                            <li>업무 내용 업무 내용 업무 내용</li>
+                            <li>업무 내용</li>
+                            <li>업무 내용 업무 내용</li>
+                        </ul>
+                        <li>웹 디자인</li>
+                        <ul>
+                            <li>업무 내용</li>
+                            <li>업무 내용 업무 내용</li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

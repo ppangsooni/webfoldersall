@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrap{
+    width: 80%;
+    margin: 15px auto 0;
+    }
+    .container1 {
+        width:500px;
+        padding:10px;
+        border:1px solid #ccc;
+        margin-bottom: 15px;
+    }
+    .container1>p span{
+        font-weight: 700;
+        font-size: larger;
+    }
+
+    .container2 {
+		width:500px;
+		padding:10px;
+		border:1px solid #ccc;
+        margin-bottom: 15px;
+    }
+    .container2>ul li{
+        list-style: none;
+        line-height:2.0;
+    }
+    
+	.subject {
+		font-weight:700;
+	    font-size:larger;
+        color: #ad3000;
+        /* text-justify: inter-word:2%; */
+	}
+
+    .container3 {
+		width:500px;
+        height:50px;
+        /* margin:0 auto; */
+		background-color:#444;
+        text-align: center;
+        color: #fff;
+        text-shadow:3px 2px 5px #000;
+        margin-bottom: 15px;
+	}
+	.container4> h1 {
+		font-size:17px;
+	}
+	.container4> p {
+	    font-size:16px;
+		line-height:25px;
+	}
+	.accent {
+		font-weight:bold;
+		color:red;
+	}
+	.container4 {
+		width:750px;
+		padding:10px;
+		border:1px solid #ccc;
+        font-family: "맑은 고딕", 돋움;
+	}
+	.book-img {
+		float:left;
+		padding:10px;
+		margin-right:20px;
+	}
+	.book-desc {
+		padding:10px;
+	}
+</style>
+<body>
+    <div class="wrap">
+        <p>q1_텍스트스타일</p>
+        <div class="container1">
+            <h1>최신 웹 디자인 트렌드</h1>
+            <p><span>반응형 웹 디자인</span> - 다양한 화면 크기에 최적화하다</p>
+            <p><span>플랫 디자인</span> - 입체에서 평면으로 </p>
+            <p><span>풀스크린 배경</span> - 콘텐츠에 집중</p>
+            <p><span>원 페이지 사이트</span> - 한 페이지에 모든 내용을 담다</p>
+            <p><span>패럴랙스 스크롤링</span> - 동적인 효과로 강한 인상을!</p>
+            <p><span>웹 폰트</span> - 웹 타이포그래피를 받쳐주는 기술</p>
+        </div>
+        <div class="container2">
+			<h1>최신 웹 디자인 트렌드</h1>
+			<ul>
+				<li><span class="subject">반응형 웹 디자인</span> - 다양한 화면 크기에 최적화하다</li>
+				<li><span class="subject">플랫 디자인 </span> - 입체에서 평면으로 </li>
+				<li><span class="subject">풀스크린 배경 </span> - 콘텐츠에 집중</li>
+				<li><span class="subject">원 페이지 사이트 </span> - 한 페이지에 모든 내용을 담다</li>
+				<li><span class="subject">패럴랙스 스크롤링 </span> - 동적인 효과로 강한 인상을!</li>
+				<li><span class="subject">웹 폰트 </span> - 웹 타이포그래피를 받쳐주는 기술</li>
+			</ul>
+		</div>
+        <div class="container3">
+            <h1>최신 웹 디자인 트렌드</h1>
+        </div>
+        <div class="container4">
+			<div class="book-img">
+				<img src="data:image/jpeg;base64,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" alt="">
+			</div>
+			<div class="book-desc">
+				<h1>웹 디자인 트렌드를 따라잡는 비법 대공개!</h1>
+				<p>그래픽 프로그램으로 웹 디자인 요소를 일일이 만들어 웹사이트를 제작하는 시대는 지났다. 이제 모바일, 태블릿, PC 등 멀티 디바이스에 한 번에 적용할 수 있는 웹 디자인 방법을 알아야 한다. 바로 코딩을 이용한 웹 디자인이다. </p>
+				<p><span class="accent">이 책은 HTML과 CSS에 대한 기초적인 내용만 알고 있다면 누구든 쉽게 코딩으로 여러 기기에 대응할 수 있는 웹 디자인을 만들 수 있도록 기획되었다.</span> jQuery를 몰라도 된다. jQuery 플러그인을 가져다 사용할 수 있는 방법을 소스 한 줄 한 줄 자세하고 친절하게 설명해 놓았으니까!</p>			
+				<p><a href="http://www.easyspub.co.kr/20_Menu/BookView/A001/65" target="_blank">[책 자세히 보기]</a></p>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
