@@ -72,16 +72,21 @@
 
     .main_right{
         width: 300px;
+        overflow: hidden;
+    }
 
+    .main_right img{
+        height: 880px;
+    }
+    .main_right:hover{
+        overflow: visible;
     }
     .main_leftBottom{
         float: right;
     }
-    /* .main_leftBottom::after{
-        width: ;
-    } */
+
     .main_leftBottom:hover{
-        border: 1px rgb(255, 0, 0) dotted;
+        background-color: rgb(173, 22, 2);
         /* transform: ; */
     }
 
@@ -110,8 +115,82 @@
     }
     .commit{
         background-color: rgb(173, 22, 2);
-
+        content: "";
+        clear: both;
+        display: table;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        font-size: 40px;
+        position: relative;
     }
+    .commit:hover .commit_alt{
+        display: block;
+    }
+    .commit_alt{
+        display: none;
+        padding: 10px;
+        width: 250px;
+        font-size: 20px;
+        background-color: rgb(224, 201, 68);
+        color: black;
+        left: 600px;
+        top: -350px;
+        position: absolute;
+        transform: translate(30px, 20px) rotate(20deg);
+    }
+    .commit_alt :nth-child(1){
+        font-size: 40px;
+        font-weight: bolder;
+        color: rgb(173, 22, 2);
+    }
+    .commit_alt :nth-child(2){
+        color: black;
+    }
+
+    .commit>form>div{
+        float: left;
+        padding: 20px;
+    }
+    .commit_left{
+        width: 350px;
+        /* width: calc(100%-510px); */
+    }
+    .commit_right{
+
+        width: 500px;
+    }
+    .commit_left>div{
+        border: 1px transparent solid;
+        border-radius: 5px;
+        background-color: wheat;
+        margin: 10% 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+    form>div label{
+        color: brown;
+    }
+    input{
+        border: none;
+        width: 150px;
+        font-size: 28px;
+        background-color: transparent;
+        color: brown;
+    }
+    .commit_right>div{
+        border: 1px transparent solid;
+        border-radius: 5px;
+        background-color: wheat;
+        margin: 7% 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+
 
 
     .footer{
@@ -161,18 +240,33 @@
             </div>
         </div>
         <div class="commit">
-            <h2>응모하기</h2>
-            <div class="box">
-                <label>name</label>
-                <input type="text" id="usrname" class="usrname">
+            <h2>크루엘라를 한마디로 정의한다면?</h2>
+            <div class="commit_alt">
+                <p class="">크루엘라는 ________(이)다:</p>
+                <p>빈칸을 채워 응모를 해주세요<br>추첨을 통해 100분께 디즈니플러스 3개월 이용권을 드립니다.</p>
             </div>
-            <div class="box">
-                <label>email</label>
-                <input type="email" id="usremail" class="usremail">
-            </div>
-            <div class="box">
-                <textarea class="usermessage" placeholder="message"></textarea>
-            </div>
+            <form action="">
+                <div class="commit_left">
+                    <div class="box">
+                        <label for="usrname">name</label>
+                        <input type="text" id="usrname" class="usrname" placeholder="Please enter your name!">
+                    </div>
+                    <div class="box">
+                        <label for="usremail">email</label>
+                        <input type="email" id="usremail" class="usremail" placeholder="Please enter your email!">
+                    </div>
+                </div>
+                <div class="commit_right">
+                    <div class="box">
+                        <label for="usermessage">Cruella</label>
+                        <input type="text" class="usermessage" placeholder="__________________________." title="크루엘라는 ">
+                        <label for="usermessage">이다.</label>
+                    </div>
+                    <div class="box">
+                        <input type="submit" value="Submit Confirmation" class="submit">
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="footer">
             <p>footer</p>
