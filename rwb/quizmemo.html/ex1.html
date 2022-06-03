@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<style>
+    *{
+       font-family: 'Gowun Dodum', sans-serif;
+       font-size: medium;
+        margin: 0 auto;
+        padding: 0 auto;
+        box-sizing: border-box;
+    }
+    .warp{
+        width: 1000px;
+        margin: 0 auto;
+        border: 1px solid grey;
+    }
+    .warp ::after{
+        content: "";
+        clear: both;
+    	display: table;
+    }
+    .header{
+        border: 1px solid rgb(190, 186, 186);
+        height: 100px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .main{
+        float: left;
+
+  
+    }
+    /* .main ::after{
+        content: "";
+        clear: both;
+    	display: table;
+    } */
+    .contents{
+        border: 1px solid rgb(190, 186, 186);
+        float: left;
+        width: calc(100% - 320px);
+        padding: 10px;
+    }
+    .sidebar{
+        border: 1px solid rgb(190, 186, 186);
+        float: left;
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        background-color: cadetblue;
+    }
+    .footer{
+        border: 1px solid rgb(190, 186, 186);
+        height: 100px;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div class="warp">
+        <div class="header">
+            <h1>Lorem Ipsum</h1>
+        </div>
+        <div class="main">
+            <div class="contents">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h3>Where does it come from?</h3>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            </div>
+            <div class="sidebar">
+                <h3>Translations</h3>
+                <p>Can you help translate this site into a foreign language ? Please email us with details if you can help.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h4>Donate: </h4>
+            <p>If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation, any sum is appreciated - click here to donate using PayPal. Thank you for your support.</p>
+        </div>
+    </div>
+</body>
+</html>
