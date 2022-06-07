@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+        @font-face {
+            font-family: 'aliceInWonderland';
+            src: url('/webfolders/font/aliceInWonderland.ttf');
+        }
+        @font-face {
+            font-family: 'disney_classic';
+            src: url('/webfolders/font/disney_classic.ttf');
+        }
+        :root{
+            font-size: 50px;
+            font-family: "aliceInWonderland";
+        }
+		body>div:nth-child(1) {
+			position: relative;
+            background-color: aqua;
+			width: 150px;
+            margin-bottom: 100px;
+		}
+		body>div:nth-child(1) div::before {
+			content: 'before';
+		}
+		body>div:nth-child(1) div::after {
+			position: absolute;
+			width: 0%;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			background-color: black;
+			content: '';
+			transition: 1s;
+		}
+		body>div:nth-child(1) div:hover::after {
+			width: 100%;
+		}
+
+        body>div:nth-child(2){
+            font-family: "disney_classic";
+        }
+        body>div:nth-child(2)>div:nth-child(1){
+            font-weight: bold;
+            text-align: center;
+
+            width: 400px;
+            height: 200px;
+            background-image: url(https://www.thegear.kr/news/photo/old/imgdata/thegear_co_kr/201708/2017080845122396.jpg)
+        }
+	</style>
+</head>
+<body>
+	<div>
+		<!-- before -->
+		contents
+		<!-- after -->
+	</div>
+
+    <div>
+        <div>
+            hover1
+        </div>
+        <div>
+            hover2
+        </div>
+        <div>
+            hover3
+        </div>
+        <div>
+            hover4
+        </div>
+    </div>
+</body>
+</html>
