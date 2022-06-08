@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <title>고정 그리드 시스템1단계</title>
+</head>
+<style>
+    *{
+       font-family: 'Gowun Dodum', sans-serif;
+       font-size: medium;
+    }
+    /* 1열: 67
+    2열: 154
+    3열: 241
+    4열: 328
+    5열: 415
+    6열: 502
+    7열: 589
+    8열: 676
+    9열: 763
+    10열: 850
+    11열: 937
+    12열: 1024 */
+    /* 전체넓이 , 컬럼 넓이, 커터, 컬럼 수
+    let total= 1024, col=67, gap=20, cntCol=12; */
+    .row {
+        
+    }
+    .container{
+        width: 1024px;
+        margin: 0 auto;
+    }
+    .row::after{
+        content: "";
+        clear: both;
+        /*display: table; 높이지정*/
+        display: table;
+    }
+    [class^=col] {
+        float: left;
+        margin-right: 20px;
+    }
+    [class^=col]:last-child {
+
+        margin-right: 0;
+    }
+    .col-1{
+        width: 67px;
+    }
+    .col-2{
+        width: 154px;
+    }
+    .col-3{
+        width: 241px;
+    }
+    .col-4{
+        width: 328px;
+    }
+    .col-5{
+        width: 415px;
+    }
+    .col-6{
+        width: 502px;
+    }
+    .col-7{
+        width: 589px;
+    }
+    .col-8{
+        width: 676px;
+    }
+    .col-9{
+        width: 763px;
+    }
+    .col-10{
+        width: 850px;
+    }
+    .col-11{
+        width: 937px;
+    }
+    .col-12{
+        width: 1024px;
+    }
+    [class^=col] >div {
+        height: 500px;
+        background-color: coral;
+    }
+
+</style>   
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div></div>
+                </div>
+                <div class="col-8">
+                    <div></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div></div>
+                </div>
+                <div class="col-6">
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+    
+</body>
+</html>

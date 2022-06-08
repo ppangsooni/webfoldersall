@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <title></title>
+</head>
+<style>
+    *{
+       font-family: 'Gowun Dodum', sans-serif;
+       font-size: medium;
+    }
+</style>   
+<body>
+    <div class="wrap">
+
+    </div>
+    <br>
+    <hr>
+    
+</body>
+</html>
+<script>
+    //전체넓이 , 컬럼 넓이, 커터, 컬럼 수
+    // let total= 1024, col=67, gap=20, cntCol=12;
+    let total= 960, col=40, gap=40, cntCol=12;
+
+    for(let i=1; i<=cntCol; i++){
+        //1단계 => col당 전체넓이 = 컬럼의 넓이*컬럼 수 +커터 *(컬럼 수-1) 
+        
+        //2단계 => 요소 너비갑셑을 %화 =(요소의 너비/컨텐츠를 감싸는 요소의 너비)*100
+         //2단계 => col당 전체넓이%화 =(1단계값 :col당 넓이 /col당 전체넓이)*100
+        //``은 표현식,변수지정표현식
+        // 1단계console.log(`${i}열: ${col*i+gap*(i-1)}`);
+        // 2단계 console.log(`${i}열: ${(col*i+gap*(i-1))/total*100}`);
+        console.log(`${i}열: ${(col*i+gap*(i-1))/total*100}`);
+    }
+</script>

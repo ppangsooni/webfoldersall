@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <title>고정 그리드 시스템</title>
+</head>
+<style>
+    *{
+       font-family: 'Gowun Dodum', sans-serif;
+       font-size: medium;
+    }
+    /* 1단계 px
+     1열: 67
+    2열: 154
+    3열: 241
+    4열: 328
+    5열: 415
+    6열: 502
+    7열: 589
+    8열: 676
+    9열: 763
+    10열: 850
+    11열: 937
+    12열: 1024 */
+    /* 전체넓이 , 컬럼 넓이, 커터, 컬럼 수
+    let total= 1024, col=67, gap=20, cntCol=12; */
+    /* 2단계 %
+    1열: 6.54296875
+    2열: 15.0390625
+    3열: 23.53515625
+    4열: 32.03125
+    5열: 40.52734375
+    6열: 49.0234375
+    7열: 57.51953125
+    8열: 66.015625
+    9열: 74.51171875
+    10열: 83.0078125
+    11열: 91.50390625
+    12열: 100
+    */
+    .row {
+        
+    }
+    .container{
+        /*1단계 width: 1024px; */
+        /* width: 100%; */
+        width: 85%;
+        margin: 0 auto;
+    }
+    .row::after{
+        content: "";
+        clear: both;
+        /*display: table; 높이지정*/
+        display: table;
+    }
+    [class^=col] {
+        float: left;
+        /* 1단계 margin-right: 20px; */
+        margin-right: 1.953125%;
+    }
+    [class^=col]:last-child {
+
+        margin-right: 0;
+    }
+    .col-1{
+        /*1단계 width: 67px;
+         (67px/1024)*100    */
+        width: 6.54296875%;
+    }
+    .col-2{
+        /*1단계 width: 154px; */
+        width: 15.0390625%;
+    }
+    .col-3{
+        /*1단계 width: 241px; */
+        width: 23.53515625%;
+    }
+    .col-4{
+        /*1단계 width: 328px; */
+        width: 32.03125%;
+    }
+    .col-5{
+        /*1단계 width: 415px; */
+        width: 40.52734375%;
+    }
+    .col-6{
+        /*1단계 width: 502px; */
+        width: 49.0234375%;
+    }
+    .col-7{
+        /*1단계 width: 589px; */
+        width: 57.51953125%;
+    }
+    .col-8{
+        /*1단계 width: 676px; */
+        width: 66.015625%;
+    }
+    .col-9{
+        /*1단계 width: 763px; */
+        width: 74.51171875%;
+    }
+    .col-10{
+        /*1단계 width: 850px; */
+        width: 83.0078125%;
+    }
+    .col-11{
+        /* 1단계 width: 937px; */
+        width: 91.50390625%;
+    }
+    .col-12{
+        /* 1단계 width: 1024px; */
+        width: 100%;
+    }
+    [class^=col] >div {
+        height: 500px;
+        height: 500px;
+        background-color: coral;
+    }
+    @media screen and (max-width: 500px) {
+        /*브레이크포인트*/
+        .sm-col-1{
+        /*1단계 width: 67px;
+         (67px/1024)*100    */
+        width: 6.54296875%;
+        }
+        .sm-col-2{
+            /*1단계 width: 154px; */
+            width: 15.0390625%;
+        }
+        .sm-col-3{
+            /*1단계 width: 241px; */
+            width: 23.53515625%;
+        }
+        .sm-col-4{
+            /*1단계 width: 328px; */
+            width: 32.03125%;
+        }
+        .sm-col-5{
+            /*1단계 width: 415px; */
+            width: 40.52734375%;
+        }
+        .sm-col-6{
+            /*1단계 width: 502px; */
+            width: 49.0234375%;
+        }
+        .sm-col-7{
+            /*1단계 width: 589px; */
+            width: 57.51953125%;
+        }
+        .sm-col-8{
+            /*1단계 width: 676px; */
+            width: 66.015625%;
+        }
+        .sm-col-9{
+            /*1단계 width: 763px; */
+            width: 74.51171875%;
+        }
+        .sm-col-10{
+            /*1단계 width: 850px; */
+            width: 83.0078125%;
+        }
+        .sm-col-11{
+            /* 1단계 width: 937px; */
+            width: 91.50390625%;
+        }
+        .sm-col-12{
+            /* 1단계 width: 1024px; */
+            width: 100%;
+        }
+        .sm-none{
+            /* 1단계 width: 1024px; */
+            width: 100%;
+        }
+
+            
+    }
+
+</style>   
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                <div class="col-1">
+                    <div></div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div></div>
+                </div>
+                <div class="col-8">
+                    <div></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 sm-col-12" >
+                    <div></div>
+                </div>
+                <div class="col-6 sm-none">
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+    
+</body>
+</html>

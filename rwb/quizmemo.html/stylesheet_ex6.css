@@ -1,0 +1,144 @@
+    /*
+    전체넓이 960px, 컬럼넓이 60px, 컬럼수 12, 마진 10px
+        열 컬럼당넓이px  컬럼당 %
+        1열	   60	    6.25
+        2열	   140	    14.58333333
+        3열	   220	    22.91666667
+        4열	   300	    31.25
+        5열	   380	    39.58333333
+        6열	   460	    47.91666667
+        7열    540	    56.25
+        8열	   620	    64.58333333
+        9열	   700	    72.91666667
+        10열   780	    81.25
+        11열   860	    89.58333333
+        12열   940	    97.91666667
+    */
+    /* html, body{
+        margin: 0 auto;
+
+    } */
+    *{
+        box-sizing: border-box;
+        border: 1px solid black;
+    }
+    p{
+        text-decoration: none;
+        color: black;
+    }
+    [class*="Yellow"]{
+        color: #D4D22C;
+    }
+    [class*="Grey"]{
+        color: #2F4858;
+    }
+
+    [class*="bg_Grey"]{
+        background-color: #2F4858;
+    }
+    [class*="bg_Yellow"]{
+        background-color: #D4D22C;
+    }
+
+    .header{
+        height: auto;       
+    }
+    .nav{
+        height: 100%;
+        list-style: none;
+    }
+    .content{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .row-left{
+        width: 100%;
+        height: 100%;
+    }
+    .maileIocon{
+        width: 150px;
+        border:1px solid transparent;
+        border-radius: 15%;
+    }
+    .img{
+        width: 50%;
+    }
+    [class^="row-left"]::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    [class*="row-right"]::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    [class$="item"]{
+        height: 300px;
+        align-items: center;
+        content: "";
+        border: 1px yellowgreen solid;
+    }
+    [class$="itemBox"]{
+        object-fit:cover;
+        align-items: center;
+        content: "";
+        border: 1px peru solid;
+    }
+
+
+    [class*="col"] {
+        float: left;
+        margin-right: 1.041666666666667%;
+        margin-left: 1.041666666666667%;
+    }
+    
+    [class*="ta_center"]{
+        text-align: center;
+    }
+    .col-1{
+        width: 6.25%;
+    }
+    .col-2{
+        width: 14.58333333%;
+    }
+    .col-3{
+        width: 22.91666667%;
+    }
+    .col-4{
+        width: 31.25%;
+    }
+    .col-5{
+        width: 39.58333333%;
+    }
+    .col-6{
+        width: 47.91666667%;
+    }
+    .col-7{
+        width: 56.25%;
+    }
+    .col-8{
+        width: 64.58333333%;
+    }
+    .col-9{
+        width: 72.91666667%;
+    }
+    .col-10{
+        width: 81.25%;
+    }
+    .col-11{
+        width: 89.58333333%;
+    }
+    .col-12{
+        width: 97.91666667%;
+    }
+
+
+    
+
+    /* .content>div {
+        background-color: aqua;
+        border: 1px red solid;
+        content: "";
+    } */
