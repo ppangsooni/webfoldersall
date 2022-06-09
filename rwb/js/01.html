@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+</body>
+</html>
+<script>
+    //컨펌 대화상자//
+        // var isGone = confirm ('계속 실행하시겠습니까?');
+        // if(isGone) {
+        //     console.log('실행');
+        // } else{
+        //     console.log('멈춤';)
+        // }
+
+
+
+    // 형변환
+    //  +  형변환없음
+    // -,/,*, * 암시적형변환 
+    // 0 "" undefined -> 암시적형변환 (false)
+
+            let a = '10';
+            let b = 20;
+            console.log(a+b); //값은 1020 (검은색)
+            //문자형변환
+            let value = true;
+            alert(typeof value); // boolean
+
+            value = String(value); // 변수 value엔 문자열 "true"가 저장됩니다.
+            alert(typeof value); // string은 개체를 만들어ㅐ는 함수(타입을 문자화 시킴 ef. Nunber는 숫자화 시킴)
+
+
+            //숫자형변환 (parseInt와 Number의 차이는 "문자와 섞여있을때" 전환시켜줌과 전환시키지 못함 "공백을 입력시" 전환안됨과 전환0)
+            //'문자와 섞여있을때'
+            let age = parseInt("임의의 문자열 123");//전환시킴//
+            let num = Number("임의의 문자열 123");//전환 안됨 /NaN, 형 변환이 실패합니다.
+            //'공백 입력시'
+            age = parseInt("");//공백을 Num으로 취급/NaN, 형 변환이 실패합니다./
+            num = Number("");//공백을 0//
+
+
+
+</script>

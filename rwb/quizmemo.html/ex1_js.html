@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+</body>
+</html>
+<script>
+   //전위형과 후위형
+
+        let a = 1, b = 1;
+
+        let c = ++a; //값 2
+        let d = b++; //값 1 (후에 증가 2)
+
+    //할당 후 결과 예측하기
+
+        let a = 2;
+        let x = 1 + (a *= 2); 
+        //결과 a값 4 x는 5
+
+    //형 변환
+
+        "" + 1 + 0 // 결과 "10"
+        "" - 1 + 0 // 결과 -1
+        true + false // truefalse----------답 1
+        6 / "3" // 결과 2
+        "2" * "3" //결과 6
+        4 + 5 +"px" //결과 "9px"
+        "$" + 4 +5 //결과 "$45"
+        "4" - 2 //결과 2
+        "4px" - 2 //결과 NuN (변환X)
+        7 / 0   //결과 0 ---------------------답 Infinity
+        " -9 " + 5 //결과 "-95"
+        " -9 " - 5 //결과 -14
+        null + 1 //결과 1 (null은 0)
+        undefined + 1 //결과 Nun (undefined은 Nun)
+        " \t \n " - 2 // 결과 -2 (\t \n은 0)
+
+    //덧셈고치기
+
+        let a = prompt("덧셈할 첫 번째 숫자를 입력해주세요.", 1); //이는 "1"
+        let b = prompt("덧셈할 두 번째 숫자를 입력해주세요.", 2); //이는 "2"
+        alert(a + b);//12
+
+        //수정 후 
+        let a = prompt("덧셈할 첫 번째 숫자를 입력해주세요.", 1);
+        let b = prompt("덧셈할 두 번째 숫자를 입력해주세요.", 2);
+
+        alert(+a + +b);
+
+
+</script>
