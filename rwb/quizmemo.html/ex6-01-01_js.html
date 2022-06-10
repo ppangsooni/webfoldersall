@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 구구단 ④  예제 ex6-01-01_js</title>
+</head>
+
+<body>
+    <div></div>
+     반복문 
+    <a href="../js/08.html"> 08.html </a>
+</body>
+</html>
+<script>
+
+let str = '';
+str += '<table border="1">';
+
+for (let i = 1; i <10; i++) {
+    str += '<tr><td>';
+    for (let j = 1; j <10; j++){
+        str += "<tr><td>" + i + "*" + j + "=" + i*j + "<br>";
+    }
+    str += "</tr></td>";
+}
+str += "</table>";
+document.body.innerHTML = str;
+//  document.body.innerHTML = "<table border=\"1\"><tr><td>test</td></tr></table>";
+</script>

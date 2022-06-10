@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div>
+
+    </div>
+    <a href="../js/06.html"> .html </a>
+</body>
+</html>
+<script>
+    /*
+    BMI = (몸무게) kg / (키)2 m
+
+    18.5미만   저체중    
+    18.5~24.9 정상체중
+    25~29.9   과체중
+    30~34.9   비만
+    35~39.9   고도비만
+    40이상   초고도비만
+
+    */
+
+    //방법 1
+    let userHeight = prompt("당신의 키를 입력하세요","cm"); //160
+    let userWeight = prompt("당신의 몸무게를 입력하세요","kg"); //50
+
+    let userBMI = userWeight /((userHeight/100)*(userHeight/100));
+
+    alert ("당신의 BMI는 "+userBMI);
+
+    if (18.5 <= userBMI 18.5 && userBMI>= 24.9 ) {
+        alert ("정상체중입니다.");
+    } else {
+        alert ("정상체중이 아닙니다.");      
+    }
+
+
+
+</script>

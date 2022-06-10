@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문  예제 ex3_js</title>
+</head>
+
+<body>
+    <div></div>
+     반복문 
+    <a href="../js/08.html"> 08.html </a>
+</body>
+</html>
+<script>
+    // let n=10;
+    let n = Number (prompt('숫자를 넣으세요',0));
+    let counter = 0;
+
+    //방법 1
+    for (let i=2; i<=n; i++) {
+        for (let j=2; j<=i; j++){
+            //i = 2, j = 2
+            //i = 3, j = 2,3
+            //i = 4, j = 2, 3, 4
+            if(i % j == 0) {//체크
+                counter++;
+            }
+        }
+    }
+
+    //방법 2
+    for (let i=2; i<=n; i++) {
+        for (let j=2; j<=i; j++){
+            //i = 2, j = 2
+            //i = 3, j = 2,3
+            //i = 4, j = 2, 3, 4
+            if(counter == 1){
+                console.log (i)
+            }
+        }
+    }
+//  document.body.innerHTML = "<table border=\"1\"><tr><td>test</td></tr></table>";
+</script>

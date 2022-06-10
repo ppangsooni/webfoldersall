@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch문</title>
+</head>
+
+<body>
+    <div></div>
+  
+    switch문
+    https://www.w3schools.com/js/js_operators.asp
+    https://ko.javascript.info/switch
+
+    <a href="../quizmemo.html/ex7_js.html"> ex7_js.html </a>
+
+   <div>
+    
+</div>
+
+</body>
+</html>
+<script>
+    //switch 문의 ==는 ===로 사용한다. 
+
+    switch (browser) {
+    case 'Edge':
+        alert( "Edge를 사용하고 계시네요!" );
+        break;
+
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+        alert( '저희 서비스가 지원하는 브라우저를 사용하고 계시네요.' );
+        break;
+
+    default:
+        alert( '현재 페이지가 괜찮아 보이길 바랍니다!' );
+    }
+
+// 아래와 같이 if문으로 바꿔짐 
+    
+    if(browser ==  'Edge') {
+        alert ("Edge를 사용하고 계시네요!");
+    } else if (browser ==  'Chrome'
+        || browser ==  'Firefox'
+        || browser ==  'Safari'
+        || browser ==  'Opera') {
+        alert( '저희 서비스가 지원하는 브라우저를 사용하고 계시네요.' );
+    }else {
+        alert( '현재 페이지가 괜찮아 보이길 바랍니다!' );
+    }
+</script>

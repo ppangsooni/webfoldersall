@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <a href="../js/06.html"> .html </a>
+    <div>
+
+    </div>
+</body>
+</html>
+<script>
+    /*
+    표준 체중 = (신장-100)*0.9
+
+
+    */
+
+    //방법 1
+
+        let height = prompt('당신의 키를 입력하세요'); //160
+        let weight = prompt('당신의 몸무게를 입력하세요'); //50
+        let properWeight = (height-100)*0.9; //54
+
+        alert('당신의 적정몸무게는 '+properWeight);
+
+        if (properWeight == weight) {
+            alert('당신은 적정몸무게 입니다.');
+        } else if (properWeight > weight){ 
+            alert('당신은 저체중 입니다.');
+        } else {
+            alert('당신은 과체중 입니다.')  ; 
+        }
+    //방법 2
+        let height = prompt('당신의 키를 입력하세요'); //160
+        let weight = prompt('당신의 몸무게를 입력하세요'); //50
+        let properWeight = (height-100)*0.9; //54
+
+        alert('당신의 적정몸무게는 '+properWeight);
+
+        let result = properWeight == weight ? alert('당신은 적정몸무게 입니다.'):
+        properWeight > weight ? alert('당신은 저체중 입니다.'):
+        alert('당신은 과체중 입니다.'); 
+
+    //방법 3
+
+        let height = prompt('당신의 키를 입력하세요'); //160
+        let weight = prompt('당신의 몸무게를 입력하세요'); //50
+        let properWeight = (height-100)*0.9; //54
+
+        alert('당신의 적정몸무게는 '+properWeight);
+
+        if(properWeight == weight||)
+
+    
+
+
+
+</script>
