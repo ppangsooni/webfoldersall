@@ -47,7 +47,7 @@
     */
 
     function isEmpty(obj) {
-        for (let kye in obj) {
+        for (let key in obj) {
             return false;
         }
         return true
@@ -72,7 +72,7 @@
 
     let sum = 0;
     for (let key in salaries) {
-        sum += salaries[kye];
+        sum += salaries[key];
     }
     alert(sum);
 
@@ -80,7 +80,7 @@
     
     function multiplyNumeric(obj) {
         for (let key in obj) {
-            if (typeof obj[kye] == "number") {
+            if (typeof obj[key] == "number") {
                 obj[kye] *= 2;
             }
         }
