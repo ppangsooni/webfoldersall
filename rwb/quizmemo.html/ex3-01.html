@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문  예제 ex3_js</title>
+</head>
+
+<body>
+    <div></div>
+     반복문 
+    <a href="../js/09.html"> 09.html </a>
+</body>
+</html>
+<script>
+/* 변경전 방법 1
+    (if문으로만 되어있음. 
+     입력오류시 되돌아가기가 않되어있음)
+     let userName = prompt("Who's there?","");
+
+      if (userName == "Admin") {
+        let userPassword = prompt("Admin, Password?","");
+
+        if (userPassword == "TheMaster") {
+          alert("Welcome!");
+        } else if (userPassword == '' || userPassword ==  null) {
+          alert("Canceled");
+        }else {
+          alert("Wrong password");
+          let userPassword = prompt("Admin, Password?","");
+        }
+
+      } else if (userName == '' || userName == null){
+        alert("Canceled");
+      } else {
+        alert("I don't know you");
+      }
+      */
+
+ //방법 1 변경 후 
+ // + 입력오류시 되돌아가기 (while문: 조건엔 ture값 )
+  // + break에 라벨 추가로 나가기
+
+/* 
+outBreak:
+while(1){
+  let userName = prompt("Who's there?","");
+      if (userName == "Admin") {
+        while(1){
+            let userPassword = prompt("Admin, Password?","");
+            if (userPassword == "TheMaster") {
+              alert("Welcome!");
+              break outBreak;
+            } else if (userPassword == '' || userPassword ==  null) {
+              alert("Canceled");
+              break outBreak;
+            }else {
+              alert("Wrong password");
+            }
+      }
+  } else if (userName == '' || userName == null) {
+    alert("Canceled");
+    break;
+  } else {
+    alert("I don't know you");
+  }
+}
+*/
+
+/* 변경전 방법 2
+    (if문을 switch문으로 
+      전체적인 틀 미숙  
+     입력오류시 되돌아가기가 않되어있음)
+let userName = prompt("Who's there?",""); 
+
+outBreak:
+switch(userName) {
+  case (userName == "Admin"):
+    let userPassword = prompt("Admin, Password?","");
+            if (userPassword == "TheMaster") {
+              alert("Welcome!");
+              break outBreak;
+            } else if (userPassword == '' || userPassword ==  null) {
+              alert("Canceled");
+              break outBreak;
+            }else {
+              alert("Wrong password");
+            }
+    
+  case (userName == '' || userName == null):
+    alert("Canceled") ;
+    break;
+  
+  default:
+    alert("I don't know you");
+}
+*/
+
+ // 방법 2 변경 후 
+ // + 입력오류시 되돌아가기 (switch문)
+ // + 이중 userPassword == '' || userPassword ==  null 부분을 둘로 나누어 적기
+// + break에 라벨 추가로 나가기
+
+outBreak:
+while(1){
+  let userName = prompt("Who's there?",""); 
+  switch(userName) {
+    case "Admin":
+      alert("hi");
+      while(1){
+        let userPassword = prompt("Admin, Password?","");
+        switch (userPassword) {
+          case "TheMaster" :
+            alert("Welcome!");
+            break outBreak;
+        
+          case "" :
+          case null :
+            alert("Canceled");
+            break outBreak;
+
+          default:
+            alert("Wrong password");
+        }
+      }
+    case '':
+    case null:
+      alert("Canceled") ;
+      break outBreak;
+    
+    default:
+      alert("I don't know you");
+  }
+}
+
+  </script>
