@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메서드와 this  예제 ex10_js 시계2</title>
+</head>
+
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+</body>
+<script type="text/javascript">
+    //<link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+
+    function Clock() { //객체 생성자 함수
+        this.div = document.createElement('div');
+        this.init = function(target) {
+            let link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css2?family=Fascinate&display=swap';
+            document.head.appendChild(link);
+
+            //this.div.id = "clock";
+            target.appendChild(this.div);
+            this.style();
+            this.run();
+        };
+        this.run = function() {
+            let self = this;
+            setInterval(function() { //this
+                let now = new Date();
+                self.div.innerText = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+            }, 1000);
+        };
+        this.style = function() {
+            this.div.style.fontSize = '5vw';
+            this.div.style.color = 'red';
+            this.div.style.fontWeight = 'bold';
+            this.div.style.fontFamily = 'Fascinate';
+        }
+    };
+
+    let clock = new Clock(); //clock 인스턴스
+    let clock2 = new Clock();
+
+    let one = document.getElementById("one");
+    let two = document.getElementById("two");
+
+    console.log(clock);
+    console.log(clock2);
+
+    clock.init(one);
+    clock2.init(two);
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메서드와 this  예제 ex10_js 시계1</title>
+</head>
+
+<body>
+  <div id="two"></div>
+
+</body>
+<script type="text/javascript">
+  let clock = {
+      div: document.createElement('div'),
+      init: function(target) {
+          //this.div.id = "clock";
+          target.appendChild(this.div);
+          this.run();
+      },
+      run: function() {
+          let self = this;
+          setInterval(function() { //this
+              let now = new Date();
+              self.div.innerText = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+          }, 1000);
+      }
+  };
+  let clock2 = JSON.parse(JSON.stringify(clock));
+
+  let target = document.body;
+  let two = document.getElementById("two");
+
+  clock.init(target);
+  clock2.init(two);
+</script>
+</html>
