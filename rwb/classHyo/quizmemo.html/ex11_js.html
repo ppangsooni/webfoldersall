@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메서드와 this  예제 ex10_js</title>
+</head>
+
+<body>
+    <div></div>
+    메서드와 this
+    <a href="../js/11.html"> 15.html </a>
+    <div>
+       
+    </div>
+</body>
+</html>
+<script>
+
+    //문 2) 계산기 만들기 
+      let calculator = {
+        read() {
+          this.a =Number(prompt("첫번째 값을 입력하세요"));
+          this.b =Number(prompt("두번째 값을 입력하세요"));
+        },
+        sum() {
+          return this.a + this.b;
+        },
+        mul() {
+          return this.a * this.b;
+        }
+      };
+  
+      calculator.read();
+      alert( calculator.sum() );
+      alert( calculator.mul() );
+  
+      //문 3) 체이닝
+  
+      let ladder = {
+        step: 0,
+        up() {
+          this.step++;
+          return this;
+        },
+        down() {
+          this.step--;
+          return this;
+        },
+        showStep: function() { // 사다리에서 몇 번째 단에 올라와 있는지 보여줌
+          alert( this.step );
+          return this;
+        }
+      };
+  
+      // ladder.up();
+      // ladder.up();
+      // ladder.down();
+      // ladder.showStep(); // 1
+      ladder.up().up().down().showStep(); // 1
+  
+  </script>
