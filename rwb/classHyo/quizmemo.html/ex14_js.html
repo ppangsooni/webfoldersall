@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원시값의 메서드 ex14_js</title>
+</head>
+<style>
+
+</style>
+<body>
+  원시값의 메서드
+  <a href="../js/17.html"> 17.html </a>
+ <div>
+
+ </div>
+</body>
+
+</html>
+<script>
+//문 1
+
+// let a = +prompt('숫자를 입력해주세요');
+// let b = +prompt('숫자를 입력해주세요');
+
+// alert(a+b);
+
+//문2
+function readNumber (){
+  
+  do {
+    userNum = prompt("유효한 숫자를 입력해주세요");
+  } while ( !isFinite(userNum) );
+
+  if (userNum === null || userNum === "") return null;
+  return +userNum;
+}
+alert(readNumber ());
+</script>
