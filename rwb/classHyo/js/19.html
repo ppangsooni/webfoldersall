@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>숫자열</title>
+    <title>문자열</title>
 </head>
 <style>
     @font-face{
@@ -34,7 +34,7 @@
 
     </div>
   
-    <p class="MainTitle">숫자열</p>
+    <p class="MainTitle">문자열</p>
     <br>
    
     <a class="MainLink" href="https://ko.javascript.info/string"> 자세히보기 ko.javascript</a>
@@ -54,5 +54,38 @@
 </body>
 </html>
 <script type="text/javascript">
-    
+    //따옴표
+    function sum(a, b) {
+    return a + b;
+    }
+
+    alert(`1 + 2 = ${sum(1, 2)}.`); // 1 + 2 = 3.
+    //특수 기호
+    //특수 기호&특정글자에 진입하기
+/*
+    let guestList = "손님:\n * John\n * Pete\n * Mary";//   \n 은 줄바꾸기
+
+
+        let a = "a오늘은\n목요일";
+        let b = "b오늘은\'목요일";
+        let c = "c오늘은\\목요일";
+
+
+        alert(a); 
+        alert(b); 
+        alert(c); 
+
+
+        alert( "\u00A9" ); // ©
+        alert( "\u{20331}" ); // 佫, 중국어(긴 유니코드)
+        alert( "\u{1F60D}" ); // 😍, 웃는 얼굴 기호(긴 유니코드)
+
+
+
+        console.log ( a[0] );
+        console.log ( b[a.length -2] );
+        console.log ( c.charAt(5) );
+*/
+
+
 </script>
