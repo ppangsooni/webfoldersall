@@ -92,9 +92,49 @@
 
     str = 'h' + str[1]; // 문자열 전체를 교체함
 
-    alert( str ); // hi
+    console.log( str ); // hi
 
 
 //대 소문자 변경하기
+// 메서드 toLowerCase() 대문자를 소문자(케이스 변경)
+// 메서드 toUpperCase() 소문자를 대문자(케이스 변경)
+    console.log ("소문자로변경해줘 Console".toUpperCase());//소문자로변경해줘 CONSOLE
+    console.log ("대문자로변경해줘 Console".toLowerCase());//대문자로변경해줘 console
+    console.log ("a만 변경해줘 aaaabaa"[0].toUpperCase());
+//부분 문자열 찾기
+/*
+   1. 메서드 str.indexOf(substr,pos) 
+           str.indexOf(substr) 
+     
+     str의 pos에서부터 시작해, 부분 문자열 substr이 어디에 위치하는지
+     //찾으면 반환, 그렇지 않으면 -1을 반환
+*/
+    //1.
+    let test = "My id is your id ";
+
+    console.log ( test.indexOf('y') ); // 1,
+    console.log ( test.indexOf('my') ); // -1, indexOf는 대·소문자를 따지므로 원하는 문자열을 찾지 못함
+
+    console.log ( test.indexOf("id") ); // 3, "id"는 첫 번째 위치에서 발견됨 
+    console.log ( test.indexOf('id', 5) ) // 14, 5번째 위치부터 id 발견위치 
+
+    //2.
+    let test2 = 'As sly as a fox, as strong as an ox';
+
+    let target = 'as'; // as를 찾아봅시다.
+
+    let pos = 0;
+
+    // console.log(found);
+    while ( true ) {
+        let found = test2.indexOf( target, pos );
+        if ( found == -1 ) break;
+        console.log (`위치: ${ found }`);
+        pos = found + 1;
+     
+
+    }
+
+
 
 </script>

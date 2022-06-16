@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 :: 배열 리스트 수정 </title>
+</head>
+<style>
+	*{
+		font-size: 40px;
+	}
+
+	.input{
+		width: 300px;
+	}
+
+</style>
+<body>
+	<div>
+		<div class="box">
+			<div class="inputText" id="inputText">
+				<label for="input">&#9818;</label>
+				<input id="input" type="text" onkeyup='printText()'/>
+				<button type="button" class="addBtn" onclick="add()" >&#9745;</button>
+				<button type="button" class="delBtn" onclick="del()" >&#9746;</button>
+			</div>
+			<div class="inputList" id="inputList"></div>
+		</div>
+	</div>
+
+   <div>
+   </div>
+</body>
+</html>
+<script>
+	let todolist=[];
+	function printText() {
+		let input = document.getElementById("input").value;
+		let newList = document.getElementById("inputList");
+		// document.getElementById("inputList").innerText = input;
+
+		if(input === "") {
+			return;
+		} else {
+			todolist = document.createElement("li");
+			todolist.innerText = input;
+			newList.appendChild(todolist);
+			document.querySelector('#todolist	').value = ''; 
+		}
+	}
+
+
+
+	// function add (){
+	// 	todolist.push = ""
+	// }
+
+	// todolist
+
+	// for (let i = 0; i < num.length; i++) {
+    //   //1console.log(num[i]);
+    //   sum += num[i];
+    // }
+
+	
+</script>
