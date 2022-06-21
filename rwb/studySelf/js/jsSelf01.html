@@ -2,10 +2,12 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+ 
 </head>
 
 <body>
@@ -18,8 +20,27 @@
 
   </pre>
   <pre>
+    <a href="https://www.toptal.com/designers/htmlarrows/symbols/">https://www.toptal.com/designers/htmlarrows/symbols/</a>
+    &#9888;주의
+    &#10163;상세
+    &#10084; 제목
+    &#10085;부제
+    &#10086;결론
+
     <연산자>
-      +  - *  /  %  **
+    &#10084;**    * / %  + - 
+    &#10084; 비교연산자 == === != !==  >= <=
+                == 값만 같
+                === 값&자료형 같
+                &#9888;ture >false ; //ture
+                &#9888;NaN==NaN//false
+                       NaN<=NaN//false
+                       NaN>=NaN//false
+                       NaN!=NaN//ture
+    &#10084;논리연산자 && ||  !
+
+
+
     typeof
     
   </pre>
@@ -30,20 +51,31 @@
     
   </pre>
   <pre>
-    값?
-    NaN (숫자가 아님 을 뜻함 그러나 typeof Number)
-    Infinity (무한 typeof Number)
+    <값?>
+    NaN (값:숫자가 아님 을 뜻함 그러나 typeof Number) NaN과의 비교는 false (NaN이 ture가 될 경우는 유일하게 
+    NaN!=NaN//ture)
+    Infinity (값:무한 typeof Number)
+  </pre>
+  <pre>
+      ture      false
+      1           0
+
+
   </pre>
  <pre>
-   매서드
+   <매서드>
+   charCodeAt();
  </pre>
 
 
 
 </body>
   <script >
-    console.log("지수표기법", 3e+4);
-    console.log("지수표기법", 3e-4);
+    console.log("지수표기법(10진법)", 3e+4);//3*10000=30,000
+    console.log("지수표기법(10진법)", 3e-4);//0.0003
+    console.log("지수표기법(2진법:0b)", 0b111);//7
+    console.log("지수표기법(8진법:0o)", 0o15);//13 
+    console.log("지수표기법(16진법:0x)", 0x1c);//1*16+c(12) =28
     
     console.log(NaN == NaN);
     console.log(NaN != NaN);
