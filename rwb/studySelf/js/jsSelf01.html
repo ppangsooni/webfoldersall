@@ -6,25 +6,32 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
   <title>replit</title>
  
 </head>
 <style>
-  @font-face{
-      font-family: 'myHeart';
-      src: url('webfoldersall/font/donounMedium.ttf');
-  }
 
-  *{
-      font-family: 'myHeart';   
-      font-size: 30px;
+
+  * {
+      font-family: 'Gothic A1', sans-serif; 
+      font-size: 22px;
 
   }
-  a{
+  a {
     text-decoration: none;
     color: black;
     background-color: chartreuse;
     
+  }
+  pre> p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  pre> span {
+    font-size: 32px;
   }
 </style>
 <body>
@@ -38,15 +45,19 @@
   </pre>
   <pre>
     <a target="_blank" href="https://www.toptal.com/designers/htmlarrows/symbols/">https://www.toptal.com/designers/htmlarrows/symbols/</a>
-    &#9888;주의
+   
     &#10163;상세
     &#10084; 제목
     &#10085;부제
-    &#10086;결론
 
-    <연산자>
-    &#10084;**    * / %  + - 
-    &#10084; 비교연산자 == === != !==  >= <=
+    &check; 체크 
+    &#9888; 주의
+    &#10162; 예제
+    &#10086; 결론
+
+    <p>&#10075;연산자&#10076;</p>
+    <span>&#10084;**    * / %  + - </span>
+    <span> &#10084; 비교연산자 == === != !==  >= <= </span>
                 == 값만 같
                 === 값&자료형 같
                 &#9888;ture >false ; //ture
@@ -54,14 +65,15 @@
                        NaN<=NaN // false
                        NaN>=NaN // false
                        NaN!=NaN // ture
-    &#10084;논리연산자 && ||  ! !!(이는 자료형을 불값으로 전환)
-                &#9888;!!false // false
+    <span>&#10084;논리연산자 && ||  ! !!(이는 자료형을 불값으로 전환)</span>
+               &check;!!false // false
                         !!''   // false
                         !!0    // false
                         !!NaN  // false
                         !!undefined// false
                         !!null   // false
-                &#9888; 
+
+                &#10162;
 
 
 
@@ -69,18 +81,19 @@
     
   </pre>
   <pre>
-   <함수>
+   <p>&#10075;함수&#10076;</p>
      parseInt('') (정수문자열을 정수숫자)
      parseFloat("") (소수점문자열을 실수)
     
   </pre>
   <pre>
-    <값?>
+    <p>&#10075;값?&#10076;</p>
     NaN (값:숫자가 아님 을 뜻함 그러나 typeof Number) NaN과의 비교는 false (NaN이 ture가 될 경우는 유일하게 
     NaN!=NaN//ture)
     Infinity (값:무한 typeof Number)
   </pre>
   <pre>
+    <p>&#10075;value: ture & false&#10076;</p>
       ture      false
       1           0
                 !!false
@@ -91,10 +104,18 @@
 
   </pre>
  <pre>
-   <매서드>
-   charCodeAt();
+  <p>&#10075;매서드&#10076;</p>
+   charCodeAt();   //문자의 번호 알아보기
  </pre>
+<pre>
+  <p>예제</p>
 
+  &#10162; true가 나오게 하는법. 5+4*3 === 27;
+              console.log((5+4)*3===27);
+              console.log(!(5+4*3===27));
+              console.log(!(5+4*3===27));
+
+</pre>
 
 
 </body>
