@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라우저 창 사이즈와 스크롤</title>
+</head>
+<style>
+  @font-face{
+      font-family: "main";
+      /* src: url('/webfolders/font/donounMedium.ttf'); */        
+      src: url('/webfoldersall/font/donounMedium.ttf');
+      
+
+  }
+  .MainTitle{
+  font-size: 40px;
+  font-family: "main";
+  }
+  .MainLink{
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  background-color: darkorange;
+  font-family: "main";
+  margin-bottom: 10px;
+
+  }
+
+
+
+  body{
+        height: 100000px;
+    }
+    .dd {
+        top: 50%;
+        left: 50%;
+
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+</style>
+<body>
+  <div>
+
+  </div>
+
+  <p class="MainTitle">브라우저 창 사이즈와 스크롤</p>
+  <br>
+ 
+  <a class="MainLink" href="https://ko.javascript.info/size-and-scroll-window"> 자세히보기 ko.javascript</a>
+  <br>
+  <br>
+  <a class="MainLink" href="https://ko.javascript.info/string"> ex12_js.html </a>
+  <br>
+  <br>
+  <a class="MainLink" href="">참고 주소</a>
+  <br>
+  <br>
+ <div>
+    
+  </div>
+  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile6.uf.tistory.com%2Fimage%2F9940E34F5EE294750895B6"/>
+    <div class="dd">나나나나</div>
+</div>
+
+</body>
+</html>
+<script>
+
+    
+  /* //브라우저 창의 너비와 높이 
+      방법1) document.documentElement.clientHeight
+           document.documentElement.clientWidth
+  
+      방법2) window.innerWidth
+              window.innerHeight
+  
+      스크롤바가 생기면 스크롤바 역시 공간을 차지하는데,
+      clientWidth나 clientHeight는 스크롤바가 차지하는 공간을 제외해서
+       너비나 높이 값을 계산 (html)
+
+       window.innerWidth/innerHeight는 스크롤바가 차지하는 영역을 포함해 값을 계산
+
+       ex) document.documentElement.clientWidth// 623
+              window.innerWidth//640
+  */
+ 
+  console.log(document.documentElement.clientHeight);
+  console.log(document.documentElement.clientWidth);
+
+  console.log(window);
+  console.log(window.innerHeight);
+  console.log(window.innerWidth);
+  console.log("브라우저(문서) 스크롤 넓이" + (window.innerWidth - document.documentElement.clientWidth));
+  
+
+
+  //문서의 너비와 높이 (보이지 않는크기)
+  /*
+  clientHeight 는 요소의 내부 높이//패딩 값은 포함 & 스크롤바, 테두리, 마진은 제외
+  offsetHeight 는 요소의 높이//패딩, 스크롤 바, 테두리(Border)가 포함 & 마진은 제외
+  scrollHeight  는 요소에 들어있는 컨텐츠의 전체 높이//패딩과 테두리가 포함 & 마진은 제외
+  */
+
+  console.log('body.scrollHeight : ' + document.body.scrollHeight
+      + ' / ' + 'documentElement.scrollHeight  : '+document.documentElement.scrollHeight 
+      + ' / ' + 'body.offsetHeight : ' + document.body.offsetHeight
+      + ' / ' + 'documentElement.offsetHeight : ' + document.documentElement.offsetHeight
+      + ' / ' + 'body.clientHeight  : ' + document.body.clientHeight
+      + ' / ' + 'documentElement.clientHeight : ' + document.documentElement.clientHeight 
+      );
+
+
+
+  //스크롤 정보 얻기
+  /*
+  window.onscroll = function () {
+      console.log('scrollY : ' + window.scrollY);//이는 많이 이용됨
+      console.log('pageYOffset : ' + window.pageYOffset);
+  }
+  */
+
+  // scrollTo,scrollBy로 스크롤 상태 변경하기
+
+
+  //scrollntoView
+
+  // document.querySelector('button').onclick = function(){
+  //     viewElement("div";)
+  // }
+
+  // function viewElement (target) {
+  //     document.querySelector(target).scrollIntoView('top');
+  // }
+
+  //스크롤 막기
+      // document.body.style.overflow = "hidden";
+      document.body.style.overflow = ""
+
+
+</script>

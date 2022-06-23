@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 메뉴바폰트 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+    <title>화면이동 </title>
+</head>
+<style>
+
+    .wrap {
+        width: 5770px;
+        height: 1954px;
+        display: flex;
+        flex-wrap: wrap;
+		position: relative;
+    }
+
+    .wrap>div:nth-child(2){
+    background-color: darkred;
+    }
+    .wrap>div:nth-child(3){
+    background-color: darkorange;
+    }
+    .wrap>div:nth-child(4){
+    background-color: darkgreen;
+    }
+    .wrap>div:nth-child(5){
+    background-color: darkcyan;
+    }
+    .wrap>div:nth-child(6){
+    background-color: darkblue;
+    }
+    .wrap>div:nth-child(7){
+    background-color: darkorchid;
+    }
+	.viewBox {
+        width: 1920px;
+        height: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+    }
+
+	.card {
+		width: 21%;
+		height: 60%;
+		background-color: aliceblue;
+		border: 5px solid transparent;
+		border-radius: 5%;
+		background-image: linear-gradient(aliceblue, aliceblue), linear-gradient(to right, #84ffebbe, #ffcdf3aa, #000000aa);
+    	background-origin: border-box;
+		background-clip: content-box, border-box;
+		content: "";
+	}
+
+    
+
+
+
+    .btBox {
+        width: 25%;
+		height: 40%;
+		margin: 1%;
+        border: 2px wheat dotted;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: fixed;
+    }
+
+    .btBox>button {
+        margin: 3%;
+        width: 20%;
+        height: 40%;
+        border: 10px solid wheat;
+        background-color: transparent;
+        border-radius: 5%;
+        color: wheat;
+		font-size: 50px;
+		font-weight: bold;
+
+		font-family: 'Nanum Gothic Coding', monospace;
+		font-family: 'Nanum Myeongjo', serif;
+    }
+
+	.btBoxEnd {
+		position: absolute;
+		left: 80%;
+		top: 80%;
+		margin: 30px;
+        width: 50px;
+        height: 25px;
+        
+        border: 1px solid wheat;
+        background-color: transparent;
+
+        color: wheat;
+	}
+    button:hover {
+        background-color: wheat;
+		color: dimgrey;
+
+    }
+
+	.tex1{
+		position: absolute;
+		left: 27%;
+		top: 36%;
+        margin: 3%;
+        width: 20%;
+		color: wheat;
+		font-size: 50px;
+		font-weight: bold;
+
+		font-family: 'Nanum Gothic Coding', monospace;
+		font-family: 'Nanum Myeongjo', serif;
+	}
+	.tex2{
+		position: absolute;
+		left: 60%;
+		top: 36%;
+        margin: 3%;
+        width: 20%;
+		color: wheat;
+		font-size: 50px;
+		font-weight: bold;
+
+		font-family: 'Nanum Gothic Coding', monospace;
+		font-family: 'Nanum Myeongjo', serif;
+	}
+	.tex3{
+		position: absolute;
+		left: 94.2%;
+		top: 36%;
+        margin: 3%;
+        width: 20%;
+		color: wheat;
+		font-size: 50px;
+		font-weight: bold;
+
+		font-family: 'Nanum Gothic Coding', monospace;
+		font-family: 'Nanum Myeongjo', serif;
+	}
+	.tex4{
+		position: absolute;
+		left: 27%;
+		top: 86%;
+        margin: 3%;
+        width: 20%;
+		color: wheat;
+		font-size: 50px;
+		font-weight: bold;
+
+		font-family: 'Nanum Gothic Coding', monospace;
+		font-family: 'Nanum Myeongjo', serif;
+	}
+	.tex5{
+		position: absolute;
+		left: 60%;
+		top: 86%;
+        margin: 3%;
+        width: 20%;
+		color: wheat;
+		font-size: 50px;
+		font-weight: bold;
+
+		font-family: 'Nanum Gothic Coding', monospace;
+		font-family: 'Nanum Myeongjo', serif;
+	}
+	.tex6{
+		position: absolute;
+		left: 93.5%;
+		top: 86%;
+        margin: 3%;
+        width: 20%;
+		color: wheat;
+		font-size: 50px;
+		font-weight: bold;
+
+		font-family: 'Nanum Gothic Coding', monospace;
+		font-family: 'Nanum Myeongjo', serif;
+	}
+
+</style>
+<body>
+    <div class="wrap">
+
+			<div class="btBox">
+				<button type="button" > &#9787; </button>
+				<button type="button" > A &spades; </button>
+				<button type="button" > &#9786;</button>
+				<button type="button" > K &diams;</button>
+				<button type="button" > Q &hearts;</button>
+				<button type="button" > J &clubs;</button>
+
+				<div>
+					<button type="button" onclick="hiddenMenu()" class="btBoxEnd"> &#10008;</button>
+				</div>
+				
+			</div>
+
+		<!-- 1 -->
+        <div class="viewBox" >
+			<div class="card">
+
+			</div>
+			<div class="tex1">
+				&#10077; &#9787; &#10078;
+			</div>
+		</div> 
+		<!-- 2 -->
+		<div class="viewBox" >
+			<div class="card">
+
+			</div>
+			<div class="tex2">
+				&#10077; A &spades; &#10078;
+			</div>
+		</div> 
+		<!-- 3 -->
+		<div class="viewBox" >
+			<div class="card">
+
+			</div>
+			<div class="tex3">
+				&#10077; &#9786;&#10078;
+			</div>
+		</div> 
+		<!-- 4 -->
+		<div class="viewBox" >
+			<div class="card">
+
+			</div>
+			<div class="tex4">
+				&#10077; K &diams; &#10078;
+			</div>
+		</div> 
+		<!-- 5 -->
+		<div class="viewBox" >
+			<div class="card">
+
+			</div>
+			<div class="tex5">
+				&#10077; K &diams; &#10078;
+			</div>
+		</div> 
+		<!-- 6 -->
+		<div class="viewBox" >
+			<div class="card">
+
+			</div>
+			<div class="tex6">
+				&#10077; J &clubs; &#10078;
+			</div>
+		</div> 
+    </div>
+
+    
+
+
+</body>
+</html>
+<script>
+    let scrollHeight = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight,
+        document.body.clientHeight,
+        document.documentElement.clientHeight
+    );
+    let scrollWidth = Math.max(
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.body.clientWidth,
+        document.documentElement.clientWidth
+    );
+    console.log(scrollHeight);
+    console.log(scrollWidth);
+    let btn = document.getElementsByTagName('button');
+
+    btn[0].onclick = function(){
+        window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+    }
+    btn[1].onclick = function(){
+        window.scrollTo({left: scrollWidth/3.5, top: 0, behavior: 'smooth'});
+    }
+    btn[2].onclick = function(){
+        window.scrollTo({left: (scrollWidth/3.5)*2, top: 0, behavior: 'smooth'});
+    }
+    btn[3].onclick = function(){
+        window.scrollTo({left: 0, top: scrollHeight, behavior: 'smooth'});
+    }
+    btn[4].onclick = function(){
+        window.scrollTo({left: scrollWidth/3.5, top: scrollHeight, behavior: 'smooth'});
+    }
+    btn[5].onclick = function(){
+        window.scrollTo({left: (scrollWidth/3.5)*2, top: scrollHeight, behavior: 'smooth'});
+    }
+
+    
+
+</script>
