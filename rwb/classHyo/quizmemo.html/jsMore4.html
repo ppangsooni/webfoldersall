@@ -64,12 +64,11 @@
 
 
     .btBox {
-        width: 25%;
-		height: 40%;
+        width: 40%;
+		height: 38%;
 		margin: 1%;
         border: 2px wheat dotted;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         position: fixed;
     }
@@ -84,11 +83,12 @@
         color: wheat;
 		font-size: 50px;
 		font-weight: bold;
-
 		font-family: 'Nanum Gothic Coding', monospace;
 		font-family: 'Nanum Myeongjo', serif;
     }
-
+	.btBox:nth-child(1){
+		transform:rotateX();
+	}
 	.btBoxEnd {
 		position: absolute;
 		left: 80%;
@@ -186,7 +186,9 @@
 		font-family: 'Nanum Gothic Coding', monospace;
 		font-family: 'Nanum Myeongjo', serif;
 	}
+	@media all and (max-width:800px) {
 
+	}
 </style>
 <body>
     <div class="wrap">
@@ -288,10 +290,22 @@
     let btn = document.getElementsByTagName('button');
 
     btn[0].onclick = function(){
-        window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+		window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+		// if(matchMedia("screen and (max-width: 480px)").matches){ 
+        // //화면 크기가 480px이하일때
+        //     window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+        // }else if(matchMedia("screen and (max-width: 680px)").matches){
+        // //화면 크기가 680px이하일때
+        //     window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+        // }else if(matchMedia("screen and (max-width: 1022px)").matches){
+        //     window.scrollTo({left: 100, top: 0, behavior: 'smooth'});
+        // }else if(matchMedia("screen and (min-width: 1023px)").matches){
+        //     window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+        // }
+
     }
     btn[1].onclick = function(){
-        window.scrollTo({left: scrollWidth/3.5, top: 0, behavior: 'smooth'});
+		window.scrollTo({left: scrollWidth/3.5, top: 0, behavior: 'smooth'});
     }
     btn[2].onclick = function(){
         window.scrollTo({left: (scrollWidth/3.5)*2, top: 0, behavior: 'smooth'});
@@ -305,6 +319,8 @@
     btn[5].onclick = function(){
         window.scrollTo({left: (scrollWidth/3.5)*2, top: scrollHeight, behavior: 'smooth'});
     }
+
+
 
     
 
