@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css">
+    div {
+      z-index: 0;
+    }
+    input {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<a href="./ex50-1_js.html" target="_blank">소스 상세보기</a>
+<body>
+  <div></div>
+  <input type="text">
+  <script type="text/javascript">
+    let body = document.body.style;
+    body.height = "10000px";
+    body.width = "10000px";
+
+    let div = document.querySelector("div");
+    div.style.position = "fixed";
+    div.style.border = "1px solid black";
+    div.style.padding = "10px";
+    div.style.width = "250px";
+    div.style.top = "100px";
+    div.style.left = "100px";
+
+    console.dir(div);
+    console.log(div.clientX);
+    console.log(div.clientY);
+    console.log(div.pageX);
+    console.log(div.pageY);
+    console.log(div.offsetTop);
+    console.log(div.offsetLeft);
+    console.log(div.offsetX);
+    console.log(div.offsetY);
+    console.log(div.screenX);
+    console.log(div.screenY);
+
+    window.addEventListener('mousemove', function(e) {
+      div.style.top = e.clientY - (div.clientHeight / 2 ) + 'px';
+      div.style.left = e.clientX - (div.clientWidth / 2) + 'px';
+      div.innerHTML = 'e.pageX :' + e.pageX + "<br>";
+      div.innerHTML += 'e.pageY :' + e.pageY + "<br>";
+      div.innerHTML += 'e.clientX :' + e.clientX + "<br>";
+      div.innerHTML += 'e.clientY :' + e.clientY + "<br>";
+      div.innerHTML += 'e.screenX :' + e.screenX + "<br>";
+      div.innerHTML += 'e.screenY :' + e.screenY + "<br>";
+      div.innerHTML += 'e.offsetX :' + e.offsetX + "<br>";
+      div.innerHTML += 'e.offsetY :' + e.offsetY + "<br>";
+    });
+
+ 
+  </script>
+</body>
+</html>

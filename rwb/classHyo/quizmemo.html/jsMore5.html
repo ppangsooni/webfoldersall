@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 :: 스크롤 상태바 </title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	header {
+		height: 100px;
+		background-color:darkorange;
+
+	}
+	body {
+		height: 10000px;
+	}
+	header > div:first-child {
+		height: 95px;
+	}
+	header > div:last-child {
+		height: 5px;
+		width: 100%;
+		background-color: aliceblue;
+	}
+	/*바 부분*/
+	.scrollbar {
+		width: 0%;
+    	height: 100%;
+    	background-color:chartreuse;
+	}
+</style>
+<body>
+<header>
+	<div></div>
+	<div>
+		<div class="scrollbar" id="scrollbar"></div>
+	</div>
+</header>
+</body>
+</html>
+<script>
+	/*//방법 1 
+const nav = document.querySelector('header > div:last-child'),
+navTop = nav.offsetTop,
+navBottom = nav.offsetHeight;
+
+console.log(nav);
+console.log(navTop);
+console.log(navBottom);
+
+window.addEventListener('scroll', function() {
+
+    if (window.pageYOffset >= navTop) {
+        nav.style.position = 'fixed';
+        nav.style.top = 0;
+    } else {
+        nav.style.position = '';
+    }
+});
+*/
+	//방법 2 https://wazacs.tistory.com/41 참조
+	window.addEventListener('load',function() {
+		window.addEventListener('scroll',function(){
+			let progress = document.querySelector("header > div:last-child");
+			let progressTop = progress.offsetTop;
+			let winTop = window.scrollY;
+			let html = document.documentElement;
+			let docHeigh = html.scrollHeight;
+			let docWiewHeight = html.clientHeight;
+			let totalDocHeight = docHeigh - docWiewHeight;
+				console.log( totalDocHeight );
+				console.log( winTop / totalDocHeight *100 );
+			
+				progress.querySelector("div").style.width = winTop / totalDocHeight *100 + '%';
+
+			if ( progressTop <= winTop ) {
+				progress.style.cssText = `
+				position : fixed;
+				top : 0
+				`;
+			} else {
+				console.log ('test');
+				progress.style.cssText = `
+				position: static
+				`;
+			}
+		}) 
+
+	});
+
+
+/*
+	window.addEventListener('scroll', function(){
+		let progress = document.querySelector("header > div:last-child");
+		let progressTop = progress.offsetTop;
+		let scrollHeight = window.scrollHeight - window.clientHeight;
+		let percentage = (scrollTop/scrollHeight) * 100;
+			if(isNaN(percentage)) percentage = 0;
+			progress.style.width = percentage + '%';
+			window.innerText = Math.floor(percentage) + '%';
+})
+*/
+
+
+</script>

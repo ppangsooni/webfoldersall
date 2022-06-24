@@ -12,13 +12,13 @@
     <title>화면이동 </title>
 </head>
 <style>
-
+	/* 1652*1013 */
     .wrap {
-        width: 5770px;
-        height: 1954px;
+        width: 9912px;
+        height: 987px;
         display: flex;
-        flex-wrap: wrap;
-		position: relative;
+		flex-direction: row;
+
     }
 
     .wrap>div:nth-child(2){
@@ -40,8 +40,8 @@
     background-color: darkorchid;
     }
 	.viewBox {
-        width: 1920px;
-        height: 50%;
+        width: 16.52%;
+        height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -184,7 +184,7 @@
 	.tex4{
 		position: absolute;
 		left: 27%;
-		top: 86%;
+		top: 36%;
         margin: 3%;
         width: 20%;
 		color: wheat;
@@ -197,7 +197,7 @@
 	.tex5{
 		position: absolute;
 		left: 60%;
-		top: 86%;
+		top: 36%;
         margin: 3%;
         width: 20%;
 		color: wheat;
@@ -210,7 +210,7 @@
 	.tex6{
 		position: absolute;
 		left: 93.5%;
-		top: 86%;
+		top: 36%;
         margin: 3%;
         width: 20%;
 		color: wheat;
@@ -246,54 +246,54 @@
 			<div class="card">
 
 			</div>
-			<div class="tex1">
+			<!-- <div class="tex1">
 				&#10077; &#9787; &#10078;
-			</div>
+			</div> -->
 		</div> 
 		<!-- 2 -->
 		<div class="viewBox" >
 			<div class="card">
 
 			</div>
-			<div class="tex2">
+			<!-- <div class="tex2">
 				&#10077; A &spades; &#10078;
-			</div>
+			</div> -->
 		</div> 
 		<!-- 3 -->
 		<div class="viewBox" >
 			<div class="card">
 
 			</div>
-			<div class="tex3">
+			<!-- <div class="tex3">
 				&#10077; &#9786;&#10078;
-			</div>
+			</div> -->
 		</div> 
 		<!-- 4 -->
 		<div class="viewBox" >
 			<div class="card">
 
 			</div>
-			<div class="tex4">
+			<!-- <div class="tex4">
 				&#10077; K &diams; &#10078;
-			</div>
+			</div> -->
 		</div> 
 		<!-- 5 -->
 		<div class="viewBox" >
 			<div class="card">
 
 			</div>
-			<div class="tex5">
+			<!-- <div class="tex5">
 				&#10077; K &diams; &#10078;
-			</div>
+			</div> -->
 		</div> 
 		<!-- 6 -->
 		<div class="viewBox" >
 			<div class="card">
 
 			</div>
-			<div class="tex6">
+			<!-- <div class="tex6">
 				&#10077; J &clubs; &#10078;
-			</div>
+			</div> -->
 		</div> 
     </div>
 
@@ -325,33 +325,21 @@
 
     btn[0].onclick = function(){
 		window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
-		// if(matchMedia("screen and (max-width: 480px)").matches){ 
-        // //화면 크기가 480px이하일때
-        //     window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
-        // }else if(matchMedia("screen and (max-width: 680px)").matches){
-        // //화면 크기가 680px이하일때
-        //     window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
-        // }else if(matchMedia("screen and (max-width: 1022px)").matches){
-        //     window.scrollTo({left: 100, top: 0, behavior: 'smooth'});
-        // }else if(matchMedia("screen and (min-width: 1023px)").matches){
-        //     window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
-        // }
-
     }
     btn[1].onclick = function(){
-		window.scrollTo({left: scrollWidth/3.5, top: 0, behavior: 'smooth'});
+		window.scrollTo({left: scrollWidth/5, top: 0, behavior: 'smooth'});
     }
     btn[2].onclick = function(){
-        window.scrollTo({left: (scrollWidth/3.5)*2, top: 0, behavior: 'smooth'});
+        window.scrollTo({left: (scrollWidth/5)*2, top: 0, behavior: 'smooth'});
     }
     btn[3].onclick = function(){
-        window.scrollTo({left: 0, top: scrollHeight, behavior: 'smooth'});
+        window.scrollTo({left: (scrollWidth/5)*3, top: 0, behavior: 'smooth'});
     }
     btn[4].onclick = function(){
-        window.scrollTo({left: scrollWidth/3.5, top: scrollHeight, behavior: 'smooth'});
+        window.scrollTo({left: (scrollWidth/5)*4, top: 0, behavior: 'smooth'});
     }
     btn[5].onclick = function(){
-        window.scrollTo({left: (scrollWidth/3.5)*2, top: scrollHeight, behavior: 'smooth'});
+        window.scrollTo({left: scrollWidth, top: 0, behavior: 'smooth'});
     }
 
 

@@ -16,30 +16,35 @@
   }
   .MainTitle{
   font-size: 40px;
-  font-family: "main";
+  /* font-family: "main"; */
   }
   .MainLink{
   text-decoration: none;
   font-size: 22px;
   color: black;
   background-color: darkorange;
-  font-family: "main";
+  /* font-family: "main"; */
   margin-bottom: 10px;
 
   }
+
+
+  body {
+      height: 1000px;
+    }
 </style>
 <body>
-  <div>
+  <div id="coords-show-mark"></div>
 
-  </div>
 
-  <p class="MainTitle">문자열</p>
+  <p class="MainTitle">좌표</p>
   <br>
  
-  <a class="MainLink" href="https://ko.javascript.info/primitives-methods"> 자세히보기 ko.javascript</a>
+  <a class="MainLink" href="https://ko.javascript.info/coordinates"> 자세히보기 ko.javascript</a>
   <br>
   <br>
-  <a class="MainLink" href="https://ko.javascript.info/string"> ex12_js.html </a>
+  <a class="MainLink" href="../quizmemo.html/ex50_js.html"> ex50_js.html </a>
+  <a class="MainLink" href="../quizmemo.html/ex51_js.html"> ex51_js.html </a>
   <br>
   <br>
   <a class="MainLink" href="">참고 주소</a>
@@ -53,6 +58,32 @@
 </body>
 </html>
 <script type="text/javascript">
+  let elem = document.getElementById("coords-show-mark");
 
+  function createMessageUnder(elem, html, x, y) {
+    // 메시지가 담길 요소를 만듭니다.
+    let message = document.createElement('div');
+    // 요소를 스타일링 할 땐 css 클래스를 사용하는 게 좋습니다.
+    message.style.cssText = "position:fixed; color: red";
 
+    // 좌표를 지정합니다. 이때 "px"을 함께 써주는 걸 잊지 마세요!
+    let coords = elem.getBoundingClientRect();
+
+    message.style.left = x + "px";
+    message.style.top = y + "px";
+
+    message.innerHTML = html;
+
+    return message;
+  }
+
+  // 사용법:
+  // 문서 안에 메시지를 띄우고, 5초 동안만 보여줍니다.
+
+  document.body.onclick = function(e) {
+    console.log(e);
+    let message = createMessageUnder(elem, '독도는 우리땅!', e.pageX, e.pageY);
+    document.body.append(message);
+    setTimeout(() => message.remove(), 5000);
+  }
 </script>
