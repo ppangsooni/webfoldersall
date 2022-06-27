@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>브라우저 이벤트 소개(이벤트)</title>
+  <style>
+    .ex3 {
+      margin: 10px;
+      width: 600px;
+      height: 400px;
+    }
+    .fidld {
+      width: 60%;
+      height: 60%;
+      border: 0.5em solid black;
+      background-color: greenyellow;
+      position: relative;
+    }
+    .ball {
+      background-color: aliceblue;
+      border: 1px dotted black;
+      border-radius: 50%;
+      position: absolute;
+      width: 14%;
+      height: 20%;
+      left: 0;
+      top: 0;
+      transition: all 1s;
+      content: "";
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 문 1 -->
+  <button id="ex1btn1" onclick="ex1btn1()">Click to hide the text</button>
+  <div id="text1">Text 문제 1</div>
+
+  <!-- 문 2 -->
+  <button id="ex2btn1" onclick="ex2btn1()">Click to hide!!</button>
+
+  <!-- 문 3 -->
+  <button id="ex3btn1" onclick="ex3btn1()">Click to alert!!</button>
+
+
+  <!--문 4-->
+  <div class="ex3">
+    <div class="fidld">
+      <div class="ball"></div>
+
+  
+    </div>
+  </div>
+
+</body>
+</html>
+<script>
+//문 1 Hide on click
+      ex1btn1.onclick = function() {
+        text1.hidden = true;
+      };
+    //   document.getElementById('ex1btn1').onclick = function() {
+    //   document.getElementById('text1').hidden = true;
+    // };
+
+
+
+//문 2 Hide self
+
+      ex2btn1.onclick = function (){
+        this.hidden = true;
+      }
+      
+//문 3 Which handlers run?
+
+//문 4 Move the ball across the field
+
+
+
+
+</script>
