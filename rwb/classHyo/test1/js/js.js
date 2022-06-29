@@ -17,6 +17,20 @@ function cursor(e) {
   mouseCursor.style.top = e.pageY - scrollY + "px";
 }
 
+
+// var mapDisplay = true;
+// function mapDisplay(){
+// 	var con = document.getElementById("mapB");
+// 	if(con.style.display=='none'){
+// 		con.style.display = 'block';
+// 	}else{
+// 		con.style.display = 'none';
+// 	}
+// }
+
+
+
+
       let openMenu = document.querySelector('.menu_icon');
       let slide = document.querySelector('.menu_list');
       let close = document.querySelector('.menu_list_icon');
