@@ -13,7 +13,7 @@ function hideDiv (){
 // }
 
 let mouseCursor = document.querySelector(".cursor");
-let navLinks = document.querySelectorAll(".contPortfolio_imgWrap>a"); //메뉴 링크
+let navLinks = document.querySelectorAll(".contArt_imgWrap>a"); //메뉴 링크
 //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
 window.addEventListener("scroll", cursor);
 window.addEventListener("mousemove", cursor);

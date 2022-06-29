@@ -12,6 +12,9 @@ html, body{
 body{
     overflow: hidden;
 }
+
+
+
 .cursor {
     width: 3rem;
     height: 3rem;
@@ -24,8 +27,8 @@ body{
     transition: all 0.3s ease;
     transition-property: background, transform;
     transform-origin: 100% 100%;
-    backdrop-filter: sepia(20%);
-    background-size: cover;
+    backdrop-filter: brightness(150%);
+
 }
 
 .smokyWrap {
@@ -190,8 +193,6 @@ span:nth-of-type(27) {
 .sidebanner>div img {
     width: 100%;
     height: 50vh;
-
-    /* transform:rotate(-90deg); */
     filter: grayscale(100%) ;
 }
 .sidebanner>div img:hover {
@@ -226,14 +227,24 @@ span:nth-of-type(27) {
     font-size: larger;
     font-weight: bold;
 }
+.contHomeBox>img{
+    display: none;
+}
+.contHomeBox>img {
+    width: 100%;
+    filter: grayscale(100%) ;
+}
+.contHomeBox>img:hover {
+    filter: grayscale(0%) contrast(110%);
+}
 
-
-.contPortfolio {
+.contArt {
     width: 100%;
     display: flex;
-    background-color: rgb(63, 63, 62);
+
+    background-color: rgb(53, 51, 51);
 }
-.contPortfolio>div {
+.contArt>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,19 +252,23 @@ span:nth-of-type(27) {
     
     
 }
-.contPortfolio_imgWrap{
-    border: rgb(183, 0, 255) 1px solid;
-    padding: 2%;
-
+.contArt_imgWrap{
+    border:  20px solid;
+    border-image: url("https://i.ibb.co/J2YpDC9/frame2.png") 93 92 87 92 stretch stretch;
+    max-width: 100%;
+    height: auto;
+    
 }
 
-.contPortfolio_imgWrap>a>img{
+.contArt_imgWrap>a>img{
     position: relative;
+
     max-width: 100%;
     filter: grayscale(100%) ;
+    
 
 }
-.contPortfolio_imgWrap>a>img:hover {
+.contArt_imgWrap>a>img:hover {
     filter: grayscale(0%) contrast(110%);
 }
 
@@ -273,19 +288,42 @@ span:nth-of-type(27) {
     width: auto;
     height: auto;
     position: fixed;
-    left: 92%;
-    top: 0;
-    background-color: black;
+    right: 1%;
+    top: 1%;
+    background-color: transparent;
 }
 .menu_icon {
-    width: 100px;
-    height: 100px;
+    width: 4em;
+    height: 4em;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
 }
+.menu_icon>span {
+    display: block;
+    width: 0.6em;
+    height: 0.6em;
+    background-color:rgb(15, 10, 37);
+    border-radius: 20px;
+}
+.menu_icon:hover{
+    background-color:rgb(15, 10, 37);
+    border-radius: 50% 0% 0% 50%;
+    padding: 15%;
+}
+.menu_icon:hover.menu_icon>span{
+    width: 2.5em;
+    background-color:snow;
+    
+}
+
 
 @media all and (max-width:900px){
     body{
         overflow: scroll;
-        
     }
     .smokyWrap {
         background: black;
@@ -301,24 +339,23 @@ span:nth-of-type(27) {
         font-size: 2em;
 
     }
-
-
+    .contHomeBox>img{
+        display: block;
+    }
     .wrap {
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 100%;
-
     }
     .sidebanner {
-        width: 100%;
-        height: auto;
+        display: none;
     }
     .contentWrap {
         width: 100%;
     }
 
-    .contPortfolio_imgWrap{
+    .contArt_imgWrap{
 
         padding: 0%;
     
@@ -328,7 +365,7 @@ span:nth-of-type(27) {
 }
 @media all and (max-width:680px){
 
-    .contPortfolio {
+    .contArt {
         flex-direction: column;
     }
 }
