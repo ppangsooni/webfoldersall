@@ -1,16 +1,10 @@
 function hideDiv (){
+    document.getElementById("menu").style.display="block";
     document.getElementById("smokyWrap").style.display="none";
 
   }
   self.setTimeout("hideDiv()",6000); 
   
-
-// window.onload = function() {
-//     function hideDiv (){
-//         document.getElementById("smokyWrap").style.display="none"; 
-//     }        
-//     self.setTimeout("hideDiv()", 6000);
-// }
 
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".contArt_imgWrap>a"); //메뉴 링크
@@ -22,3 +16,29 @@ function cursor(e) {
   mouseCursor.style.left = e.pageX + "px";
   mouseCursor.style.top = e.pageY - scrollY + "px";
 }
+
+      let openMenu = document.querySelector('.menu_icon');
+      let slide = document.querySelector('.menu_list');
+      let close = document.querySelector('.menu_list_icon');
+      openMenu.addEventListener('click', function() {
+        console.log("11");
+        if (!slide.clientWidth) {
+          document.documentElement.style.overflow = "hidden";
+          document.body.style.overflow = "hidden";
+          slide.style.width = "60%";
+          slide.style.visibility = 'visible';
+        } else {
+          hideMenu();
+        }
+        // slide.style.left = "0";
+      });
+      close.addEventListener('click', function() {
+         hideMenu();
+      });
+      function hideMenu() {
+        document.documentElement.style.overflow = "";
+        document.body.style.overflow = "";
+        slide.style.width = "0%";
+        slide.style.visibility = 'hidden';
+      }
+      

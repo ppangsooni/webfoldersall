@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @font-face {
     font-family: 'Kanginhan';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_07@1.0/Kanginhan.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-html, body{
+
+html, body {
     margin: 0;
     padding: 0;
 
 }
-body{
+body {
     overflow: hidden;
 }
 
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0%;
+    padding: 1%;
+    color: rgb(141, 141, 141);
+}
 
-
+/*----------------마우스 효과-------------------------------------*/
 .cursor {
     width: 3rem;
     height: 3rem;
@@ -22,15 +32,12 @@ body{
     border-radius: 50%;
     position: absolute;
     z-index: 1000;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: all 0.3s ease;
     transition-property: background, transform;
-    transform-origin: 100% 100%;
-    backdrop-filter: brightness(150%);
-
+    /* transform-origin: 100% 100%; */
+    backdrop-filter: brightness(160%) contrast(140%);
 }
 
+/*---------------------------------------------------------------*/
 .smokyWrap {
     background: black;
     width: 100%;
@@ -41,6 +48,7 @@ body{
     align-items: center;
     color: transparent;
     backface-visibility: hidden;
+    z-index: 100;
 }
 .smokyWrap>p>span {
     font-size: 4em;
@@ -174,14 +182,14 @@ span:nth-of-type(26) {
 span:nth-of-type(27) {
     animation-delay: 5.7s;
 }
-
+/*-------------------------------------------------------------*/
 .wrap {
     display: flex;
     height: 100%;
     width: 100%;
-    border: 1px goldenrod solid;
+    /* padding: 1%; */
 }
-
+/*-------------왼쪽 컨텐츠부분(배너이미지)-------------------------*/
 .sidebanner {
     width: 45%;
     height: 100vh;
@@ -195,28 +203,34 @@ span:nth-of-type(27) {
     height: 50vh;
     filter: grayscale(100%) ;
 }
+/*마우스호버: 필터 변환*/
 .sidebanner>div img:hover {
     filter: grayscale(0%) contrast(110%);
 }
+
+
+
+/*-------------오른쪽 컨텐츠부분()-------------------------*/
+
 .contentWrap {
     width: 55%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-
-    border: 2px hotpink solid;
+    position: relative;
+    /* border: 10px hotpink solid; */
 }
 .contentWrap::-webkit-scrollbar{
     display:none;
   }
 
-.contnHome {
+/*-----------오른쪽 > Home */
+.contHome {
     width: 100%;
-
-   
-    background-color: aqua;
+    height: auto;
 }
+
 .contHomeBox {
     display: flex;
     flex-direction: column;
@@ -224,9 +238,17 @@ span:nth-of-type(27) {
     align-items: center;
     margin: 5%;
     font-family: 'Kanginhan';
-    font-size: larger;
-    font-weight: bold;
 }
+.contHomeBox> h1 {
+    font-size: 4em;
+    font-weight: bold;
+    
+}
+.contHomeBox> p {
+    font-size: 2em;
+
+}
+/*max-width:900px block*/
 .contHomeBox>img{
     display: none;
 }
@@ -234,65 +256,112 @@ span:nth-of-type(27) {
     width: 100%;
     filter: grayscale(100%) ;
 }
+/*마우스호버: 필터 변환*/
 .contHomeBox>img:hover {
     filter: grayscale(0%) contrast(110%);
 }
 
-.contArt {
+/*-------------오른쪽 > About*/
+.contAbout {
     width: 100%;
     display: flex;
-
-    background-color: rgb(53, 51, 51);
+    padding: 1% 1% 5%;
+    flex-direction: column;
+    justify-content: center;
+    
 }
-.contArt>div {
+.contAbout> p{
+    font-family: 'Kanginhan';
+    font-size: 1.7em;
+    text-align: center;
+    
+}
+.contAboutBox {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;    
+    margin: 0% 5%;
+}
+.contAboutB_textB {
+    position: relative;
+    background-color: rgb(128, 115, 115);
+}
+.contAboutB_textB > p{
+    padding: 2%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    color: snow;
+}
+.contAboutB_textB::after{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(199, 26, 26);
+
+}
+/*-------------오른쪽 > About the artist*/
+.contArtist {
+    width: 100%;
+    display: flex;
+    padding: 1% 1% 5%;
+    flex-direction: column;
     justify-content: center;
-    
-    
+    background-color: rgb(21, 78, 9);
+}
+
+/*-------------오른쪽 > Art gallery*/
+.contArt {
+    width: 100%;
+    display: flex;
+    padding: 1% 1% 5%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(53, 51, 51);
+}
+.contArtBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    margin: 0;
 }
 .contArt_imgWrap{
     border:  20px solid;
     border-image: url("https://i.ibb.co/J2YpDC9/frame2.png") 93 92 87 92 stretch stretch;
     max-width: 100%;
     height: auto;
-    
 }
-
 .contArt_imgWrap>a>img{
     position: relative;
-
     max-width: 100%;
-    filter: grayscale(100%) ;
-    
-
+    filter: grayscale(100%) ;   
 }
 .contArt_imgWrap>a>img:hover {
     filter: grayscale(0%) contrast(110%);
 }
-
-.contAbout {
+.contEvent {
     width: 100%;
-
-    
-    background-color: rgb(255, 115, 0);
+    display: flex;
+    padding: 1% 1% 5%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
 }
-.contContact {
-    width: 100%;
 
-    
-    background-color: rgb(183, 0, 255);
-}
+/*-------------메뉴-----------------------------------------*/
 .menu {
+    display: none;
     width: auto;
     height: auto;
     position: fixed;
-    right: 1%;
-    top: 1%;
-    background-color: transparent;
+    right: 0%;
+    top: 0%;
+    /* background-color: transparent; */
+    background-color: darkslategrey;
 }
 .menu_icon {
+    position: absolute;
     width: 4em;
     height: 4em;
     background-color:transparent;
@@ -306,19 +375,53 @@ span:nth-of-type(27) {
     display: block;
     width: 0.6em;
     height: 0.6em;
-    background-color:rgb(15, 10, 37);
+    background-color: rgb(197, 194, 13);
     border-radius: 20px;
 }
 .menu_icon:hover{
-    background-color:rgb(15, 10, 37);
+    background-color:black;
     border-radius: 50% 0% 0% 50%;
-    padding: 15%;
+
+}
+.menu_icon:hover.menu_icon :nth-child(1){
+    display: none;
+}
+.menu_icon:hover.menu_icon :nth-child(2){
+    display: none;
 }
 .menu_icon:hover.menu_icon>span{
-    width: 2.5em;
-    background-color:snow;
+    height: 3em;
+    width: 3em;
+    background: radial-gradient( ellipse, rgb(197, 194, 13), rgb(194, 194, 182), transparent );
+}
+.menu_list{
+    position: absolute;
+    float:right;
+ 
+    font-family: 'PT Sans', sans-serif;
+    /* display: none; */
+}
+.menu_list_icon {
+    width: 4em;
+    height: 4em;
+    background-color:transparent;
+    background-color: aqua;
+    padding: 5%;
+    text-align: center;
+}
+.menu_list_icon>span {
+    display: block;
+    height: 0.6em;
+    width: 3em;
+    background-color:rgb(15, 10, 37);
+    border-radius: 25px;
+    transform: rotate( 45deg ) translate( 52% , 132% );
     
 }
+.menu_list_icon :nth-child(2){
+    transform: rotate( -45deg ) translate( -13% , 170% );
+}
+
 
 
 @media all and (max-width:900px){
