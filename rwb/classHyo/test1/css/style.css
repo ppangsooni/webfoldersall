@@ -369,7 +369,7 @@ span:nth-of-type(27) {
     padding: 1% 1% 1%;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(21, 78, 9);
+    background-color: snow;
 }
 .contArtistBox{
     margin: 0 10%;
@@ -377,20 +377,17 @@ span:nth-of-type(27) {
     height: auto;
     display: flex;
     flex-direction: row;
-
-    border: 1px black solid;
-
 }
 .contArtistBox>div{
     width: 50%;
     display: flex;
     flex-direction: row;
-    border: 1px black solid;
+    margin-bottom: 2%;
+    /* border: 1px burlywood solid; */
 }
 .contArtistBox_imgwarp{
     width: 100px;
     height: auto;
-    border: 1px red solid;
     overflow: hidden;
     padding-top: 5%;
 }
