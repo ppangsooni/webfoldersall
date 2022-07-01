@@ -28,6 +28,18 @@ function cursor(e) {
 // 	}
 // }
 
+var mapBtn = document.querySelectorAll('.mapBtn');
+var mapBtnPopClose = document.querySelectorAll('#mapBtnClo');
+var mapBtnID;
+
+// 지도 팝업 열기
+for(var i = 0; i < mapBtn.length; i++){
+  mapBtn[i].addEventListener('click', function(){
+    mapBtnID = this.getAttribute('href');
+    document.querySelector(mapBtnID).style.display = 'block';
+  });
+}
+
 
 
 
