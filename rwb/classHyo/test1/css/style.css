@@ -384,6 +384,7 @@ span:nth-of-type(27) {
     flex-direction: row;
     margin-bottom: 2%;
     /* border: 1px burlywood solid; */
+    border-bottom: 1px burlywood solid;
 }
 .contArtistBox_imgwarp{
     width: 100px;
