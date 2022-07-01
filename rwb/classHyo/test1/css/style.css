@@ -377,6 +377,7 @@ span:nth-of-type(27) {
     height: auto;
     display: flex;
     flex-direction: row;
+    margin-bottom: 2%;
 }
 .contArtistBox>div{
     width: 50%;
@@ -384,7 +385,6 @@ span:nth-of-type(27) {
     flex-direction: row;
     margin-bottom: 2%;
     /* border: 1px burlywood solid; */
-    border-bottom: 1px burlywood solid;
 }
 .contArtistBox_imgwarp{
     width: 100px;
