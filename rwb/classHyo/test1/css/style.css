@@ -389,7 +389,7 @@ span:nth-of-type(27) {
 }
 .contArtistBox_imgwarp{
     width: 100px;
-    height: 90%;
+    height: auto;
     border: 1px red solid;
     overflow: hidden;
     padding-top: 5%;
@@ -578,9 +578,15 @@ span:nth-of-type(27) {
 
 
 }
-@media all and (max-width:680px){
-
-    .contArt {
+@media all and (max-width:780px){
+    .contAboutB_itemBottom>div:nth-child(1){
+        flex-direction: column;
+    }
+    .contArtistBox>div{
+        flex-direction: column;   
+        align-items: center;
+    }
+    .contArtBox {
         flex-direction: column;
     }
 }
