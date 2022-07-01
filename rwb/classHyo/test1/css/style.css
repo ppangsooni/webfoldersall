@@ -568,12 +568,8 @@ span:nth-of-type(27) {
     }
 
     .contArt_imgWrap{
-
         padding: 0%;
-    
     }
-
-
 }
 @media all and (max-width:780px){
     .contAboutB_itemBottom>div:nth-child(1){
