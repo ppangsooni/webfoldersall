@@ -13,12 +13,12 @@ html, body {
 }
 body {
     overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
 }
 
 h3 {
     font-size: 2em;
     font-weight: bold;
-    font-family: 'PT Sans', sans-serif;
     margin: 0%;
     padding: 1%;
     color: rgb(141, 141, 141);
@@ -271,7 +271,7 @@ span:nth-of-type(27) {
 .contAbout {
     width: 100%;
     display: flex;
-    padding: 1% 1% 5%;
+    padding: 1% 1% 10%;
     flex-direction: column;
     justify-content: center;
     
@@ -294,6 +294,7 @@ span:nth-of-type(27) {
     height: 100%;
     position: relative;
     background-color: rgb(128, 115, 115);
+    margin-bottom: 5%;
 }
 .contAboutB_itemTop > p{
     padding: 2%;
@@ -324,6 +325,12 @@ span:nth-of-type(27) {
     background-color: rgb(73, 72, 72);
 
 }
+.youtubeIframeBox {
+    filter: grayscale(100%) ;   
+}
+.youtubeIframeBox:hover {
+    filter: grayscale(0%) ;   
+}
 .contAboutB_itemBottom {
     width: 100%;
     height: auto;
@@ -338,10 +345,16 @@ span:nth-of-type(27) {
     justify-content: space-between;
     padding: 0% 10%;
 }
+.contAboutB_itemBottom>div:nth-child(1)>div{
+    padding: 2%;
+}
 
 .contAboutB_itemBottom>div:nth-child(2){
     float: left;
     padding: 0% 10%;
+}
+.contAboutB_itemBottom>div:nth-child(2)>div{
+    padding: 2%;
 }
 .mapOn {
     width: 90%;
@@ -358,7 +371,9 @@ span:nth-of-type(27) {
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
     text-align: center;
+    padding: 2%;
 }
+
 .admissionFeeTab :nth-child(2n-1) {
     background-color: rgb(202, 198, 193);
 }
@@ -366,7 +381,7 @@ span:nth-of-type(27) {
 .contArtist {
     width: 100%;
     display: flex;
-    padding: 1% 1% 1%;
+    padding: 1% 1% 10%;
     flex-direction: column;
     justify-content: center;
     background-color: snow;
@@ -377,20 +392,21 @@ span:nth-of-type(27) {
     height: auto;
     display: flex;
     flex-direction: row;
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 .contArtistBox>div{
     width: 50%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
     /* border: 1px burlywood solid; */
 }
 .contArtistBox_imgwarp{
     width: 100px;
     height: auto;
     overflow: hidden;
-    padding-top: 5%;
 }
 .contArtistBox_imgwarp>div>img{
     border: 1px transparent solid;
@@ -401,7 +417,11 @@ span:nth-of-type(27) {
 .contArtistBox_textwarp{
     float: left;
     padding: 2%;
+    padding-left: 8%;
     width: 67%;
+}
+.contArtistBox_textwarp>div>p{
+    margin: 0;
 }
 .contArtistBox_textwarp>div>span{
     display: block;
@@ -424,7 +444,7 @@ span:nth-of-type(27) {
 .contArt {
     width: 100%;
     display: flex;
-    padding: 1% 1% 5%;
+    padding: 1% 1% 10%;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(53, 51, 51);
@@ -532,7 +552,37 @@ span:nth-of-type(27) {
     transform: rotate( -45deg ) translate( -13% , 170% );
 }
 
+/*-------------오른쪽 > footer*/
+footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0%;
+    background-color: rgb(53, 51, 51);
+    color: snow;
+    font-size: small;
+}
+footer>div:nth-child(1) {
+    display: flex;
 
+}
+footer>div:nth-child(1)>a>img {
+    height: 50px;
+    margin: 10px;
+    filter: grayscale(100%) ;   
+    border-radius: 50%;
+}
+footer>div:nth-child(1)>a>img:hover {
+    filter: grayscale( 0%) ;   
+}
+@media all and (max-width:1680px){
+    .contArtistBox>div:nth-child(1){    
+        margin-right: 2%;
+    }
+}
 
 @media all and (max-width:900px){
     body{
@@ -567,18 +617,21 @@ span:nth-of-type(27) {
     .contentWrap {
         width: 100%;
     }
-
+    .contAboutB_itemBottom>div:nth-child(1){
+        flex-direction: column;
+    }
     .contArt_imgWrap{
         padding: 0%;
     }
 }
 @media all and (max-width:780px){
-    .contAboutB_itemBottom>div:nth-child(1){
-        flex-direction: column;
-    }
+
     .contArtistBox>div{
         flex-direction: column;   
         align-items: center;
+    }
+    .contArtistBox>div:nth-child(1){    
+        margin-right: 0%;
     }
     .contArtBox {
         flex-direction: column;
