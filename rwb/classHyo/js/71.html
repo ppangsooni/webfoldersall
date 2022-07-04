@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS :: 뉴스 실시간검색</title>
+</head>
+<style>
+  @font-face{
+      font-family: "main";
+      /* src: url('/webfolders/font/donounMedium.ttf'); */        
+      src: url('/webfoldersall/font/donounMedium.ttf');
+      
+
+  }
+  .MainTitle{
+  font-size: 40px;
+  font-family: "main";
+  }
+  .MainLink{
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  background-color: darkorange;
+  font-family: "main";
+  margin-bottom: 10px;
+
+  }
+</style>
+
+<body>
+  <div>
+    <p class="MainTitle">뉴스실시간검색</p>
+    <br>
+    <a class="MainLink" href="https://ko.javascript.info/settimeout-setinterval"> 동기 자세히보기 setTimeout과 setInterval을 이용한 호출 스케줄링</a>
+    <a class="MainLink" href="https://ko.javascript.info/primitives-methods"> 자세히보기 ko.javascript</a>
+    <a class="MainLink" href="https://jsonplaceholder.typicode.com/"></a>
+    <br>
+    <br>
+    <a class="MainLink" href="https://ko.javascript.info/string"> ex_js.html </a>
+    <br>
+    <br>
+    <a class="MainLink" href="">참고 주소</a>
+    <br>
+    <br>
+    <ul id="menu">
+      <li data-category="business">경제</li>
+      <li data-category="entertainment">엔터테이먼트</li>
+      <li data-category="health">건강</li>
+      <li data-category="science">과학</li>
+      <li data-category="sports">스포츠</li>
+      <li data-category="technology">기술</li>
+    </ul>
+  </div>
+  <div id="news"></div>
+
+</html>
+<script>
+  function showNews(category = 'general') {
+    var url = `https://newsapi.org/v2/top-headlines?` 
+            + `country=kr&`
+            + `category=${category}&`
+            + `apiKey=0a2cc7deb6c947d0abaa2eac28789ce9`;
+
+    var req = new Request(url);
+
+    fetch(req)
+        .then(function(response) {
+            console.log(response);
+            return response.json();
+        })
+        .then(data => {
+          console.log(data.articles[0]);
+          for (article of data.articles) {
+            let divTitle = document.createElement('div');
+            let imgUrl = document.createElement('img');
+            divTitle.innerHTML = `<h3><a href="${article.url}" target="_blank">${article.title}</a></h3>`;
+            imgUrl.src = article.urlToImage;
+            imgUrl.alt = article.title;
+            imgUrl.width = 100;
+
+            console.log(article.author);
+            console.log(article.title);
+            console.log(article.url);
+            console.log(article.urlToImage);
+            news.append(divTitle);
+            news.append(imgUrl);
+          }
+        });
+  }
+  
+  showNews();
+
+  menu.chil.foreach(function (val, index) {
+    console.log(val);
+  });
+</script>

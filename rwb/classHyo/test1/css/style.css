@@ -248,8 +248,10 @@ span:nth-of-type(27) {
     font-family: 'Kanginhan';
 }
 .contHomeBox> h1 {
-    font-size: 4em;
-    font-weight: bold;
+    font-size: 6em;
+    font-weight: bolder;
+    background-color: rgb(53, 51, 51);
+    color: snow;
     
 }
 .contHomeBox> p {
@@ -281,8 +283,7 @@ span:nth-of-type(27) {
 .contAbout> p{
     font-family: 'Kanginhan';
     font-size: 1.7em;
-    text-align: center;
-    
+    text-align: center;   
 }
 .contAboutBox {
     display: flex;
@@ -300,6 +301,7 @@ span:nth-of-type(27) {
 }
 .contAboutB_itemTop > p{
     padding: 2%;
+    margin: 2%;
     text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-size: 1em;
@@ -328,6 +330,9 @@ span:nth-of-type(27) {
 
 }
 .youtubeIframeBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     filter: grayscale(100%) ;   
 }
 .youtubeIframeBox:hover {
@@ -475,11 +480,96 @@ span:nth-of-type(27) {
 .contEvent {
     width: 100%;
     display: flex;
-    padding: 1% 1% 5%;
+    padding: 1% 1% 10%;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(255, 255, 255);
 }
+
+.contEvent> p{
+    font-family: 'Kanginhan';
+    font-size: 1.7em;
+    text-align: center;   
+}
+.EventBox {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;    
+
+}
+.EventBoxChi {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:  20px solid;
+    border-image: url("https://i.ibb.co/VB7vzKV/frame3.png") 93 92 87 92 stretch stretch;
+}
+.EventBoxChi>div{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.EventBoxChi>div>button {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	border: 2px solid #333;
+	color: #333;
+	line-height: 50px;
+	overflow: hidden;
+}
+.EventBoxChi>div>button:hover {
+    background-color: #333;
+	color: #fff;
+}
+
+.EventBoxChi>div:nth-child(1){
+    width: 100%;
+    background-color: rgb(238, 238, 13);
+}
+.EventBoxChi>div:nth-child(1)>p{
+    font-family: 'Kanginhan';
+    font-weight: bold;
+    font-size: 2em;
+
+}
+.EventBoxChi>div:nth-child(2)>p{
+    font-family: 'Kanginhan';
+    font-weight: bold;
+    font-size: 1.8em;
+
+}
+/*-------------오른쪽 > footer*/
+footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0%;
+    background-color: rgb(53, 51, 51);
+    color: snow;
+    font-size: small;
+}
+footer>div:nth-child(1) {
+    display: flex;
+
+}
+footer>div:nth-child(1)>a>img {
+    height: 50px;
+    margin: 10px;
+    filter: grayscale(100%) ;   
+    border-radius: 50%;
+}
+footer>div:nth-child(1)>a>img:hover {
+    filter: grayscale( 0%) ;   
+}
+
+
 
 /*-------------메뉴-----------------------------------------*/
 .menu {
@@ -554,32 +644,13 @@ span:nth-of-type(27) {
     transform: rotate( -45deg ) translate( -13% , 170% );
 }
 
-/*-------------오른쪽 > footer*/
-footer{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2% 0%;
-    background-color: rgb(53, 51, 51);
-    color: snow;
-    font-size: small;
-}
-footer>div:nth-child(1) {
-    display: flex;
 
-}
-footer>div:nth-child(1)>a>img {
-    height: 50px;
-    margin: 10px;
-    filter: grayscale(100%) ;   
-    border-radius: 50%;
-}
-footer>div:nth-child(1)>a>img:hover {
-    filter: grayscale( 0%) ;   
-}
+
+
+
+
+
+
 @media all and (max-width:1680px){
     .contArtistBox>div:nth-child(1){    
         margin-right: 2%;
@@ -627,6 +698,15 @@ footer>div:nth-child(1)>a>img:hover {
     }
 }
 @media all and (max-width:780px){
+    .contHomeBox> h1 {
+        font-size: 4em;
+    }
+    .contAboutB_itemTop::after{
+        display: none;
+    }
+    .contAboutB_itemTop::before{
+        display: none;
+    }
     .youtubeIframeBox>iframe {
         width: 90%;
         height: 90%;

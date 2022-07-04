@@ -49,7 +49,6 @@
   <br>
   <a class="MainLink" href="https://ko.javascript.info/settimeout-setinterval"> 동기 자세히보기 setTimeout과 setInterval을 이용한 호출 스케줄링</a>
   <a class="MainLink" href="https://ko.javascript.info/primitives-methods"> 자세히보기 ko.javascript</a>
-  <a class="MainLink" href="https://jsonplaceholder.typicode.com/">https://jsonplaceholder.typicode.com/</a>
   <br>
   <br>
   <a class="MainLink" href="https://ko.javascript.info/string"> ex_js.html </a>
@@ -66,6 +65,24 @@
 </body>
 </html>
 <script type="text/javascript">
+		function callback() {
+			console.log('call');
+		}
 
+		setTimeout(callback, 3000); //콜백 지옥 = 프라미스 = await / ascyn
+		console.log('End');
+		// for (let i = 0; i < 10; i++) { //먼저 실행이 끝남 i = undefined
+		// 	setTimeout(function() {console.log(i)}, 1000);
+		// }
+		let i = 0, timer = null;
+		function run() {
+			console.log(i++);
+			if (i == 5) {
+				clearTimeout(timer);
+				return;
+			}
+			timer = setTimeout(run, 1000); //재귀함수
+		}
+		run();
 
 </script>
