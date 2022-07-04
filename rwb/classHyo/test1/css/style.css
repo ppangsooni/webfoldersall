@@ -203,7 +203,7 @@ span:nth-of-type(27) {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: rgb(15, 10, 37);
+    background-color: rgb(53, 51, 51);
     
 }
 .sidebanner>div img {
@@ -380,6 +380,7 @@ span:nth-of-type(27) {
     text-align: center;
     padding: 2%;
 }
+
 
 .admissionFeeTab :nth-child(2n-1) {
     background-color: rgb(202, 198, 193);
@@ -577,13 +578,23 @@ footer>div:nth-child(1)>a>img:hover {
     width: auto;
     height: auto;
     position: fixed;
-    right: 10%;
+    right: 0%;
     top: 0%;
     text-align: end;
     /* background-color: transparent; */
     background-color: darkslategrey;
 }
 .menu_icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    background-color: white;
+    cursor: pointer;
+}
+.menu_icon>div {
     position: absolute;
     width: 4em;
     height: 4em;
@@ -594,18 +605,16 @@ footer>div:nth-child(1)>a>img:hover {
     align-items: center;
     padding: 5%;
 }
-.menu_icon>span {
+.menu_icon>div>span {
     display: block;
     width: 0.6em;
     height: 0.6em;
     background-color: rgb(197, 194, 13);
     border-radius: 20px;
 }
-.menu_icon:hover{
+/* .menu_icon:hover{
     background-color:black;
-    border-radius: 50% 0% 0% 50%;
-
-}
+} */
 .menu_icon:hover.menu_icon :nth-child(1){
     display: none;
 }
@@ -618,12 +627,17 @@ footer>div:nth-child(1)>a>img:hover {
     background: radial-gradient( ellipse, rgb(197, 194, 13), rgb(194, 194, 182), transparent );
 }
 .menu_list{
-    position: absolute;
-    float:right;
-    background-color: #333;
-    font-family: 'PT Sans', sans-serif;
-    /* display: none; */
-    border: rgb(15, 10, 37) 1px solid;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    background-color: black;
 }
 .menu_list_icon {
     width: 4em;
