@@ -573,12 +573,13 @@ footer>div:nth-child(1)>a>img:hover {
 
 /*-------------메뉴-----------------------------------------*/
 .menu {
-    display: none;
+    display: block;
     width: auto;
     height: auto;
     position: fixed;
-    right: 0%;
+    right: 10%;
     top: 0%;
+    text-align: end;
     /* background-color: transparent; */
     background-color: darkslategrey;
 }
@@ -619,9 +620,10 @@ footer>div:nth-child(1)>a>img:hover {
 .menu_list{
     position: absolute;
     float:right;
- 
+    background-color: #333;
     font-family: 'PT Sans', sans-serif;
     /* display: none; */
+    border: rgb(15, 10, 37) 1px solid;
 }
 .menu_list_icon {
     width: 4em;
@@ -630,6 +632,8 @@ footer>div:nth-child(1)>a>img:hover {
     background-color: aqua;
     padding: 5%;
     text-align: center;
+    position:fixed ;
+    right: 0%;
 }
 .menu_list_icon>span {
     display: block;
@@ -642,6 +646,10 @@ footer>div:nth-child(1)>a>img:hover {
 }
 .menu_list_icon :nth-child(2){
     transform: rotate( -45deg ) translate( -13% , 170% );
+}
+.menu_listCh{
+    width: 55%;
+    height: 100%;
 }
 
 
@@ -723,5 +731,9 @@ footer>div:nth-child(1)>a>img:hover {
     }
     .contArtistBox_textwarp>div>span{
         display: none;
+    }
+    .EventBox {
+        flex-direction: column;
+        align-items: center;
     }
 }
