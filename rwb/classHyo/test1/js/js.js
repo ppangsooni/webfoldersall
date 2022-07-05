@@ -42,29 +42,43 @@ for(var i = 0; i < mapBtn.length; i++){
 
 
 
+let openMenu = document.querySelector('.menu_icon'),
+    slide = document.querySelector('.menu_list'),
+    closeMenu = document.querySelector('.menu_list_icon');
 
-      let openMenu = document.querySelector('.menu_icon');
-      let slide = document.querySelector('.menu_list');
-      let close = document.querySelector('.menu_list_icon');
-      openMenu.addEventListener('click', function() {
-        console.log("11");
-        if (!slide.clientWidth) {
-          document.documentElement.style.overflow = "hidden";
-          document.body.style.overflow = "hidden";
-          slide.style.width = "60%";
-          slide.style.visibility = 'visible';
+openMenu.addEventListener('click', function() {
+    console.log(window.innerWidth);
+    console.log(document.body.offsetWidth < 650);
+
+    if (!slide.clientWidth) {
+        seeMenu();
+
+        if (document.body.offsetWidth <= 1040) {
+            slide.style.width = '100%';
+            slide.style.top = 0;
         } else {
-          hideMenu();
-        }
-        // slide.style.left = "0";
-      });
-      close.addEventListener('click', function() {
-         hideMenu();
-      });
-      function hideMenu() {
-        document.documentElement.style.overflow = "";
-        document.body.style.overflow = "";
-        slide.style.width = "0%";
-        slide.style.visibility = 'hidden';
-      }
-      
+            slide.style.width = '60%';
+        }        
+    }  else {
+        hideMenu();
+    }
+});
+
+closeMenu.addEventListener('click', function() {
+    hideMenu();
+});
+
+function seeMenu() {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    slide.style.opacity = '1';
+    slide.style.visibility = 'visible';
+}
+
+function hideMenu() {
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+    slide.style.width = '0';
+    slide.style.opacity = '0';
+    slide.style.visibility = 'hidden';
+}
