@@ -402,6 +402,7 @@
                             <p>&sharp;끝자락그리고_기념카드</p>
                         </div>
                         <div class="Event_popup2Select">
+                            <!-- <span>기념카드 디자인</span> -->
                             <div>
                                 <select name="codeImgSelect" class="imgSel">
                                     <option disabled selected>『명화(택)』</option>
@@ -417,18 +418,43 @@
                                 <button id="imgSel_Bt"> 이미지 보기 </button>
                             </div>
                             <div>
-                                <select name="codefilterSelect" class="filterSel">
-                                    <option disabled selected> 필터 선택</option>
-                                    <option value="filter1">없음</option>
-                                    <option value="filter2">blur</option>
-                                    <option value="filter3">grayscale</option>
-                                    <option value="filter4">sepia</option>
+                                <select name="codeFilterSelect" class="filterSel">
+                                    <option disabled selected>필터(택)</option>
+                                    <option value="filterNone">없음</option>
+                                    <option value="filter1">blur</option>
+                                    <option value="filter2">grayscale</option>
+                                    <option value="filter3">sepia</option>
                                 </select>
                                 <button id="sizeSel_Bt"> 필터 보기 </button>
                             </div>
                             <div>
+                                <select name="codeDesignSelect" class="designSel">
+                                    <option disabled selected >디자인(택)</option>
+                                    <option value="design1">1</option>
+                                    <option value="design2">2</option>
+                                    <option value="design3">3</option>
+                                    <option value="design4">4</option>
+                                    <option value="design5">5</option>
+                                </select>
+                                <input type="color" value="#ff0000">
+                                <button id="designSel_Bt"> 디자인 보기 </button>
+                            </div>
+                            <div>
+                                <select name="codeFrameSelect" class="FrameSel">
+                                    <option disabled selected >프레임 (택)</option>
+                                    <option value="FrameNone">없음</option>
+                                    <option value="FrameColor">color</option>
+                                    <option value="Frame1">Frame 1</option>
+                                    <option value="Frame2">Frame 2</option>
+                                    <option value="Frame3">Frame 3</option>
+                                    <option value="Frame4">Frame 4</option>
+                                </select>
+                                <input type="color" value="#ff0000">
+                                <button id="designSel_Bt"> 프레임 보기 </button>
+                            </div>
+                            <div>
                                 <select name="codeSizeSelect" class="sizeSel">
-                                    <option disabled selected> 기종 택(카드발급사이즈)</option>
+                                    <option disabled selected> 기종(사이즈) (택)</option>
                                     <option value="size1">iphone SE</option>
                                     <option value="size2">iphone XR</option>
                                     <option value="size3">iphone  12 Pro</option>
@@ -442,14 +468,14 @@
                                     <option value="size11">Galaxy S8</option>
                                     <option value="size12">Galaxy S9+</option>
                                 </select>
-                                <button id="sizeSel_Bt"> 기종사이즈 보기 </button>
+                                <button id="sizeSel_Bt"> 기종별사이즈 보기 </button>
                             </div>
 
                         </div>
                             
                         <div class="Event_popup2Input">
 
-                            <div>
+                            <div>   
                                 <label for="popup1Input_phoneNum"> Phone number </label>
                                 <input type="text" class="popup1Input_phoneNum" id="popup1Input_phoneNum" placeholder="-를 제외한 숫자만을 입력" required/>
                             </div>
