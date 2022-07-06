@@ -329,7 +329,7 @@
                 </div>
             </div>
 
-            <div class="contEvent">
+            <div class="contEvent" id="contEvent">
                 <h3>Event</h3>
                 
                 <div class="EventBox">
@@ -340,7 +340,7 @@
                         <div>
                             <p>입장권번호 입력시 응모가능</p>
                             <p>추첨을 통해 50분에게 선물을 드립니다. </p>
-                            <button> 응모하기 </button>
+                            <button onclick="document.getElementById('Event_popup1').style.display='block'"> 응모하기 </button>
                         </div>
                     </div>
                     <div class="EventBoxChi">
@@ -354,6 +354,47 @@
                 </div>
 
             </div>
+            <div class="Event_popup1" id="Event_popup1">
+                <div class="Event_popup1Layer">
+                    <div>
+                        <div class="Event_popup1LayerTop">
+                            <p>&sharp;끝자락그리고_추첨이벤트</p>
+                        </div>
+                        <div class="Event_popup1Input">
+                            <div>
+                                <label for="popup1Input_name"> Name </label>
+                                <input type="text" class="popup1Input_name" id="popup1Input_name" placeholder="한글 또는 영어로 입력" required/>
+                            </div>
+                            <div>
+                                <label for="popup1Input_phoneNum"> Phone numer </label>
+                                <input type="text" class="popup1Input_phoneNum" id="popup1Input_phoneNum" placeholder="-를 제외한 숫자만을 입력" required/>
+                            </div>
+                            <div>
+                                <label for="popup1Input_email"> E-mail </label>
+                                <input type="text" class="popup1Input_email" id="popup1Input_email" placeholder="이메일주소를 입력" required/>
+                            </div>
+                            <div>
+                                <label for="popup1Input_TicketNum"> Ticket number </label>
+                                <input type="text" class="popup1Input_TicketNum" id="popup1Input_TicketNum" placeholder="티켓의 12자리 숫자를 입력" required/>
+                            </div>
+                        </div>   
+                        <div class="Event_popup1bottom">
+                            <input type="checkbox" class="popup1Input_check" id="popup1Input_check" required/>
+                            <label for="popup1Input_check"> 개인정보 수집에 동의</label>
+                        </div> 
+                            
+                        
+                    </div>
+                    <div>
+                        <button>응모하기</button>
+                    </div>
+                </div>
+                <div class="Event_hiden" onclick="document.getElementById('Event_popup1').style.display='none'">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
             <footer>
                 <div>
                     <a href="#"><img src="https://i.ibb.co/y0yVb73/talkchannel.png" alt="카카오톡채널"/></a>
