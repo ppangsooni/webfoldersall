@@ -73,3 +73,26 @@ function hideMenu() {
     slide.style.opacity = '0';
     slide.style.visibility = 'hidden';
 }
+//-----------------------Event_popup1 
+var popup1_Opbt = document.getElementById('Event_popup1_Open');
+var popup1 = document.getElementById('Event_popup1');
+var popup1_Clbt = document.getElementById('Event_popup1_Close');
+
+popup1_Opbt.addEventListener('click', function(){
+    popup1.style.display="block";
+});
+popup1_Clbt.addEventListener('click', function(){
+    popup1.style.display="none";
+});
+
+//-----------------------Event_popup2
+var popup2_Opbt = document.getElementById('Event_popup2_Open');
+var popup2 = document.getElementById('Event_popup2');
+var popup2_Clbt = document.getElementById('Event_popup2_Close');
+
+popup2_Opbt.addEventListener('click', function(){
+    popup2.style.display="block";
+});
+popup2_Clbt.addEventListener('click', function(){
+    popup2.style.display="none";
+});
