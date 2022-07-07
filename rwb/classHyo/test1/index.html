@@ -407,7 +407,7 @@
                                 <!-- <span>기념카드 디자인</span> -->
                                 <div>
                                     <select name="codeImgSelect" class="imgSel" required>
-                                        <option disabled selected>『명화(택)』</option>
+                                        <option disabled selected>『명화』선택</option>
                                         <option value="img1">『죽음의섬』</option>
                                         <option value="img2">『윌렘 반 데어...』</option>
                                         <option value="img3">『의사』</option>
@@ -421,17 +421,17 @@
                                 </div>
                                 <div>
                                     <select name="codeFilterSelect" class="filterSel" required>
-                                        <option disabled selected>필터(택)</option>
+                                        <option disabled selected>필터 선택</option>
                                         <option value="filterNone">없음</option>
                                         <option value="filter1">blur</option>
                                         <option value="filter2">grayscale</option>
                                         <option value="filter3">sepia</option>
                                     </select>
-                                    <button id="sizeSel_Bt" type="button"> 필터 보기 </button>
+                                    <button id="filterSel_Bt" type="button"> 필터 보기 </button>
                                 </div>
                                 <div>
                                     <select name="codeDesignSelect" class="designSel" required>
-                                        <option disabled selected >디자인(택)</option>
+                                        <option disabled selected >디자인 선택</option>
                                         <option value="design1">1</option>
                                         <option value="design2">2</option>
                                         <option value="design3">3</option>
@@ -443,7 +443,7 @@
                                 </div>
                                 <div>
                                     <select name="codeFrameSelect" class="FrameSel" required>
-                                        <option disabled selected >프레임 (택)</option>
+                                        <option disabled selected >프레임 선택</option>
                                         <option value="FrameNone">없음</option>
                                         <option value="FrameColor">color</option>
                                         <option value="Frame1">Frame 1</option>
@@ -456,7 +456,7 @@
                                 </div>
                                 <div>
                                     <select name="codeSizeSelect" class="sizeSel" required>
-                                        <option disabled selected> 기종(사이즈) (택)</option>
+                                        <option disabled selected> 기종(사이즈) 선택</option>
                                         <option value="size1">iphone SE</option>
                                         <option value="size2">iphone XR</option>
                                         <option value="size3">iphone  12 Pro</option>
@@ -478,15 +478,15 @@
                             <div class="Event_popup2Input">
     
                                 <div>   
-                                    <label for="popup1Input_phoneNum" required> Phone number </label>
-                                    <input type="text" class="popup1Input_phoneNum" id="popup1Input_phoneNum" placeholder="-를 제외한 숫자만을 입력" required/>
+                                    <label for="popup1Input_phoneNum"> Phone number </label>
+                                    <input type="text" class="popup2Input_phoneNum" id="popup2Input_phoneNum" placeholder="-를 제외한 숫자만을 입력" required/>
                                 </div>
                                 <div>
-                                    <label for="popup2Input_TicketNum" required> Ticket number </label>
+                                    <label for="popup2Input_TicketNum"> Ticket number </label>
                                     <input type="text" class="popup2Input_TicketNum" id="popup2Input_TicketNum" placeholder="티켓의 12자리 숫자를 입력" required/>
                                 </div>
                             </div>   
-                            <div class="Event_popup2bottom" required>
+                            <div class="Event_popup2bottom">
                                 <input type="checkbox" class="popup2Input_check" id="popup2Input_check" required/>
                                 <label for="popup2Input_check"> 개인정보 수집에 동의</label>
                             </div> 
@@ -552,5 +552,4 @@
 </body>
 
 <script src="./js/js.js"></script>
-</script>
 </html>
