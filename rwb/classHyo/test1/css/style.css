@@ -206,13 +206,17 @@ span:nth-of-type(27) {
     background-color: rgb(53, 51, 51);
     
 }
-.sidebanner>div img {
+.sidebanner>div {
     width: 100%;
-    height: 50vh;
+    height: 100%;
+}
+.sidebanner>div>img {
+    width: 100%;
+    height: 100%;
     filter: grayscale(100%) ;
 }
 /*마우스호버: 필터 변환*/
-.sidebanner>div img:hover {
+.sidebanner>div>img:hover{
     filter: grayscale(0%) contrast(110%);
 }
 
@@ -227,8 +231,11 @@ span:nth-of-type(27) {
     flex-direction: column;
     overflow-y: scroll;
     position: relative;
+
+
     /* border: 10px hotpink solid; */
 }
+
 .contentWrap::-webkit-scrollbar{
     display:none;
   }
@@ -1024,7 +1031,7 @@ footer>div:nth-child(1)>a>img:hover {
     width: 55%;
     height: 100%;
     position: fixed;
-    border: #fff 1px solid;
+    /* border: #fff 1px solid; */
 
 }
 .menu_listCh>ul{
@@ -1036,11 +1043,9 @@ footer>div:nth-child(1)>a>img:hover {
     height: auto;
     font-size: 3em;
     color: snow;
-    border: #fff 1px solid;
+    /* border: #fff 1px solid; */
 }
-.menu_list>ul>li {
 
-}
 .menu_listCh>ul>li>a:hover{
     font-size: 2em;
     color: rgb(197, 194, 13);
