@@ -1105,14 +1105,14 @@ footer>div:nth-child(1)>a>img:hover {
         padding: 0%;
     }
     .Event_popup1Layer{
-        width: 60%;
+        width: 80%;
         top: 15%;
-        left: 20%;
+        left: 10%;
     }
     .Event_popup2Layer{
-        width: 60%;
+        width: 80%;
         top: 15%;
-        left: 20%;
+        left: 10%;
     }
     .Event_popup2Select>div {
         width: 80%;
@@ -1160,7 +1160,7 @@ footer>div:nth-child(1)>a>img:hover {
         width: 100%;
         left: 10%;
         top: 10%;
-        left: 5%;
+        left: 0%;
     }
     
     .Event_popup1LayerTop {
@@ -1189,7 +1189,7 @@ footer>div:nth-child(1)>a>img:hover {
         width: 100%;
         left: 0%;
         top: 10%;
-        left: 5%;
+        left: 0%;
         /* justify-content: center; */
     }
     .Event_popup2LayerTop {
