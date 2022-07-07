@@ -135,7 +135,7 @@
                             <p>현장 관람 장소</p>
                             <hr>
                             <p>부산혜미술관: 부산광역시 해운대구 우2동 해운대로 407 신세계프라자 7층</p>
-                            <a href="#mapOn" class="mapBtn">지도 보기</a>
+                            <a href="#mapOn" id="mapBtn" class="mapBtn">지도 보기</a>
                             <div class="mapOn" id="mapOn">                            
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.551038158803!2d129.13842911560795!3d35.167816080317216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688d5f58a8bb1b%3A0x7ef8a517ba5f5efc!2z7Zqo7ISx7KeB7JeF7KCE66y47ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1656489308856!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     <button id="mapBtnClo">&#9747;</button>                      
@@ -340,7 +340,7 @@
                         <div>
                             <p>입장권번호 입력시 응모가능</p>
                             <p>추첨을 통해 50분에게 선물을 드립니다. </p>
-                            <button id="Event_popup1_Open"> 응모하기 </button>
+                            <button id="Event_popup1_Open" type="button"> 응모하기 </button>
                         </div>
                     </div>
                     <div class="EventBoxChi">
@@ -348,7 +348,7 @@
                         <div><p>&#10077; 관람 기념카드 &#10078;</p></div>
                         <div>
                             <p>입장권번호 입력시 문자로 보내드립니다.</p>
-                            <button id="Event_popup2_Open"> 신청하기 </button>
+                            <button id="Event_popup2_Open" type="button"> 신청하기 </button>
                         </div>                        
                     </div>
                 </div>
@@ -356,38 +356,39 @@
             </div>
             <div class="Event_popup1" id="Event_popup1">
                 <div class="Event_popup1Layer">
-                    <div>
-                        <div class="Event_popup1LayerTop">
-                            <p>&sharp;끝자락그리고_추첨이벤트</p>
+                    <form action="#" id="popupEvent1">
+                        <div>
+                            <div class="Event_popup1LayerTop">
+                                <p>&sharp;끝자락그리고_추첨이벤트</p>
+                            </div>
+                            <div class="Event_popup1Input">
+                                <div>
+                                    <label for="popup1Input_name"> Name </label>
+                                    <input type="text" class="popup1Input_name" id="popup1Input_name" placeholder="한글 또는 영어로 입력" required/>
+                                </div>
+                                <div>
+                                    <label for="popup1Input_phoneNum"> Phone nubmer </label>
+                                    <input type="text" class="popup1Input_phoneNum" id="popup1Input_phoneNum" placeholder="-를 제외한 숫자만을 입력" required/>
+                                </div>
+                                <div>
+                                    <label for="popup1Input_email"> E-mail </label>
+                                    <input type="text" class="popup1Input_email" id="popup1Input_email" placeholder="이메일주소를 입력" required/>
+                                </div>
+                                <div>
+                                    <label for="popup1Input_TicketNum"> Ticket number </label>
+                                    <input type="text" class="popup1Input_TicketNum" id="popup1Input_TicketNum" placeholder="티켓의 12자리 숫자를 입력" required/>
+                                </div>
+                            </div>   
+                            <div class="Event_popup1bottom">
+                                <input type="checkbox" class="popup1Input_check" id="popup1Input_check" required/>
+                                <label for="popup1Input_check"> 개인정보 수집에 동의</label>
+                            </div> 
                         </div>
-                        <div class="Event_popup1Input">
-                            <div>
-                                <label for="popup1Input_name"> Name </label>
-                                <input type="text" class="popup1Input_name" id="popup1Input_name" placeholder="한글 또는 영어로 입력" required/>
-                            </div>
-                            <div>
-                                <label for="popup1Input_phoneNum"> Phone nubmer </label>
-                                <input type="text" class="popup1Input_phoneNum" id="popup1Input_phoneNum" placeholder="-를 제외한 숫자만을 입력" required/>
-                            </div>
-                            <div>
-                                <label for="popup1Input_email"> E-mail </label>
-                                <input type="text" class="popup1Input_email" id="popup1Input_email" placeholder="이메일주소를 입력" required/>
-                            </div>
-                            <div>
-                                <label for="popup1Input_TicketNum"> Ticket number </label>
-                                <input type="text" class="popup1Input_TicketNum" id="popup1Input_TicketNum" placeholder="티켓의 12자리 숫자를 입력" required/>
-                            </div>
-                        </div>   
-                        <div class="Event_popup1bottom">
-                            <input type="checkbox" class="popup1Input_check" id="popup1Input_check" required/>
-                            <label for="popup1Input_check"> 개인정보 수집에 동의</label>
-                        </div> 
-                            
-                        
-                    </div>
-                    <div>
-                        <button>신청하기</button>
-                    </div>
+                        <div>
+                            <button type="submit" form="popupEvent1" id="Event_popup1_sub" class="Event_popup1_sub">신청하기</button>
+                        </div>
+                    </form>
+
                 </div>
                 <div class="Event_popup1_Close" id="Event_popup1_Close">
                     <span></span>
@@ -397,103 +398,106 @@
             <!-- 카드발급받기이벤트 (Event_popup2) -->
             <div class="Event_popup2" id="Event_popup2">
                 <div class="Event_popup2Layer">
-                    <div>
-                        <div class="Event_popup2LayerTop">
-                            <p>&sharp;끝자락그리고_기념카드</p>
-                        </div>
-                        <div class="Event_popup2Select">
-                            <!-- <span>기념카드 디자인</span> -->
-                            <div>
-                                <select name="codeImgSelect" class="imgSel">
-                                    <option disabled selected>『명화(택)』</option>
-                                    <option value="img1">『죽음의섬』</option>
-                                    <option value="img2">『윌렘 반 데어 메이르 박사의 해부학수업』</option>
-                                    <option value="img3">『의사』</option>
-                                    <option value="img4">『죽음의 승리』</option>
-                                    <option value="img5">『밤』</option>
-                                    <option value="img6">『오필리아』</option>
-                                    <option value="img7">『바니타스 정물화』</option>
-                                    <option value="img8">『소크라테스의 죽음』</option>
-                                </select>
-                                <button id="imgSel_Bt"> 이미지 보기 </button>
+                    <form action="#" id="popupEvent2">
+                        <div>
+                            <div class="Event_popup2LayerTop">
+                                <p>&sharp;끝자락그리고_기념카드</p>
                             </div>
-                            <div>
-                                <select name="codeFilterSelect" class="filterSel">
-                                    <option disabled selected>필터(택)</option>
-                                    <option value="filterNone">없음</option>
-                                    <option value="filter1">blur</option>
-                                    <option value="filter2">grayscale</option>
-                                    <option value="filter3">sepia</option>
-                                </select>
-                                <button id="sizeSel_Bt"> 필터 보기 </button>
+                            <div class="Event_popup2Select">
+                                <!-- <span>기념카드 디자인</span> -->
+                                <div>
+                                    <select name="codeImgSelect" class="imgSel" required>
+                                        <option disabled selected>『명화(택)』</option>
+                                        <option value="img1">『죽음의섬』</option>
+                                        <option value="img2">『윌렘 반 데어...』</option>
+                                        <option value="img3">『의사』</option>
+                                        <option value="img4">『죽음의 승리』</option>
+                                        <option value="img5">『밤』</option>
+                                        <option value="img6">『오필리아』</option>
+                                        <option value="img7">『바니타스 정물화』</option>
+                                        <option value="img8">『소크라테스의 죽음』</option>
+                                    </select>
+                                    <button id="imgSel_Bt" type="button"> 이미지 보기 </button>
+                                </div>
+                                <div>
+                                    <select name="codeFilterSelect" class="filterSel" required>
+                                        <option disabled selected>필터(택)</option>
+                                        <option value="filterNone">없음</option>
+                                        <option value="filter1">blur</option>
+                                        <option value="filter2">grayscale</option>
+                                        <option value="filter3">sepia</option>
+                                    </select>
+                                    <button id="sizeSel_Bt" type="button"> 필터 보기 </button>
+                                </div>
+                                <div>
+                                    <select name="codeDesignSelect" class="designSel" required>
+                                        <option disabled selected >디자인(택)</option>
+                                        <option value="design1">1</option>
+                                        <option value="design2">2</option>
+                                        <option value="design3">3</option>
+                                        <option value="design4">4</option>
+                                        <option value="design5">5</option>
+                                    </select>
+                                    <input type="color" value="#ff0000">
+                                    <button id="designSel_Bt" type="button"> 디자인 보기 </button>
+                                </div>
+                                <div>
+                                    <select name="codeFrameSelect" class="FrameSel" required>
+                                        <option disabled selected >프레임 (택)</option>
+                                        <option value="FrameNone">없음</option>
+                                        <option value="FrameColor">color</option>
+                                        <option value="Frame1">Frame 1</option>
+                                        <option value="Frame2">Frame 2</option>
+                                        <option value="Frame3">Frame 3</option>
+                                        <option value="Frame4">Frame 4</option>
+                                    </select>
+                                    <input type="color" value="#ff0000">
+                                    <button id="designSel_Bt" type="button"> 프레임 보기 </button>
+                                </div>
+                                <div>
+                                    <select name="codeSizeSelect" class="sizeSel" required>
+                                        <option disabled selected> 기종(사이즈) (택)</option>
+                                        <option value="size1">iphone SE</option>
+                                        <option value="size2">iphone XR</option>
+                                        <option value="size3">iphone  12 Pro</option>
+                                        <option value="size4">iphone 6/7/8 Plus</option>
+                                        <option value="size5">iphone 6/7/8 </option>
+                                        <option value="size6">iphone S5</option>
+                                        <option value="size7">iphone XR</option>
+                                        <option value="size8">Galaxy Note 3</option>
+                                        <option value="size9">Galaxy Note 2</option>
+                                        <option value="size10">Galaxy S 3</option>
+                                        <option value="size11">Galaxy S8</option>
+                                        <option value="size12">Galaxy S9+</option>
+                                    </select>
+                                    <button id="sizeSel_Bt" type="button"> 기종별사이즈 보기 </button>
+                                </div>
+    
                             </div>
-                            <div>
-                                <select name="codeDesignSelect" class="designSel">
-                                    <option disabled selected >디자인(택)</option>
-                                    <option value="design1">1</option>
-                                    <option value="design2">2</option>
-                                    <option value="design3">3</option>
-                                    <option value="design4">4</option>
-                                    <option value="design5">5</option>
-                                </select>
-                                <input type="color" value="#ff0000">
-                                <button id="designSel_Bt"> 디자인 보기 </button>
-                            </div>
-                            <div>
-                                <select name="codeFrameSelect" class="FrameSel">
-                                    <option disabled selected >프레임 (택)</option>
-                                    <option value="FrameNone">없음</option>
-                                    <option value="FrameColor">color</option>
-                                    <option value="Frame1">Frame 1</option>
-                                    <option value="Frame2">Frame 2</option>
-                                    <option value="Frame3">Frame 3</option>
-                                    <option value="Frame4">Frame 4</option>
-                                </select>
-                                <input type="color" value="#ff0000">
-                                <button id="designSel_Bt"> 프레임 보기 </button>
-                            </div>
-                            <div>
-                                <select name="codeSizeSelect" class="sizeSel">
-                                    <option disabled selected> 기종(사이즈) (택)</option>
-                                    <option value="size1">iphone SE</option>
-                                    <option value="size2">iphone XR</option>
-                                    <option value="size3">iphone  12 Pro</option>
-                                    <option value="size4">iphone 6/7/8 Plus</option>
-                                    <option value="size5">iphone 6/7/8 </option>
-                                    <option value="size6">iphone S5</option>
-                                    <option value="size7">iphone XR</option>
-                                    <option value="size8">Galaxy Note 3</option>
-                                    <option value="size9">Galaxy Note 2</option>
-                                    <option value="size10">Galaxy S 3</option>
-                                    <option value="size11">Galaxy S8</option>
-                                    <option value="size12">Galaxy S9+</option>
-                                </select>
-                                <button id="sizeSel_Bt"> 기종별사이즈 보기 </button>
-                            </div>
-
-                        </div>
+                                
+                            <div class="Event_popup2Input">
+    
+                                <div>   
+                                    <label for="popup1Input_phoneNum" required> Phone number </label>
+                                    <input type="text" class="popup1Input_phoneNum" id="popup1Input_phoneNum" placeholder="-를 제외한 숫자만을 입력" required/>
+                                </div>
+                                <div>
+                                    <label for="popup2Input_TicketNum" required> Ticket number </label>
+                                    <input type="text" class="popup2Input_TicketNum" id="popup2Input_TicketNum" placeholder="티켓의 12자리 숫자를 입력" required/>
+                                </div>
+                            </div>   
+                            <div class="Event_popup2bottom" required>
+                                <input type="checkbox" class="popup2Input_check" id="popup2Input_check" required/>
+                                <label for="popup2Input_check"> 개인정보 수집에 동의</label>
+                            </div> 
+                                
                             
-                        <div class="Event_popup2Input">
-
-                            <div>   
-                                <label for="popup1Input_phoneNum"> Phone number </label>
-                                <input type="text" class="popup1Input_phoneNum" id="popup1Input_phoneNum" placeholder="-를 제외한 숫자만을 입력" required/>
-                            </div>
-                            <div>
-                                <label for="popup2Input_TicketNum"> Ticket number </label>
-                                <input type="text" class="popup2Input_TicketNum" id="popup2Input_TicketNum" placeholder="티켓의 12자리 숫자를 입력" required/>
-                            </div>
-                        </div>   
-                        <div class="Event_popup2bottom">
-                            <input type="checkbox" class="popup2Input_check" id="popup2Input_check" required/>
-                            <label for="popup2Input_check"> 개인정보 수집에 동의</label>
-                        </div> 
-                            
-                        
-                    </div>
-                    <div>
-                        <button>신청하기</button>
-                    </div>
+                        </div>
+                        <div>
+                            <button type="submit" form="popupEvent2" id="Event_popup2_sub" class="Event_popup2_sub">신청하기</button>
+                        </div>
+                    </form>
+                    
                 </div>
                 <div class="Event_popup2_Close" id="Event_popup2_Close">
                     <span></span>
@@ -525,7 +529,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <div class="menu_listCh">
+                    <div class="7">
                         <ul>
                             <li><a href="#contHome">Home</a></li>
                             <li><a href="#conAbout">About</a></li>

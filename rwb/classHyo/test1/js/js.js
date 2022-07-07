@@ -18,24 +18,26 @@ function cursor(e) {
 }
 
 
-//----------------------- map
-var mapBtn = document.querySelectorAll('.mapBtn');
-var mapBtnPopClose = document.querySelectorAll('#mapBtnClo');
-var mapBtnID;
+// //----------------------- map
 
-// 지도 팝업 열기
-for(var i = 0; i < mapBtn.length; i++){
-  mapBtn[i].addEventListener('click', function(){
-    mapBtnID = this.getAttribute('href');
-    document.querySelector(mapBtnID).style.display = 'block';
-  });
-}
+let map_Opbt = document.getElementById('mapBtn');
+let map = document.getElementById('mapOn');
+let map_Clbt = document.getElementById('mapBtnClo');
+
+map_Opbt.addEventListener('click', function(){
+    map.style.display="block";
+});
+map_Clbt.addEventListener('click', function(){
+    map.style.display="none";
+});
 
 
-
+//----------------------- menu
 let openMenu = document.querySelector('.menu_icon'),
     slide = document.querySelector('.menu_list'),
-    closeMenu = document.querySelector('.menu_list_icon');
+    closeMenu = document.querySelector('.menu_list_icon'),
+    menulistClick = document.querySelector('.menu_listCh>ul');
+
 
 openMenu.addEventListener('click', function() {
     console.log(window.innerWidth);
@@ -58,6 +60,9 @@ openMenu.addEventListener('click', function() {
 closeMenu.addEventListener('click', function() {
     hideMenu();
 });
+menulistClick.addEventListener('click', function() {
+    hideMenu();
+});
 
 function seeMenu() {
     document.documentElement.style.overflow = 'hidden';
@@ -74,9 +79,9 @@ function hideMenu() {
     slide.style.visibility = 'hidden';
 }
 //-----------------------Event_popup1 
-var popup1_Opbt = document.getElementById('Event_popup1_Open');
-var popup1 = document.getElementById('Event_popup1');
-var popup1_Clbt = document.getElementById('Event_popup1_Close');
+let popup1_Opbt = document.getElementById('Event_popup1_Open');
+let popup1 = document.getElementById('Event_popup1');
+let popup1_Clbt = document.getElementById('Event_popup1_Close');
 
 popup1_Opbt.addEventListener('click', function(){
     popup1.style.display="block";
@@ -86,9 +91,9 @@ popup1_Clbt.addEventListener('click', function(){
 });
 
 //-----------------------Event_popup2
-var popup2_Opbt = document.getElementById('Event_popup2_Open');
-var popup2 = document.getElementById('Event_popup2');
-var popup2_Clbt = document.getElementById('Event_popup2_Close');
+let popup2_Opbt = document.getElementById('Event_popup2_Open');
+let popup2 = document.getElementById('Event_popup2');
+let popup2_Clbt = document.getElementById('Event_popup2_Close');
 
 popup2_Opbt.addEventListener('click', function(){
     popup2.style.display="block";
