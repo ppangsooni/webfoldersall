@@ -1157,7 +1157,7 @@ footer>div:nth-child(1)>a>img:hover {
         width: 100%;
     }
     .Event_popup1Layer{
-        width: 80%;
+        width: 100%;
         left: 10%;
         top: 10%;
         left: 5%;
@@ -1186,8 +1186,8 @@ footer>div:nth-child(1)>a>img:hover {
         width: 100%;
     }
     .Event_popup2Layer{
-        width: 80%;
-        left: 10%;
+        width: 100%;
+        left: 0%;
         top: 10%;
         left: 5%;
         /* justify-content: center; */
