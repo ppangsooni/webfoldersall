@@ -1134,6 +1134,20 @@ footer>div:nth-child(1)>a>img:hover {
     .Event_popup1LayerTop {
         font-size: 1.2em;
     }
+    .Event_popup1_Close{
+        width: 2em;
+        height: 2em;
+    }
+    .Event_popup1_Close>span {
+        width: 2em;
+        height: 0.5em;
+    }
+    .Event_popup1_Close>span:nth-child(1) {
+        transform: rotate( 45deg ) translate( 35% , 80% );
+    }
+    .Event_popup1_Close>span:nth-child(2) {
+        transform: rotate( -45deg ) translate( -5% , 56% );
+    }
     .Event_popup2{
         height: auto;
     }
@@ -1149,5 +1163,19 @@ footer>div:nth-child(1)>a>img:hover {
     }
     .Event_popup2Select>div {
         width: 90%;
+    }
+    .Event_popup2_Close{
+        width: 2em;
+        height: 2em;
+    }
+    .Event_popup2_Close>span {
+        width: 2em;
+        height: 0.5em;
+    }
+    .Event_popup2_Close>span:nth-child(1) {
+        transform: rotate( 45deg ) translate( 35% , 80% );
+    }
+    .Event_popup2_Close>span:nth-child(2) {
+        transform: rotate( -45deg ) translate( -5% , 56% );
     }
 }
