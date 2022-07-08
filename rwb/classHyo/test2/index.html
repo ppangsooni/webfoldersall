@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,body {
+        margin: 0;
+        padding: 0;
+    }
+    .bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: snow;
+    }
+    .face {
+        position: absolute;
+        background:url('https://i.ibb.co/FVRrb0p/JuAug34.jpg') no-repeat 0 0;
+        width: 10%;
+        height: 16%;
+        animation-name: walk;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: steps(4);
+    }
+
+    @keyframes walk {
+    0%{
+        background-position: 0 0;
+    }        
+    100%{
+        background-position: -1472px 0;
+    }     
+    }
+    @keyframes street{
+        0%{
+        background-position: 0 0;
+    }        
+    100%{
+        background-position: -1472px 0;
+    }     
+    }
+</style>
+<body>
+    <div class="bg"></div>
+    <div class="face"></div>
+</body>
+</html>
