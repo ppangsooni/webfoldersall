@@ -7,20 +7,38 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="iphone"></div>    
+    <!-- <div class="iphone"></div>     -->
+    <div class="z">끝<br>자<br>락</div>
 </body>
 </html>
 
 
 <style>
-.iphone {
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    .z {
+        width: 45%;
+        height: 100%;
+        background-image: url("https://i.ibb.co/RS1gKh2/image.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background: url(https://i.ibb.co/RS1gKh2/image.jpg) no-repeat center cover; */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        top:10%;
+        font-size: 200px;
+        font-weight: bold;
+    }
+/* .iphone {
     padding: 10px;
     width: 600px;
     height: 1061px;
     background-image:  url("https://s.cdpn.io/6859/iphone.png");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 @media only screen and (max-width: 600px){	
 	.iphone {

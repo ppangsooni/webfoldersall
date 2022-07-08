@@ -1,10 +1,17 @@
-function hideDiv (){
-    document.getElementById("menu").style.display="block";
-    document.getElementById("smokyWrap").style.display="none";
+let menuEvent = document.getElementById('menu');
+let smokyWrapEvent = document.getElementById('smokyWrap');
+let posterEvent = document.getElementById('posterCover');
+
+  function hideDiv (){
+    menuEvent.style.display="block";
+    posterEvent.style.display="block";
+    smokyWrapEvent.style.display="none";
 
   }
   self.setTimeout("hideDiv()",6000); 
-  
+
+
+
 
 let mouseCursor = document.querySelector(".cursor");
 // let navLinks = document.querySelectorAll(".contArt_imgWrap>a"); //메뉴 링크
@@ -100,4 +107,16 @@ popup2_Opbt.addEventListener('click', function(){
 });
 popup2_Clbt.addEventListener('click', function(){
     popup2.style.display="none";
+});
+
+let posterText = document.getElementById('posterText');
+let posterCoverOn = document.getElementById('posterCover');
+let posterOn = document.getElementById('poster');
+posterText.addEventListener('mouseover', function(){
+    posterOn.style.display="block";
+    posterCoverOn.style.display="none";
+});
+posterText.addEventListener('mouseout', function(){
+    posterOn.style.display="none";
+    posterCoverOn.style.display="block";
 });

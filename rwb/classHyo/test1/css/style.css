@@ -56,7 +56,7 @@ a {
     align-items: center;
     color: transparent;
     backface-visibility: hidden;
-    z-index: 100;
+    z-index: 1000;
 }
 .smokyWrap>p>span {
     font-size: 4em;
@@ -206,22 +206,103 @@ span:nth-of-type(27) {
     background-color: rgb(53, 51, 51);
     
 }
-.sidebanner>div {
+
+
+.posterCover {
+    display: none;
+    width: 45%;
+    height: 100%;
+    position: fixed;
+    font-weight: bolder;
+}
+.posterCover>div {
+    position: fixed;
+    height: auto;
+    color:  rgb(199, 197, 197);
+    padding-top: 0.5%;
+}
+.posterCover>div:nth-child(1){
+    border-top: 2px solid  grey;
+    top: 1%;
+    left: 1%;
+    width: 6.5%;
+}
+.posterCover>div:nth-child(2){
+    border-top: 2px solid  grey;
+    top: 1%;
+    left: 18%;
+    text-align:center;
+    width: 6.5%;   
+}
+.posterCover>div:nth-child(3){
+    border-top: 2px solid  grey;
+    top: 1%;
+    left: 38%;
+    text-align: end;
+    width: 6.5%;
+}
+.posterCover>div:nth-child(4){
+    top: 60%;
+    left: 38%;
+    text-align: end;
+    width: 6.5%;
+}
+.posterCover>div:nth-child(4)>span{
+    font-size: larger;
+}
+.posterCover>div:nth-child(4)>div{
+    border-top: 2px solid  grey;
+    font-size: small;
+}
+.posterCover>div:nth-child(5){
+    top: 82%;
+    left: 35.5%;
+    text-align: end;
+    width: 9%;
+}
+
+.posterCover>div:nth-child(5)>span{
+    
+    font-size: larger;
+}
+.posterCover>div:nth-child(5)>div{
+    border-top: 2px solid  grey;
+    font-size: small;
+}
+.posterCover>div>span{
+    display: block;
+}
+.posterCover>p{
+    position: fixed;
+    background-image: url("https://i.ibb.co/RS1gKh2/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.posterText1{
+    top: -10%;
+    left: 10%;
+    font-size: 14rem;
+    line-height: 1;
+}
+.posterText2{
+    top: 10%;
+    left: 21%;
+    font-size: 5rem;
+    font-family: 'Kanginhan';
+}
+/*--posterCover 호버시 보이는 이미지---*/
+.poster {
+    display: none;
+    width: 98%;
+    height: 98%;
+    padding: 2%;
+}
+#posterimg {
     width: 100%;
     height: 100%;
 }
-.sidebanner>div>img {
-    width: 100%;
-    height: 100%;
-    filter: grayscale(100%) ;
-}
-/*마우스호버: 필터 변환*/
-.sidebanner>div>img:hover{
-    filter: grayscale(0%) contrast(110%);
-}
-
-
-
 /*-------------오른쪽 컨텐츠부분()-------------------------*/
 
 .contentWrap {
@@ -231,9 +312,6 @@ span:nth-of-type(27) {
     flex-direction: column;
     overflow-y: scroll;
     position: relative;
-
-
-    /* border: 10px hotpink solid; */
 }
 
 .contentWrap::-webkit-scrollbar{
@@ -257,13 +335,11 @@ span:nth-of-type(27) {
 .contHomeBox> h1 {
     font-size: 6em;
     font-weight: bolder;
-    background-color: rgb(53, 51, 51);
-    color: snow;
-    
+    border-bottom: rgb(53, 51, 51) 2px solid;
+    color: rgb(53, 51, 51);  
 }
 .contHomeBox> p {
     font-size: 2em;
-
 }
 /*max-width:900px block*/
 .contHomeBox>img{
@@ -387,7 +463,6 @@ span:nth-of-type(27) {
     text-align: center;
     padding: 2%;
 }
-
 
 .admissionFeeTab :nth-child(2n-1) {
     background-color: rgb(202, 198, 193);
@@ -602,7 +677,6 @@ span:nth-of-type(27) {
     position: relative;
     width: 100%;
     height: auto;
-    /* border: red solid 1px; */
     font-family: 'Kanginhan';
     font-size: 2em;
     font-weight: bold;
@@ -835,8 +909,6 @@ select:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-image: url(https://i.ibb.co/5jq3rsJ/test1-3.jpg); */
-    /* background-color: rgb(167, 154, 137); */
 }
 
 .Event_popup2Input>div {
@@ -949,7 +1021,7 @@ footer>div:nth-child(1)>a>img:hover {
 
 /*-------------메뉴-----------------------------------------*/
 .menu {
-    display: block;
+    display: none;
     width: auto;
     height: auto;
     position: fixed;
@@ -991,7 +1063,6 @@ footer>div:nth-child(1)>a>img:hover {
     border-radius: 50%;
 }
 
-
 .menu_list{
     position: fixed;
     right: 0;
@@ -1031,8 +1102,6 @@ footer>div:nth-child(1)>a>img:hover {
     width: 55%;
     height: 100%;
     position: fixed;
-    /* border: #fff 1px solid; */
-
 }
 .menu_listCh>ul{
     width: 90%;
@@ -1043,15 +1112,12 @@ footer>div:nth-child(1)>a>img:hover {
     height: auto;
     font-size: 3em;
     color: snow;
-    /* border: #fff 1px solid; */
 }
 
 .menu_listCh>ul>li>a:hover{
     font-size: 2em;
     color: rgb(197, 194, 13);
 }
-
-
 
 
 
@@ -1190,7 +1256,6 @@ footer>div:nth-child(1)>a>img:hover {
         left: 0%;
         top: 10%;
         left: 0%;
-        /* justify-content: center; */
     }
     .Event_popup2LayerTop {
         font-size: 1.2em;
