@@ -21,7 +21,7 @@ body {
 h3 {
     font-size: 2em;
     font-weight: bold;
-    margin: 0%;
+    margin: 0% 6%;
     padding: 1%;
     color: rgb(141, 141, 141);
 }
@@ -477,7 +477,7 @@ span:nth-of-type(27) {
     background-color: snow;
 }
 .contArtistBox{
-    margin: 0 10%;
+    margin: 0 7%;
     width: 80%;
     height: auto;
     display: flex;
@@ -507,7 +507,7 @@ span:nth-of-type(27) {
 .contArtistBox_textwarp{
     float: left;
     padding: 2%;
-    padding-left: 8%;
+    padding-left: 10%;
     width: 67%;
 }
 .contArtistBox_textwarp>div>p{
@@ -552,12 +552,12 @@ span:nth-of-type(27) {
     max-width: 100%;
     height: auto;
 }
-.contArt_imgWrap>a>img{
+.contArt_imgWrap>img{
     position: relative;
     max-width: 100%;
     filter: grayscale(100%) ;   
 }
-.contArt_imgWrap>a>img:hover {
+.contArt_imgWrap>img:hover {
     filter: grayscale(0%) contrast(110%);
 }
 

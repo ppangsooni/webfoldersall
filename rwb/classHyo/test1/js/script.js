@@ -54,7 +54,7 @@ openMenu.addEventListener('click', function() {
             slide.style.width = '100%';
             slide.style.top = 0;
         } else {
-            slide.style.width = '60%';
+            slide.style.width = '55%';
         }        
     }  else {
         hideMenu();
