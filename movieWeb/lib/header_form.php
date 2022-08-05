@@ -19,16 +19,15 @@
 
         <div class="popPage_top">
             <!-- 1.헤더 영역의 네비게이션 메뉴 영역 -->
-            <div class="">
+            <div class="popPage_top_home">
                 <a href="../index.php">
                     <img src="https://cdn-icons-png.flaticon.com/512/5525/5525279.png" alt="home">
                 </a>
-                
             </div>
             
             <!-- 2. 로고영역 -->
-            <div class="">
-                <img src="https://i.ibb.co/V3Y54Rm/logo2.png" alt="BaAB">
+            <div class="popPage_top_logo">
+                <img src="https://i.ibb.co/swHGtC0/logo1.png" alt="BaAB">
             </div>
 
         </div>

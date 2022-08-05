@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/stely_form.css">
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
-    <title>회원가입</title>
+    <title>popup form</title>
 </head>
 <div class="bg">
         <div class="bgImg">
@@ -25,15 +25,17 @@
             <div class="screen">
                 <div class="wrap">
                     <header class="header">
-                            <?php include "../lib/header_form.php" ?>
+                            <?php include "../movieWeb/lib/header_form.php" ?>
                     </header>
                     <section class="section">
-                        <form method="POST" action="../signupProcess.php">
-                        </form>
+                        <!-- <form method="POST" action="../signupProcess.php">
+                        </form> -->
                     </section>
                     <footer class="footer">
 
                     </footer>
+                    <!---------------menu(nav)------------------------------------------------>
+
                 <div>
             </div>
 
@@ -41,6 +43,5 @@
 
     </div>
 </body>
-    
-</body>
+<script src="./js/script_index_form.js"></script>
 </html>
