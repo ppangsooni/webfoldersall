@@ -24,17 +24,16 @@
             <img src="https://i.ibb.co/PYr4rTt/ipd1.png">
             <div class="screen">
                 <div class="wrap">
-                    <header class="header">
+                    <header class="pop_header">
                             <?php include "../movieWeb/lib/header_form.php" ?>
                     </header>
-                    <section class="section">
+                    <section class="pop_section">
                         <!-- <form method="POST" action="../signupProcess.php">
                         </form> -->
                     </section>
-                    <footer class="footer">
-
+                    <footer class="pop_footer">
+                        <?php include "../movieWeb/lib/footer_form.php" ?>
                     </footer>
-                    <!---------------menu(nav)------------------------------------------------>
 
                 <div>
             </div>

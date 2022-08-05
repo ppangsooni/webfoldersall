@@ -25,10 +25,10 @@
             <img src="https://i.ibb.co/PYr4rTt/ipd1.png">
             <div class="screen">
                 <div class="wrap">
-                    <header class="header">
+                    <header class="pop_header">
                             <?php include "../lib/header_form.php" ?>
                     </header>
-                    <section class="section">
+                    <section class="pop_section">
                         <div id="main_content">
                             <div id="join_box">
                                 <!-- DB의 member테이블에 저장하는 member_insert.php에 입력값들 전달하도록 -->
@@ -87,8 +87,8 @@
                             </div>
                         </div>
                     </section>
-                    <footer class="footer">
-
+                    <footer class="pop_footer">
+                        <?php include "../lib/footer_form.php" ?>
                     </footer>
                     <!---------------menu(nav)------------------------------------------------>
                 <div>
