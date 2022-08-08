@@ -175,7 +175,7 @@
                     </section>
                     <!---------------footer------------------------------------------------>
                     <footer>
-                    Footer
+                        <?php include "../movieWeb/lib/footer.php" ?>
                     </footer>
                 </div>
             </div>

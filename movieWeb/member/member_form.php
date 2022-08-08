@@ -25,10 +25,21 @@
             <img src="https://i.ibb.co/PYr4rTt/ipd1.png">
             <div class="screen">
                 <div class="wrap">
-                    <header class="pop_header">
-                            <?php include "../lib/header_form.php" ?>
-                    </header>
+                <header class="pop_header">
+                    <div class="pop_header_wrap">
+                        <div class="pop_header_title">
+                            <h2>회원가입</h2>
+                        </div>
+                        <?php include "../lib/header_form.php" ?>
+                    </div>
+                </header>
                     <section class="pop_section">
+                        <!--  로고영역 -->
+                        <div class="pop_section_logo">
+                            <div>
+                                <img src="https://i.ibb.co/swHGtC0/logo1.png" alt="BaAB">
+                            </div>
+                        </div>
                         <div id="main_content">
                             <div id="join_box">
                                 <!-- DB의 member테이블에 저장하는 member_insert.php에 입력값들 전달하도록 -->
@@ -88,7 +99,7 @@
                         </div>
                     </section>
                     <footer class="pop_footer">
-                        <?php include "../lib/footer_form.php" ?>
+                        <?php include "../lib/footer.php" ?>
                     </footer>
                     <!---------------menu(nav)------------------------------------------------>
                 <div>
@@ -97,7 +108,17 @@
     </div>
     <!-- 내부 자바스크립트 작성 -->
     <script>
+        let footerBtn = document.querySelector('.footerBtn'),
+            footerBtn_Ch = document.querySelector('.footerBtn_Ch'),
+            footerSlide = document.querySelector('.pop_footer_center');
 
+            footerBtn.addEventListener('click', function() {   
+            if (footerSlide.style.display == 'none') {
+                footerSlide.style.display = 'block';        
+            } else {
+                footerSlide.style.display = 'none';     
+            } 
+        });
 
         
         function submitForm(){
