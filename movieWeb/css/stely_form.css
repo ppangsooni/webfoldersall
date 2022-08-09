@@ -218,7 +218,7 @@ li {
     clear: both;
 }
 .pop_header_title {
-    margin-top: 1%;
+    margin-top: 2%;
     float: left;
 }
 .pop_header_title>h2 {
@@ -226,7 +226,7 @@ li {
 
 }
 .pop_header_home {
-    margin-top: 1%;
+    margin-top: 2%;
     float: right;
 }
 .pop_header_home>a>img {
@@ -237,7 +237,7 @@ li {
 
 /* index_from>section() 영역 */
 .pop_section {
-    background-color: aqua;
+    background-color: white;
     width: 96%;
     margin-top: 12%;
     padding: 2%;
@@ -251,6 +251,26 @@ li {
 .pop_section_logo>div>img {   
     width: 5rem;    
 }
+.pop_section_main {
+    background-color: blanchedalmond;
+    width: 92%;
+    padding: 4%;
+}
+.pop_section_main>article {
+    border: 1px solid blue;
+    width: 92%;
+    padding: 2% 4% 4% 4%;
+    text-align: center;
+}
+.pop_section_main>article>h4 {
+    font-size: x-large;
+}
+.pop_section_main>article>div {
+    border: 1px solid blue;
+    width: 92%;
+    padding: 4%;   
+}
+
 /* index_from>footer() 영역 */
 /* >footer(/footer.php) 영역 */
 .footer {

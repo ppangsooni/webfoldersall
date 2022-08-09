@@ -60,7 +60,7 @@ function submitForm(){
     // 입력값 중에 비어있으면 안되는 것들이 있음.
 
     // id
-    if(!document.member_form.userId.value){
+    if(!document.member_formCh.userId.value){
         alert("아이디를 입력하세요.");
         //커서(포커스)를 아이디 인풋요소로 이동
         document.member_form.userId.focus();

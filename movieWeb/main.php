@@ -10,12 +10,16 @@
         <!-- 1. main_Top -->
         <article class="pop_section_main_Top">
             <h4>main_Top</h4>
-            <ul></ul>
+            <div>
+
+            </div>
         </article>
  
         <!-- 2. main_bottom -->
         <article class="pop_section_main_bottom">
             <h4>main_bottom</h4>
-            <ul></ul>
+            <div>
+                
+            </div>
         </article>
     </div>
