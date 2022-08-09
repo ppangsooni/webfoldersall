@@ -11,21 +11,12 @@
 <body>
 
     <div class="bg">
-        <div class="bgImg">
-            <div class="bgImg_scroll">
-                <div>
-                    <div class="bgImg_scroll_t"></div>               
-                </div>
-                <div class="bgImg_scroll_m"></div>
-                <div>
-                    <div class="bgImg_scroll_b"></div>
-                </div>
-            </div>
-        </div>
+        <!---------------background_scroll(bgScroll.php)------------------------------------------------>
+        <?php include "./lib/bgScroll.php" ?>
         <div class="bg_macbook">
             <img src="https://i.ibb.co/PYr4rTt/ipd1.png">
-            <div class="screen">
-                <div class="wrap">
+            <div class="screen" id="screen">
+                <div class="wrap" >
                     <!---------------header------------------------------------------------>
                     <header class="header">
                         <!-----header _ 영역--------------------->
@@ -174,7 +165,7 @@
                         </div>
                     </section>
                     <!---------------footer------------------------------------------------>
-                    <footer>
+                    <footer class="footer">
                         <?php include "../movieWeb/lib/footer.php" ?>
                     </footer>
                 </div>

@@ -5,22 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/stely_form.css">
-    <link rel="stylesheet" type="text/css" href="./css/stely_menu.css">
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
     <title>회원가입</title>
 </head>
 <div class="bg">
-        <div class="bgImg">
-            <div class="bgImg_scroll">
-                <div>
-                    <div class="bgImg_scroll_t"></div>               
-                </div>
-                <div class="bgImg_scroll_m"></div>
-                <div>
-                    <div class="bgImg_scroll_b"></div>
-                </div>
-            </div>
-        </div>
+        <!---------------background_scroll(bgScroll.php------------------------------------------------>
+        <?php include "../lib/bgScroll.php"?>
         <div class="bg_macbook">
             <img src="https://i.ibb.co/PYr4rTt/ipd1.png">
             <div class="screen">
@@ -98,7 +88,7 @@
                             </div>
                         </div>
                     </section>
-                    <footer class="pop_footer">
+                    <footer class="footer">
                         <?php include "../lib/footer.php" ?>
                     </footer>
                     <!---------------menu(nav)------------------------------------------------>
@@ -106,11 +96,12 @@
             </div>
         </div>
     </div>
+    <script src="../js/script_member.js"></script>
     <!-- 내부 자바스크립트 작성 -->
-    <script>
+    <!-- <script>
         let footerBtn = document.querySelector('.footerBtn'),
             footerBtn_Ch = document.querySelector('.footerBtn_Ch'),
-            footerSlide = document.querySelector('.pop_footer_center');
+            footerSlide = document.querySelector('.footer_center');
 
             footerBtn.addEventListener('click', function() {   
             if (footerSlide.style.display == 'none') {
@@ -205,7 +196,7 @@
             open("./check_id.php?userId="+userId, "아이디체크", "width=300, height=100, left=200, top=100");
 
         }
-    </script>
+    </script> -->
 </body>
     
 </html>
