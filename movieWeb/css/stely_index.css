@@ -262,7 +262,6 @@ li {
     list-style: none;
     margin-top: 1%;
     padding:0% 2%;
-
 }
 .header_submenu_list>li>a {
     color: white;
@@ -350,6 +349,7 @@ li {
     background-color: white;
     border: 1px solid transparent;
     border-radius: 50%;
+    color: brown;
 }
 .menuPage_login {
     width: 60%;

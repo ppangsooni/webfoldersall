@@ -137,5 +137,24 @@ function checkId(){
 
     // DB에서 같은 아이디가 있는지 확인하고 결과를 보여주는 새로운 윈도우 띄우기
     open("./check_id.php?userId="+userId, "아이디체크", "width=300, height=100, left=200, top=100");
+    // if (window.screen.width <= 680) {
+    //     open("./check_id.php?userId="+userId, "아이디체크", "width=300, height=100, left=200, top=100");
+        
+    // } else {
+    //     let result ="<?php php_func(); ?>"
+    //     // document.write(result);
+    // } 
+
+
 
 }
+
+    let idBtn = document.querySelector('.checkIdBt'),
+    idBtnOk = document.querySelector('.idckIcon_ok'),
+    idBtnNo = document.querySelector('.idckIcon_no');
+    console.log(idBtn);
+    idBtn.addEventListener('click', function() {   
+
+        idBtn.style.backgroundColor = 'red'; 
+        idBtnOk.style.display = 'block'; 
+    });
