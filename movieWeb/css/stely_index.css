@@ -19,7 +19,7 @@ li {
     top: 40%;
     right: 12%;
     width: 6rem;
-    height: 25%;
+    height: 30%;
 }
 .bgImg_scroll {
     width: 100%;
@@ -79,7 +79,7 @@ li {
 .bgImg_scroll_m{
     content: "";
     position: relative;
-    top: 20%;
+    top: 15%;
     left: 14%;
     width: 3.5rem;
     height: 5rem;
@@ -161,7 +161,7 @@ li {
     background-color:rgb(114, 114, 114);
     border: 4px rgb(114, 114, 114) solid; 
     border-radius: 30px;
-    transform: rotate( 90deg ) translate( 25% , -80% );
+    transform: rotate( 90deg ) translate( 30% , -102% );
 }
 
 .bg {
@@ -188,9 +188,9 @@ li {
     position: absolute;
     top: 8.5%;
     left:  9.5%;
-    width: 80.5%;
-    height: 81%;
-    border: 1px saddlebrown solid;
+    width: 80.8%;
+    height: 81.5%;
+    /* border: 1px saddlebrown solid; */
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -566,6 +566,7 @@ li {
     transform: rotate( 0deg ) translate( 0% , 20% ); */
     
     transform: rotate( -180deg ) translate( -25% , 10% );
+    cursor : pointer;
 }
 
 .footerBtn_Ch {
