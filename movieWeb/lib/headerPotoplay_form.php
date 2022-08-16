@@ -8,12 +8,24 @@
     $userName="";
     $grane=""; //회원등급 : 1~5등급 [1등급:관리자, 5등급:신규회원]
     $userPoint="";
+
+    $potoplay_number="";
+    $potopaly_title="";
+    $content="";
+    $potopaly_date ="";
+    $potppaly_like  ="";
+
  
     if( isset($_SESSION['userId'])) $userId= $_SESSION['userId'];
     if( isset($_SESSION['userName'])) $userName= $_SESSION['userName'];
     if( isset($_SESSION['grane'])) $userlevel= $_SESSION['grane'];
     if( isset($_SESSION['userPoint'])) $userPoint= $_SESSION['userPoint'];
- 
+
+    if( isset($_SESSION['potoplay_number'])) $userId= $_SESSION['potoplay_number'];
+    if( isset($_SESSION['potopaly_title'])) $userName= $_SESSION['potopaly_title'];
+    if( isset($_SESSION['content'])) $userlevel= $_SESSION['content'];
+    if( isset($_SESSION['potopaly_date'])) $userPoint= $_SESSION['potopaly_date']; 
+    if( isset($_SESSION['potppaly_like'])) $userPoint= $_SESSION['potppaly_like']; 
 ?>
 <!-- 헤더 영역의 로고와 회원가입/로그인 표시 영역 -->
             <!-- 헤더 영역의 네비게이션 메뉴 영역 -->

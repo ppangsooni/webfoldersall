@@ -12,6 +12,7 @@
     <title>회원가입</title>
     
 </head>
+<body>
 <div class="bg">
         <!---------------background_scroll(bgScroll.php------------------------------------------------>
         <?php include "../lib/bgScroll.php"?>

@@ -10,7 +10,7 @@
 </head>
 <div class="bg">
         <!---------------background_scroll(bgScroll.php------------------------------------------------>
-        <?php include "./lib/bgScroll.php" ?>
+        <?php include "../lib/bgScroll.php" ?>
         <div class="bg_macbook">
             <img src="https://i.ibb.co/PYr4rTt/ipd1.png">
             <div class="screen">
