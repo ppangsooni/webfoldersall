@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +8,10 @@
     <link rel="stylesheet" type="text/css" href="../css/stely_form.css">
     <link rel="stylesheet" type="text/css" href="../css/stely_potoplay.css">
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
-    <title>포토플레이</title>
+    <title>내 포토플레이</title>
     
 </head>
 <body>
-    
 <div class="bg">
         <!---------------background_scroll(bgScroll.php------------------------------------------------>
         <?php include "../lib/bgScroll.php"?>
@@ -27,9 +25,9 @@
                             <a class="pop_header_back" href="back();">
                                 <img src="https://i.ibb.co/dB2ztsX/back.png" alt="back">
                             </a>
-                            <h2>포토플레이</h2>
+                            <h2>내 포토플레이</h2>
                         </div>
-                        <?php include "../lib/headerPotoplay_form.php" ?>
+                        <?php include "../lib/header_form.php" ?>
                     </div>
                 </header>
                     <section class="pop_section">
@@ -41,56 +39,17 @@
                                 </div>
                             </div>     -->
                             <!-- 로고 아래 본문영역 -->
-                            <div class="pop_section_mainList">
+                            <div class="pop_section_main">
                                 <!-- 1. main_Top -->
-                                <article class="pop_section_main_top">
-                                   <div class="pop_section_main_topText">
-                                        <h3>지금 바로,<br>영화 예매하고 포토플레이!</h3>
-                                        <a href=""><p>포토플레이?</p></a>
-                                   </div>                                    
-                                    <div class="pop_section_main_topList">
-
-                                    </div>  
-                                </article>
-                                <article class="pop_section_main_center">
-                                    <div class="pop_section_main_header">
-                                    <h4>내 포토플레이</h4>
-                                        <a href="./potoplay_userlist_form.php"><p>전체보기</p></a>
+                                <article class="pop_section_main_Top">
+                                    <div>
+                                    <p>총</p>
+                                    <p>전체보기</p>
                                     </div>
                                     <div class="pop_section_main_centerList">
-                                    <?php include "./potoplay_userlist.php" ?>
+                                        <?php include "./potoplay_userlist.php" ?>
                                     </div>  
                                 </article>
-                                      
-                                    <!-- include "../lib/dbconn.php";
-                                    //로그인 되어있는 회원의 정보를 읽어오는 쿼리문 
-                                    $sql="SELECT * FROM movie.potoplay order by potoplay_number desc";
-                                    $result = $connect->query($query);
-                                    $total = mysqli_num_rows($result); -->
-                                <!-- 2. main_bottom -->
-                                <article class="pop_section_main_bottom">
-                                    <div class="pop_section_main_header">
-                                    <h4>포토플레이 자랑하기</h4>
-                                    <a href="./potoplay_userlist_form.php"><div>내 포토플레이 자랑</div></a>
-                                        <div>
-                                            <ul>
-                                                <li>최신</li>&VerticalSeparator;
-                                                <li>주간</li>&VerticalSeparator;
-                                                <li>월간</li>&VerticalSeparator;
-                                            </ul>
-                                        </div>
-
-                                    </div>
-
-                                    <div>
-                                        <table>
-
-
-                                        </table>
-                                    </div>
-                                </article>
-                            </div>                                      
-                        </div>
                     </section>
                     <footer class="footer">
                         <?php include "../lib/footer.php" ?>

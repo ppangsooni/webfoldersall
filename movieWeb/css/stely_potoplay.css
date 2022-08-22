@@ -14,6 +14,7 @@
 .pop_section_main_header>a {
     margin: 0%;
     float: right;
+    cursor: context-menu;
 }
 .pop_section_main_header>a>p {
     margin: 0%;
@@ -34,4 +35,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.pop_section_main_top {
+    background-color: aquamarine;
+
+    
+}
+.pop_section_main_topText {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+}
+.pop_section_main_topList {
+    width: 100%;
+    border: 1px saddlebrown solid;
 }
