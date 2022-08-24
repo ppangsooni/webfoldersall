@@ -276,7 +276,6 @@ section {
         height: 85%;
         margin-top: 5%;
         flex-direction: column-reverse;    
-        background-color: #384955;
     }
     .main_left {
         width: 100%;
