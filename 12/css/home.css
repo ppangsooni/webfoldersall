@@ -222,7 +222,6 @@ main {
     width: 60%;
     height: 85%;
     padding: 2% 1% 2% 2%;
-    border: 1px red solid;
 }
 .main_left_mapBox {
     position: relative;
@@ -230,14 +229,21 @@ main {
     height: 100%;
     overflow: hidden;
 }
+/* main_left_mapBox영역의 svg */
 .main_left_mapBox>svg {
     position: absolute;
     width: 200%;
     height: 130%;
     top: -14%;
-    left: -52%;
+    left: -55%;
 }
-
+/* 기존 이미지(감천 문화마을) 위치 수정 */
+.map_gamcheonCultureVillage{
+    translate: -2% -1%
+}/* 기존 이미지(새) 위치 수정 */
+.map_bird {
+    translate: -2% 
+}
 .main_right {
     width: 30%;
     height: 85%;
@@ -276,6 +282,7 @@ section {
         height: 85%;
         margin-top: 5%;
         flex-direction: column-reverse;    
+        background-color: #384955;
     }
     .main_left {
         width: 100%;
