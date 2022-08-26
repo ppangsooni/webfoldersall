@@ -196,6 +196,7 @@ a {
 .loginFormBox>div>input {
     border: transparent;
     background-color: #EBFCFF;
+    width: 80%;
 }
 .loginButton {
     margin-top: 10%;
