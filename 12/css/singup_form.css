@@ -555,7 +555,6 @@ a {
     }
     
 }
-
 @media all and (max-width:590px) {
     /* 상단 로고영역 */
     .loginTopWrap {
@@ -575,6 +574,12 @@ a {
         width: 22.5rem;
         height: 32rem;
     }
+    .login_subWrap_1 {
+        top: 18%;
+    }
+    .login_subWrap_2 {
+        top: 44%;
+    }
     /* 하단 footer */
     .loginBottomWrap {
         left: 41%;
@@ -592,6 +597,12 @@ a {
         left: 14%;
         width: 22.5rem;
         height: 30rem;
+    }
+    .login_subWrap_1 {
+        top: 18%;
+    }
+    .login_subWrap_2 {
+        top: 47%;
     }
 
 }
@@ -611,10 +622,6 @@ a {
         width: 25.5rem;
         height: 35rem;
     }
-    
-    .login_subWrap_1 {
-        top: 18%;
-    }
     .login_subWrap_2 {
         top: 44%;
     }
@@ -633,7 +640,7 @@ a {
         top: 16%;
     }
     .login_subWrap_2 {
-        top: 42%;
+        top: 41%;
     }
     /* 로그인 메인영역 */
     .loginWrapBg {
