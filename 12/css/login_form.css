@@ -24,7 +24,6 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    border: 1px solid palegreen;
 }
 .loginBg {
     position: absolute;
@@ -97,11 +96,34 @@ a {
 /* 상단 로고영역 */
 .loginTopWrap {
     top: 15%;
-    left: 41.5%;
+    left: 39.5%;
     width: 20%;
     height: 10%;
     position: absolute;
     text-align: center;
+}
+.loginTopWrap>p {
+    margin: 0%;
+    font-family: 'yg-jalnan';
+    color: #EBFCFF;
+    cursor: pointer;
+}
+.loginTopWrap_logo>img {
+    width: 3rem;
+    cursor: pointer;
+}
+.loginTop_home {
+    top: -5%;
+    left: 70%;
+    font-family: 'yg-jalnan';
+    color: #EBFCFF;
+    font-size: smaller;
+    position: absolute;
+    transform: rotate(-10deg);
+    display: none;
+}
+.loginTopWrap_logo:hover .loginTop_home {
+    display: block;
 }
 /* 로그인 메인영역 */
 /* 로그인 메인영역(loginWrap)에 키업시 loginWrapBg의 opacity 변경 */
@@ -118,15 +140,7 @@ a {
     padding: 2%;
     opacity: 30%;
 }
-.loginTopWrap>p {
-    margin: 0%;
-    font-family: 'yg-jalnan';
-    color: #EBFCFF;
-}
-.loginTopWrap_logo>img {
-    width: 3rem;
 
-}
 .loginWrap {
     top: 28%;
     left: 42%;
@@ -168,7 +182,7 @@ a {
     margin-top: 10%;
     margin-bottom: 5%;
 }
-.loginFormBox>div {
+.userIdWrap, .userPwWrap {
     margin-bottom: 10%;
     width: 98%;
     height: 1.6rem;
@@ -191,11 +205,110 @@ a {
     background-color: #E0952C;
     color: #EBFCFF;
     font-family: 'yg-jalnan';
+    cursor: pointer;
+}
+.loginButton_Naver {
+    margin-top: 10%;
+    width: 96%;
+    padding: 2%;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #EBFCFF;
+    color: #E0952C;
+    font-family: 'yg-jalnan';
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.loginButton_Naver>img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px transparent solid;
+    border-radius: 20%;
+    margin-right: 5%;
+}
+.loginButton_Naver>p {
+    margin: 0;
+}
+
+/* 아이디찾기&비밀번호찾기&회원가입 버튼  */
+.login_subWrap {
+    top: 54%;
+    left: 98%;
+    position: absolute;
+    padding: 2%;
+}
+.login_subWrap_1, .login_subWrap_2 {
+    width: 6rem;
+    background-color: #2B92D1;
+    border-radius: 0 5px 5px 0;
+    color: #EBFCFF;
+    margin-bottom: 10%;
+    text-align: end;
+    padding: 10%;
+}
+.login_subWrap_3 {
+    width: 6rem;
+    background-color: #E0952C;
+    border-radius: 0 5px 5px 0;
+    color: #EBFCFF;
+    margin-bottom: 10%;
+    text-align: end;
+    padding: 10%;
+}
+.login_subWrap_1:hover {
+    width: 8rem;
+    transition-duration: 2s;
+}
+.login_subWrap_1:hover .login_subWrap_ch1 {
+    font-size: small;
+    display: none;
+}
+.login_subWrap_1:hover .login_subWrap_ch2 {
+    font-size: small;
+    display: block;
+}
+.login_subWrap_2:hover {
+    width: 8rem;
+    transition-duration: 2s;
+}
+.login_subWrap_2:hover .login_subWrap_ch1 {
+    font-size: small;
+    display: none;
+}
+.login_subWrap_2:hover .login_subWrap_ch2 {
+    font-size: small;
+    display: block;
+}
+.login_subWrap_3:hover {
+    width: 8rem;
+    transition-duration: 2s;
+}
+.login_subWrap_3:hover .login_subWrap_ch1 {
+    font-size: small;
+    display: none;
+}
+.login_subWrap_3:hover .login_subWrap_ch2 {
+    font-size: small;
+    display: block;
+}
+
+.login_subWrap_ch1 {
+    margin: 0;
+    font-size: x-small;
+    display: block;
+}
+.login_subWrap_ch2 {
+    margin: 0;
+    font-size: x-small;
+    display: none;
 }
 /* 하단 footer */
 .loginBottomWrap {
-    top: 86%;
-    left: 41.5%;
+    top: 92%;
+    left: 39.5%;
     width: 20%;
     height: 10%;
     position: absolute;
@@ -203,48 +316,68 @@ a {
     text-align: center;
     color: rgb(151, 151, 151); 
 }
-@media all and (max-width:1690px) {
+@media all and (max-width:1890px) {
     /* 상단 로고영역 */
     .loginTopWrap {
-        left: 40.5%;
+        left: 41.5%;
     }
+    /* 하단 footer */
+    .loginBottomWrap {
+        left: 41.5%;
+    }
+}
+
+@media all and (max-width:1690px) {
     /* 로그인 메인영역 */
     .loginWrapBg {
         left: 40%;
     }
     .loginWrap {
         left: 40%;
-    }
-    /* 하단 footer */
-    .loginBottomWrap {
-        left: 40.5%;
     }
 }
 
 @media all and (max-width:1590px) {
-    /* 로그인 메인영역 */
-    .loginWrapBg {
-        left: 38%;
-    }
-    .loginWrap {
-        left: 38%;
-    }    
-}
-@media all and (max-width:1290px) {
     /* 상단 로고영역 */
     .loginTopWrap {
-        left: 40%;
+        left: 39.5%;
     }
     /* 로그인 메인영역 */
     .loginWrapBg {
-        left: 36%;
+        left: 38%;
     }
     .loginWrap {
-        left: 36%;
+        left: 38%;
     }
     /* 하단 footer */
     .loginBottomWrap {
-        left: 40%;
+        left: 39.5%;
+    }   
+}
+@media all and (max-width:1390px) {
+    /* 상단 로고영역 */
+    .loginTopWrap {
+        left: 40.5%;
+    }
+    /* 로그인 메인영역 */
+    .loginWrapBg {
+        left: 38%;
+    }
+    .loginWrap {
+        left: 38%;
+    }
+    /* 하단 footer */
+    .loginBottomWrap {
+        left: 40.5%;
+    }   
+}
+@media all and (max-width:1290px) {
+    /* 로그인 메인영역 */
+    .loginWrapBg {
+        left: 36%;
+    }
+    .loginWrap {
+        left: 36%;
     }
 }
 
@@ -281,6 +414,9 @@ a {
     /* 상단 로고영역 */
     .loginTopWrap {
         left: 40.5%;
+    }
+    .loginTop_home {
+        width: 100%;
     }
     /* 하단 footer */
     .loginBottomWrap {
@@ -321,6 +457,7 @@ a {
         top: 90%;
         left: 43%;
     }
+    
 }
 
 @media all and (max-width:640px) {
@@ -339,16 +476,85 @@ a {
         width: 20.5rem;
         height: 28rem;
     }
+
+    .login_subWrap {
+        position: unset;
+    }
+    .login_subWrap>div {
+        position: absolute;
+    }
+    .login_subWrap_1 {
+        top: 20%;
+        left: 60%;
+        width: 20%;
+        height: 4%;
+        margin-bottom: 0%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 0;
+        padding: 1% 1% 0 1%;
+    }
+    .login_subWrap_2 {
+        top: 48%;
+        left: 60%;
+        width: 20%;
+        height: 4%;
+        margin-bottom: 0%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 1% 1% 0 1%;
+    }
+    .login_subWrap_3 {
+        top: -2%;
+        left: 6%;
+        width: 30%;
+        height: 5%;
+        margin-bottom: 0%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 0;
+        padding-top: 1%;
+    }
+    .login_subWrap_3>p {
+        font-size: medium;
+    }
+    .login_subWrap>div>p {
+        margin: 0;
+    }
+    .login_subWrap_1:hover {
+        width: 30%;
+        transition-duration: 2s;
+    }
+    .login_subWrap_2:hover {
+        width: 30%;
+        transition-duration: 2s;
+    }
+    .login_subWrap_3:hover {
+        padding-top: 0%;
+        width: 50%;
+        transition-duration: 2s;
+    }
+    .login_subWrap_3:hover .login_subWrap_ch1 {
+        display: none;
+    }
+    .login_subWrap_3:hover .login_subWrap_ch2 {
+        font-size: large;
+        display: block;
+    }
     /* 하단 footer */
     .loginBottomWrap {
         left: 44%;
     }
+    
 }
 
 @media all and (max-width:590px) {
     /* 상단 로고영역 */
     .loginTopWrap {
         left: 41%;
+    }
+    .loginTop_home {
+        width: 100%;
     }
     /* 로그인 메인영역 */
     .loginWrapBg {
@@ -396,6 +602,13 @@ a {
         left: 6%;
         width: 25.5rem;
         height: 35rem;
+    }
+
+    .login_subWrap_1 {
+        top: 18%;
+    }
+    .login_subWrap_2 {
+        top: 44%;
     }
     /* 하단 footer */
     .loginBottomWrap {
