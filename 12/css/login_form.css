@@ -97,7 +97,7 @@ a {
 /* 상단 로고영역 */
 .loginTopWrap {
     top: 15%;
-    left: 39.5%;
+    left: 41.5%;
     width: 20%;
     height: 10%;
     position: absolute;
@@ -309,7 +309,7 @@ a {
 /* 하단 footer */
 .loginBottomWrap {
     top: 92%;
-    left: 39.5%;
+    left: 41.5%;
     width: 20%;
     height: 10%;
     position: absolute;
