@@ -505,7 +505,7 @@ a {
     .login_subWrap_2 {
         top: 48%;
         left: 60%;
-        width: 20%;
+        width: 22%;
         height: 4%;
         margin-bottom: 0%;
         text-align: center;
@@ -555,6 +555,7 @@ a {
     }
     
 }
+
 @media all and (max-width:590px) {
     /* 상단 로고영역 */
     .loginTopWrap {
@@ -637,10 +638,10 @@ a {
         left: 39%;
     }
     .login_subWrap_1 {
-        top: 16%;
+        top: 14%;
     }
     .login_subWrap_2 {
-        top: 41%;
+        top: 38%;
     }
     /* 로그인 메인영역 */
     .loginWrapBg {
@@ -655,6 +656,7 @@ a {
     }
     /* 하단 footer */
     .loginBottomWrap {
-        left: 39%;
+        left: 34%;
+        width: 30%;
     }
 }
