@@ -591,16 +591,16 @@ a {
 @media all and (max-width:490px) {
     /* 상단 로고영역 */
     .loginTopWrap {
-        left: 41%;
+        left: 40%;
     }
     /* 로그인 메인영역 */
     .loginWrapBg {
-        left: 6%;
+        left: 4%;
         width: 25.5rem;
         height: 35rem;
     }
     .loginWrap {
-        left: 6%;
+        left: 4%;
         width: 25.5rem;
         height: 35rem;
     }
@@ -613,20 +613,28 @@ a {
     }
     /* 하단 footer */
     .loginBottomWrap {
-        left: 43%;
+        left: 40%;
     }
 }
 
 @media all and (max-width:468px) {
+    /* 상단 로고영역 */
+    .loginTopWrap {
+        left: 39%;
+    }
     /* 로그인 메인영역 */
     .loginWrapBg {
-        left: 2.5%;
-        width: 25.5rem;
+        left: 2%;
+        width: 87.5%;
         height: 35rem;
     }
     .loginWrap {
-        left: 2.5%;
-        width: 25.5rem;
+        left: 2%;
+        width: 87.5%;
         height: 35rem;
+    }
+    /* 하단 footer */
+    .loginBottomWrap {
+        left: 39%;
     }
 }
