@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="loginPage">
-        <!-- 로그인 페이지 Background  -->
+        <!-- 회원가입 페이지 Background  -->
         <div class="loginBg">
             <div class="loginPage_bgTop">
                 <div class="loginPage_bgHeader">
@@ -49,47 +49,45 @@
         <div class="loginWrap">
             <div class="loginWarp_in">
                 <header class="login_Header">
-                    <h2>wt::12 로그인</h2>
+                    <h2>wt::12 회원가입</h2>
                 </header>
                 <section class="login_center">
                     <form class="loginFormBox">
+                        <div class="uesr_inputTop1">
                             <label for="userId">아이디</label>
-                            <div class="userIdWrap">
-                                <input name="userId" class="userIdBox" type="text" placeholder="아이디를 입력하세요">
-                            </div>
+                            <button>아이디 중복체크</button>
+                        </div>
+                        <div class="userIdWrap">
+                            <input name="userId" class="userIdBox" type="text" placeholder="아이디를 입력하세요">
+                        </div>
+                        <div class="uesr_inputTop">
                             <label for="userPw">비밀번호</label>
-                            <div class="userPwWrap">
-                                <input name="userPw" class="userPwBox" type="password" placeholder="비밀번호를 입력하세요">
-                            </div>
+                        </div>
+                        <div class="userPwWrap">
+                            <input name="userPw" class="userPwBox" type="password" placeholder="비밀번호를 입력하세요">
+                        </div>
+                        <div class="uesr_inputTop">
                             <label for="userPwCheck">비밀번호 확인</label>
-                            <div class="userPwCheckWrap">
-                                <input name="userPwCheck" class="userPwCheckBox" type="password" placeholder="비밀번호를 다시 입력하세요">
-                            </div>
+                        </div>
+                        <div class="userPwCheckWrap">
+                            <input name="userPwCheck" class="userPwCheckBox" type="password" placeholder="비밀번호를 다시 입력하세요">
+                        </div>
+                        <div class="uesr_inputTop1">
                             <label for="userPhen">휴대전화</label>
-                            <div class="userPhen">
-                                <input name="userPhen" class="userPhenBox" type="tel" placeholder="휴대전화번호를 입력하세요">
-                            </div>
+                            <button>인증하기</button>
+                        </div>
+                        <div class="userPhen">
+                            <input name="userPhen" class="userPhenBox" type="tel" placeholder="휴대전화번호를 입력하세요">
+                        </div>
+                        <div class="uesr_inputTop">
                             <label for="userEmail">이메일</label>
-                            <div class="userEmailWrap">
-                                <input name="userEmail" class="userEmailBox" type="email" placeholder="이메일주소를  입력하세요">
-                            </div>
-                            <button class="loginButton" type="submit">회원가입</button>                                                       
+                        </div>
+                        <div class="userEmailWrap">
+                            <input name="userEmail" class="userEmailBox" type="email" placeholder="이메일주소를  입력하세요">
+                        </div>
+                        <button class="loginButton" type="submit">회원가입</button>                                                       
                     </form>
                 </section>
-                <div class="login_subWrap">
-                    <div class="login_subWrap_1">
-                        <p class="login_subWrap_ch1">아이디 잊었나요?</p>
-                        <p class="login_subWrap_ch2">아이디 찾기</p>
-                    </div>
-                    <div class="login_subWrap_2">
-                        <p class="login_subWrap_ch1">비밀번호 잊었나요?</p>
-                        <p class="login_subWrap_ch2">비밀번호 찾기</p>
-                    </div>
-                    <div class="login_subWrap_3">
-                        <p class="login_subWrap_ch1">회원이 아닌가요?</p>
-                        <p class="login_subWrap_ch2">회원가입 하기</p>
-                    </div>
-                </div>
             </div>
         </div>
         <footer class="loginBottomWrap">
