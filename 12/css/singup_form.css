@@ -102,7 +102,7 @@ a {
 /* 상단 로고영역 */
 /* (로그인페이지 & 나의정보페이지와 동일) */
 .loginTopWrap {
-    top: 15%;
+    top: 10%;
     left: 41.5%;
     width: 20%;
     height: 10%;
@@ -137,10 +137,10 @@ a {
 /* (로그인페이지 & 나의정보페이지와 일부동일) */
 .loginWrapBg {
     content: "";
-    top: 28%;
+    top: 22%;
     left: 42%;
     width: 17.5rem;
-    height: 25rem;
+    height: 29rem;
     background-color: aliceblue;
     position: absolute;
     border: 1px solid transparent;
@@ -150,10 +150,10 @@ a {
 }
 
 .loginWrap {
-    top: 28%;
+    top: 22%;
     left: 42%;
     width: 17.5rem;
-    height: 25rem;
+    height: 29rem;
     position: absolute;
     border: 1px solid transparent;
     border-radius: 5%;
@@ -188,19 +188,19 @@ a {
 상의함(추가됨) */
 .uesr_inputTop {
     width: 98%;
-    height: 1.6rem;
+    height: 1rem;
     padding-top: 2%;
     display: flex;
 }
-.uesr_inputTop1 {
+.user_inputTop1 {
     width: 98%;
-    height: 1.6rem;
+    height: 1rem;
     padding-top: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.uesr_inputTop1>button {
+.user_inputTop1>button {
     font-family: 'yg-jalnan';
     font-size: 8pt;
     font-weight: 10;
@@ -213,18 +213,22 @@ a {
 }
 /* 로그인페이지 & 나의정보페이지와
 margin 값 상의함 */
-.loginFormBox>label {
+.loginFormBox>div>label {
+
+    font-size: smaller;
+}
+.loginFormBox>div {
     margin-top: 2%;
     margin-bottom: 1%;
 }
 /* 로그인페이지 & 나의정보페이지와
 margin 값 상의함 */
 .userIdWrap, .userPwWrap
-,.userPwCheckWrap,.userPhen
-,.userEmailWrap {
+,.userPwCheckWrap,.userPhenWrap
+,.userEmailWrap, .userNameWrap {
     margin-bottom: 2%;
     width: 98%;
-    height: 1.6rem;
+    height: 1.5rem;
     padding-top: 2%;
     background-color: #EBFCFF;
     border-radius: 5px;
@@ -235,6 +239,7 @@ margin 값 상의함 */
     border: transparent;
     background-color: #EBFCFF;
     width: 80%;
+    height: 1rem;
 }
 .loginButton {
     margin-top: 10%;
@@ -275,11 +280,11 @@ margin 값 상의함 */
     /* 로그인 메인영역 */
     .loginWrapBg {
         left: 40%;
-        height: 27rem;
+        height: 30rem;
     }
     .loginWrap {
         left: 40%;
-       height: 27rem;        height: 27rem;
+       height: 30rem;        
     }
 }
 
@@ -364,6 +369,13 @@ margin 값 상의함 */
     .loginTop_home {
         width: 100%;
     }
+    /* 로그인 메인영역 */
+    .loginWrapBg {
+        height: 31rem;
+    }
+    .loginWrap {
+        height: 31rem;
+    }
     /* 하단 footer */
     .loginBottomWrap {
         left: 40.5%;
@@ -387,14 +399,16 @@ margin 값 상의함 */
     }
     /* 로그인 메인영역 */
     .loginWrapBg {
-        top: 20%;
+        top: 18%;
         left: 29%;
         width: 19.5rem;
+        height: 33rem;
     }
     .loginWrap {
-        top: 20%;
+        top: 18%;
         left: 29%;
         width: 19.5rem;
+        height: 33rem;
     }
     /* 하단 footer */
     .loginBottomWrap {
@@ -413,12 +427,10 @@ margin 값 상의함 */
     .loginWrapBg {
         left: 25%;
         width: 20.5rem;
-        height: 28rem;
     }
     .loginWrap {
         left: 25%;
         width: 20.5rem;
-        height: 28rem;
     }
     /* 하단 footer */
     .loginBottomWrap {
@@ -439,16 +451,17 @@ margin 값 상의함 */
     .loginWrapBg {
         left: 17.5%;
         width: 22.5rem;
-        height: 32rem;
+        height: 35rem;
     }
     .loginWrap {
         left: 17.5%;
         width: 22.5rem;
-        height: 32rem;
+        height: 35rem;
     }
     /* 하단 footer */
     .loginBottomWrap {
         left: 41%;
+        bottom: 0%;
     }
 
 }
@@ -457,12 +470,10 @@ margin 값 상의함 */
     .loginWrapBg {
         left: 14%;
         width: 22.5rem;
-        height: 30rem;
     }
     .loginWrap {
         left: 14%;
         width: 22.5rem;
-        height: 30rem;
     }
 }
 @media all and (max-width:490px) {
@@ -474,19 +485,20 @@ margin 값 상의함 */
     .loginWrapBg {
         left: 4%;
         width: 25.5rem;
-        height: 35rem;
+        height: 37.5rem;
     }
     .loginWrap {
         left: 4%;
         width: 25.5rem;
-        height: 35rem;
+        height: 37.5rem;
     }
     .login_subWrap_2 {
         top: 44%;
     }
     /* 하단 footer */
     .loginBottomWrap {
-        left: 40%;
+        left: 34%;
+        width: 30%;
     }
 }
 
@@ -499,16 +511,11 @@ margin 값 상의함 */
     .loginWrapBg {
         left: 6%;
         width: 87.5%;
-        height: 35rem;
+        height: 37rem;
     }
     .loginWrap {
         left: 6%;
         width: 87.5%;
-        height: 35rem;
-    }
-    /* 하단 footer */
-    .loginBottomWrap {
-        left: 34%;
-        width: 30%;
+        height: 37rem;
     }
 }
