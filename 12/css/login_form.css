@@ -24,6 +24,7 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
+    border: 1px solid palegreen;
 }
 .loginBg {
     position: absolute;
@@ -603,7 +604,7 @@ a {
         width: 25.5rem;
         height: 35rem;
     }
-
+    
     .login_subWrap_1 {
         top: 18%;
     }

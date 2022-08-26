@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="loginPage">
+        <!-- 로그인 페이지 Background  -->
         <div class="loginBg">
             <div class="loginPage_bgTop">
                 <div class="loginPage_bgHeader">
@@ -32,12 +33,18 @@
             <div class="loginPage_bgFooter">
             </div>
         </div>
+        <!-- 상단 로고영역  -->
         <div class="loginTopWrap">
             <div class="loginTopWrap_logo">
                 <img src="https://i.ibb.co/V34gRJK/wtR-wsb.png" alt="wt_로고">
+                <div class="loginTop_home">
+                    홈으로 !
+                </div>
             </div>
             <p>want to :: 12</p>
         </div>
+        <!-- 로그인 메인영역 -->
+        <!-- loginWrapBg: loginWrap의 배경부분 (로그인 메인영역(loginWrap)에 키업시 loginWrapBg의 opacity 변경) -->
         <div class="loginWrapBg"></div>
         <div class="loginWrap">
             <div class="loginWarp_in">
@@ -55,16 +62,34 @@
                                 <input name="userPw" class="userPwBox" type="password" placeholder="비밀번호를 입력하세요">
                             </div>
                             
-                            <button class="loginButton" type="submit">로그인</button>
-                            <button class="loginButton" type="button">네이버 간편로그인</button>
+                            <button class="loginButton" type="submit">로그인</button>                            
+                            <div class="loginButton_Naver">
+                                <img src="https://i.ibb.co/3mcScVf/image.png" alt="naverIcon">
+                                <p>네이버 간편로그인</p>
+                            </div>
+                            
                     </form>
                 </section>
+                <div class="login_subWrap">
+                    <div class="login_subWrap_1">
+                        <p class="login_subWrap_ch1">아이디 잊었나요?</p>
+                        <p class="login_subWrap_ch2">아이디 찾기</p>
+                    </div>
+                    <div class="login_subWrap_2">
+                        <p class="login_subWrap_ch1">비밀번호 잊었나요?</p>
+                        <p class="login_subWrap_ch2">비밀번호 찾기</p>
+                    </div>
+                    <div class="login_subWrap_3">
+                        <p class="login_subWrap_ch1">회원이 아닌가요?</p>
+                        <p class="login_subWrap_ch2">회원가입 하기</p>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="loginBottomWrap">
             <p>Copyright 12 COMPANY Corp. All rights Reserved</p>
         </footer>
-    </div>
+    </div>  
 
 </body>
 </html>
