@@ -1,95 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/login_form.css">
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/QcyRTbG/wt.png">
-    <title>12::로그인</title>
+    <link rel="stylesheet" type="text/css" href="../css/stely_form.css">
+    <link rel="stylesheet" type="text/css" href="../css/stely_login.css">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
+    <title>login</title>
 </head>
-<body>
-    <div class="loginPage">
-        <!-- 로그인 페이지 Background  -->
-        <div class="loginBg">
-            <div class="loginPage_bgTop">
-                <div class="loginPage_bgHeader">
-                </div>
-                <div class="loginPage_bgCenter">
-                    <svg class="loginPage_bgWaves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                        <defs>
-                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                        </defs>
-                        <g class="parallax">
-                            <use xlink:href="#gentle-wave" x="48" y="0" fill="#009FF5" />
-                            <use xlink:href="#gentle-wave" x="48" y="3" fill="#18ACED" />
-                            <use xlink:href="#gentle-wave" x="48" y="5" fill="#15D4ED" />
-                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#EEE8A9" />
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <div class="loginPage_bgFooter">
-            </div>
-        </div>
-        <!-- 상단 로고영역  -->
-        <div class="loginTopWrap">
-            <div class="loginTopWrap_logo">
-                <img src="https://i.ibb.co/V34gRJK/wtR-wsb.png" alt="wt_로고">
-                <div class="loginTop_home">
-                    홈으로 !
-                </div>
-            </div>
-            <p>want to :: 12</p>
-        </div>
-        <!-- 로그인 메인영역 -->
-        <!-- loginWrapBg: loginWrap의 배경부분 (로그인 메인영역(loginWrap)에 키업시 loginWrapBg의 opacity 변경) -->
-        <div class="loginWrapBg"></div>
-        <div class="loginWrap">
-            <div class="loginWarp_in">
-                <header class="login_Header">
-                    <h2>wt::12 로그인</h2>
-                </header>
-                <section class="login_center">
-                    <form class="loginFormBox">
-                            <label for="userId">아이디</label>
-                            <div class="userIdWrap">
-                                <input name="userId" class="userIdBox" type="text" placeholder="아이디를 입력하세요">
+<div class="bg">
+        <!---------------background_scroll(bgScroll.php------------------------------------------------>
+        <?php include "../lib/bgScroll.php" ?>
+        <div class="bg_macbook">
+            <img src="https://i.ibb.co/PYr4rTt/ipd1.png">
+            <div class="screen">
+                <div class="wrap">
+                    <header class="pop_header">
+                        <div class="pop_header_wrap">
+                            <div class="pop_header_title">
+                                <a class="pop_header_back" href="back();">
+                                    <img src="https://i.ibb.co/dB2ztsX/back.png" alt="back">
+                                </a>
+                                <h2>로그인</h2>
                             </div>
-                            <label for="userPw">비밀번호</label>
-                            <div class="userPwWrap">
-                                <input name="userPw" class="userPwBox" type="password" placeholder="비밀번호를 입력하세요">
+                            <?php include "../lib/header_form.php" ?>
+                            <!-- php include "../lib/header_form.php" -->
+                        </div>
+                    </header>
+                    <section class="pop_section">
+                        <!-------- 메인 이미지 영역 ------>
+                        <!--  로고영역 -->
+                        <div class="pop_section_logo">
+                            <div>
+                                <img src="https://i.ibb.co/swHGtC0/logo1.png" alt="BaAB">
                             </div>
-                            
-                            <button class="loginButton" type="submit">로그인</button>                            
-                            <div class="loginButton_Naver">
-                                <img src="https://i.ibb.co/3mcScVf/image.png" alt="naverIcon">
-                                <p>네이버 간편로그인</p>
-                            </div>
-                            
-                    </form>
-                </section>
-                <div class="login_subWrap">
-                    <div class="login_subWrap_1">
-                        <p class="login_subWrap_ch1">아이디 잊었나요?</p>
-                        <p class="login_subWrap_ch2">아이디 찾기</p>
-                    </div>
-                    <div class="login_subWrap_2">
-                        <p class="login_subWrap_ch1">비밀번호 잊었나요?</p>
-                        <p class="login_subWrap_ch2">비밀번호 찾기</p>
-                    </div>
-                    <div class="login_subWrap_3">
-                        <p class="login_subWrap_ch1">회원이 아닌가요?</p>
-                        <p class="login_subWrap_ch2">회원가입 하기</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="loginBottomWrap">
-            <p>Copyright 12 COMPANY Corp. All rights Reserved</p>
-        </footer>
-    </div>  
+                        </div>    
+                        <!-- 로고 아래 본문영역 -->
+                        <div class="pop_section_main">
+                            <!-- 1. main_Top -->
+                            <article class="pop_section_main_Top">
+                                    <h4></h4>
+                                    <div class="formBox">
+                                        <!-- DB의 member테이블에 저장하는 member_insert.php에 입력값들 전달하도록 -->
+                                        <form action="./login.php" method="post" name="login">
+                                            <!-- 각 줄마다 라벨, 인풋요소 영역으로 나누어 지므로 col1, col2 클래스지정으로 스타일링 -->
+                                            <div class="form">
+                                                
+                                                <div class="col1">아이디</div>
+                                                <div class="col2"><input type="text" id= "userId" name="userId" placeholder="숫자와 영문만 입력(4~20자리)해주세요"></div>
+                                                
+                                            </div>
+                                            <div class="form">
+                                                <div class="col1">비밀번호</div>
+                                                <div class="col2"><input type="password" id= "userPassword" name="userPassword"placeholder="숫자+영대문자+영소문자+특수문자 포함(8자리이상)"></div>
+                                            </div>
+                                            <div class="bottom_line">
+                                                <div class="textBtns">
+                                                    <button class="loginBtn" type="submit" onclick="loginBtn()" >
+                                                        <span>로그인</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>  
+                                </article>
+                                <!-- 2. main_bottom -->
+                                <article class="pop_section_main_bottom">
+                                    <!-- <h4>main_bottom</h4> -->
+                                    <div>
+                                        <div class="formBtnType">
+                                            <div class="formBtnTypeCh1"><img src="https://i.ibb.co/3mcScVf/image.png" alt="naverIcon"></div>
+                                            <div class="formBtnTypeCh2">네이버 간편로그인</div>
+                                        </div>
+                                        <div class="formBtnType">
+                                            <div class="formBtnTypeCh1"><img src="https://i.ibb.co/BL1RghR/image.png" alt="kakaoIcon"></div>
+                                            <div class="formBtnTypeCh2">카카오 간편로그인</div>
+                                        </div>
+                                        <div class="formBtnType">
+                                            <div class="formBtnTypeCh1"><img src="https://i.ibb.co/9Ydn27t/apple.png" alt="appleIcom"></div>
+                                            <div class="formBtnTypeCh2"> 간편로그인</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>        
+                        </div>
 
+                    </section>
+                    <footer class="footer">
+                        <?php include "../lib/footer.php" ?>
+                    </footer>
+
+                <div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
+<script src="../js/script_index_form.js"></script>
 </html>

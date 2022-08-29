@@ -49,7 +49,7 @@
                                         <a href=""><p>포토플레이?</p></a>
                                    </div>                                    
                                     <div class="pop_section_main_topList">
-
+                                    <?php include "../movielist/screening_movie.php" ?>
                                     </div>  
                                 </article>
                                 <article class="pop_section_main_center">

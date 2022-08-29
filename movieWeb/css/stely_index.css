@@ -177,7 +177,7 @@ li {
     top: 5%;
     left: 30%;
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 	background-size: contain;
 }
 .bg_macbook>img {
