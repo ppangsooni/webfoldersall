@@ -11,7 +11,6 @@
     <title>BAAB::CINEMA</title>
 </head>
 <body>
-
     <div class="bg">
         <!---------------background_scroll(bgScroll.php)------------------------------------------------>
         <?php include "./lib/bgScroll.php" ?>
@@ -76,7 +75,7 @@
                                                 패스트오더
                                             </div>
                                         </a>
-                                        <a class="menuPage_ticketBymovie" href="../movieWeb/potoplay/potoplay_list.php">
+                                        <a class="menuPage_ticketBymovie" href="../movieWeb/potoplay/potoplay.php">
                                             <div>
                                                 <img src="https://cdn-icons-png.flaticon.com/128/2548/2548374.png" alt="포토릴레이 메뉴">
                                                 포토릴레이

@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/swHGtC0/logo1.png">
     <title>popup form</title>
 </head>
-<div class="bg">
+    <div class="bg">
         <!---------------background_scroll(bgScroll.php------------------------------------------------>
         <?php include "../lib/bgScroll.php" ?>
         <div class="bg_macbook">
@@ -38,10 +38,8 @@
                     <footer class="footer">
                         <?php include "../movieWeb/lib/footer.php" ?>
                     </footer>
-
-                <div>
+                </div>
             </div>
-
         </div>
 
     </div>
