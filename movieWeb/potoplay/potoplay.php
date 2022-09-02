@@ -81,7 +81,6 @@
                                         <?php include "./potoplay_list.php" ?>
                                     </div>
                                 </article>
-                            </div>                                      
                     </section>
                     <footer class="footer">
                         <?php include "../lib/footer.php" ?>

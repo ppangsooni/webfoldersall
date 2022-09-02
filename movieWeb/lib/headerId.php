@@ -6,7 +6,7 @@
  
     $userId="";
     $userName="";
-    $grane=""; //회원등급 : 1~5등급 [1등급:관리자, 5등급:신규회원]
+    $grade=""; //회원등급 : 1~5등급 [1등급:관리자, 5등급:신규회원]
     $userPoint="";
 
     $potopaly_number ="";
@@ -18,7 +18,7 @@
  
     if( isset($_SESSION['userId'])) $userId= $_SESSION['userId'];
     if( isset($_SESSION['userName'])) $userName= $_SESSION['userName'];
-    if( isset($_SESSION['grane'])) $userlevel= $_SESSION['grane'];
+    if( isset($_SESSION['grade'])) $userlevel= $_SESSION['grade'];
     if( isset($_SESSION['userPoint'])) $userPoint= $_SESSION['userPoint'];
 
     if( isset($_SESSION['potoplay_number'])) $userId= $_SESSION['potoplay_number'];
@@ -30,5 +30,7 @@
 
 
 
+
+        
 
         

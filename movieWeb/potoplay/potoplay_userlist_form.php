@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,13 +23,19 @@
                 <header class="pop_header">
                     <div class="pop_header_wrap">
                     <div class="pop_header_title">
-                            <a class="pop_header_back" href="back();">
-                                <img src="https://i.ibb.co/dB2ztsX/back.png" alt="back">
-                            </a>
-                            <h2>포토플레이 자랑하기</h2>
-                        </div>
+                        <a class="pop_header_back" href="back();">
+                            <img src="https://i.ibb.co/dB2ztsX/back.png" alt="back">
+                        </a>
+                        <h2>포토플레이 자랑하기</h2>
+                        
+                    </div>
                         <?php include "../lib/header_form.php" ?>
                     </div>
+                    <a href="./potoplay_write.php">
+                        <div class="potoplay_writeBtn">
+                            <span>포토플레이<br>제작하기</span>
+                        </div>
+                    </a>
                 </header>
                     <section class="pop_section3">
                     <!-------- 메인 이미지 영역 ------>
@@ -47,9 +54,6 @@
                                 </div>  
                             </article>
                     </section>
-                    <footer class="footer">
-                        <?php include "../lib/footer.php" ?>
-                    </footer>
                     <!---------------menu(nav)------------------------------------------------>
                 </div>
             </div>

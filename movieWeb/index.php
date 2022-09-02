@@ -37,11 +37,11 @@
                         <!-----header 서브메뉴 영역--------------------->
                         <div class="header_submenu">
                             <ul class="header_submenu_list">
-                                <li><a href="#">홈</a></li>
-                                <li><a href="#">이벤트</a></li>
-                                <li><a href="#">무비톡</a></li>
-                                <li><a href="#">패스트오더</a></li>
-                                <li><a href="#">@BaAB</a></li>
+                                <li><a href="#homeTab_sectionWrap">홈</a></li>
+                                <li><a href="#eventTab_sectionWrap">이벤트</a></li>
+                                <li><a href="#movieTalkTab_sectionWrap">무비톡</a></li>
+                                <li><a href="#fastOrderTab_sectionWrap">패스트오더</a></li>
+                                <li><a href="#baabTagTab_sectionWrap">@BaAB</a></li>
                             </ul>
                         </div>
                     </header>
@@ -155,15 +155,47 @@
                                     <a href=""><span>설정</span></a>&VerticalSeparator;
                                     <a href=""><span>고객센터</span></a>
                                 </div>
-                                <div><a</div>
                             </footer>   
                         </div>
                     </nav>
-                    <!---------------section------------------------------------------------>
+                <!---------------menu Tab------------------------------------------------>
                     <section class="section">
-                        <div class="content" style="height: 1000px;">
-                            
+                    <!------------------홈------------------------------------------------------>
+                        <div class="Tab_sectionWrap" id="homeTab_sectionWrap">
+                            <!---------------section------------------------------------------------>
+                            <div class="content">
+                                홈
+                            </div>                            
                         </div>
+                        <!------------------이벤트------------------------------------------------------>
+                        <div class="Tab_sectionWrap" id="eventTab_sectionWrap">
+                            <!---------------section------------------------------------------------>
+                            <div class="content">
+                                이벤트
+                            </div>
+                        </div>
+                        <!------------------무비톡------------------------------------------------------>
+                        <div class="Tab_sectionWrap" id="movieTalkTab_sectionWrap">
+                            <!---------------section------------------------------------------------>
+                            <div class="content">
+                                무비톡
+                            </div>
+                        </div>
+                        <!------------------패스트오더------------------------------------------------------>
+                        <div class="Tab_sectionWrap" id="fastOrderTab_sectionWrap">
+                            <!---------------section------------------------------------------------>
+                            <div class="content">
+                                패스트오더
+                            </div>
+                        </div>
+                        <!------------------@BaAB (태그)------------------------------------------------------>
+                        <div class="Tab_sectionWrap" id="baabTagTab_sectionWrap">
+                            <!---------------section------------------------------------------------>
+                            <div class="content">
+                                태그
+                            </div>
+                        </div>
+                
                     </section>
                     <!---------------footer------------------------------------------------>
                     <footer class="footer">
@@ -176,5 +208,5 @@
 
     </div>
 </body>
-<script src="./js/script_index.js"></script>
+<script src="./js/script_index.js">alert</script>
 </html>

@@ -65,6 +65,58 @@ openMenu.addEventListener('click', function() {
 closeMenu.addEventListener('click', function() {
     slide.style.display = 'none';
 });
+//--------------------메뉴별------------------------------
+const listBtn = document.querySelectorAll('.header_submenu_list> li'),
+        homeTab = document.getElementById('homeTab_sectionWrap'),
+        eventTab = document.getElementById('eventTab_sectionWrap'),
+        movieTalkTab = document.getElementById('movieTalkTab_sectionWrap'),
+        fastOrderTab = document.getElementById('fastOrderTab_sectionWrap'),
+        baabTagTab = document.getElementById('baabTagTab_sectionWrap');
+let Tab_sectionWrap = document.querySelectorAll('.Tab_sectionWrap');
+listBtn[0].addEventListener('click', () => {
+    window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+    homeTab.style.display = 'block';
+    eventTab.style.display = 'none';
+    movieTalkTab.style.display = 'none';
+    fastOrderTab.style.display = 'none';
+    baabTagTab.style.display = 'none';
+});
+
+listBtn[1].addEventListener('click', () => {
+    window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+    homeTab.style.display = 'none';
+    eventTab.style.display = 'block';
+    movieTalkTab.style.display = 'none';
+    fastOrderTab.style.display = 'none';
+    baabTagTab.style.display = 'none';
+});
+
+listBtn[2].addEventListener('click', () => {
+    window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+    homeTab.style.display = 'none';
+    eventTab.style.display = 'none';
+    movieTalkTab.style.display = 'block';
+    fastOrderTab.style.display = 'none';
+    baabTagTab.style.display = 'none';
+});
+
+listBtn[3].addEventListener('click', () => {
+    window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+    homeTab.style.display = 'none';
+    eventTab.style.display = 'none';
+    movieTalkTab.style.display = 'none';
+    fastOrderTab.style.display = 'block';
+    baabTagTab.style.display = 'none';
+});
+
+listBtn[4].addEventListener('click', () => {
+    window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
+    homeTab.style.display = 'none';
+    eventTab.style.display = 'none';
+    movieTalkTab.style.display = 'none';
+    fastOrderTab.style.display = 'none';
+    baabTagTab.style.display = 'block';
+});
 //--------------------footer------------------------------
 // footer영역 버튼
 let footerBtn = document.querySelector('.footerBtn'),

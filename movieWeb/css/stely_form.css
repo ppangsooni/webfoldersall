@@ -193,6 +193,7 @@ li {
     height: 81.5%;
     overflow-y: scroll;
     overflow-x: hidden;
+    touch-action: pan-y;
 }
 .wrap {
     width: 100%;
@@ -348,7 +349,6 @@ li {
 .footer {
     background-color: gray;
     width: 96%;
-    height: 15rem;
     bottom: 0;
     padding: 2%;
     content: "";
@@ -585,6 +585,10 @@ li {
     /* 상단헤더바 폭 변경 */
     .pop_header {
         width: 92%;
+    }
+    .pop_header_title>h2 {
+        padding-left: 4%;
+        font-size: larger;
     }
     /* index_from>section() 영역 */
     .pop_section_logo>div {

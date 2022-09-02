@@ -27,7 +27,7 @@
             <div class="potoplay_listText">
                 
                 <p><img src="https://i.ibb.co/Sfw1Kty/likeA.png" alt="좋아요"><?php echo $row['potoplay_like'];?></p>
-                <p><span>작성자:<?php echo $row['userId'];?> </span>|<span>작성일<?php echo  $row['potoplay_date'];?><</span></p>
+                <p><span><?php echo $row['userId'];?> </span><br><span><?php echo  $row['potoplay_date'];?><</span></p>
             </div>
 
             <div class="potoplay_listLike">

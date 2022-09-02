@@ -193,6 +193,7 @@ li {
     /* border: 1px saddlebrown solid; */
     overflow-y: scroll;
     overflow-x: hidden;
+    touch-action: pan-y;
 }
 .wrap {
     width: 100%;
@@ -216,7 +217,6 @@ li {
     height: 3rem;
     display: flex;
     background-color: white;
-    border: 1px solid salmon;
     padding: 1% 2%;    
 }
 .header_top_left {
@@ -255,7 +255,7 @@ li {
 .header_submenu {
     background-color: #1E2C5C;
     width: 100%;
-    height: 2.8rem;
+    height: 3rem;
     text-align-last: initial;
 }
 
@@ -263,27 +263,35 @@ li {
     list-style: none;
     margin-top: 1%;
     padding:0% 2%;
+    display: flex;
+    justify-content: space-around;
 }
 .header_submenu_list>li>a {
     color: white;
     font-size: 1.5em;
 }
-/* .header_submenu>ul>li>a:hover {
-    color: #1E2C5C;
-    background-color: white;
-} */
 .header_submenu_list>li {
     display: inline-block;
     margin: 1% 2%;
-
+}
+.header_submenu_list>li>a:hover{
+    color: #1E2C5C;
+    background-color: white;
 }
 /* index>section() 영역 */
+.Tab_sectionWrap {
+    display: none;
+    padding: 5%;
+    height: 1000px;
+    border: #1E2C5C;
+}
+
 .section {
     width: 100%;
     min-height: 53rem;
-
     background-color: wheat;
 }
+
 
 /* ------index>menu(nav)---------------------------- */
 /* index>nav>header() 영역 */
@@ -298,10 +306,8 @@ li {
 .menuPage {
     width: 100%;
     height: auto;
-    border: 1px salmon solid;
     display: flex;
     flex-direction: column;
-    
 }
 /* >nav(/header_menu.php) 영역 */
 .menuHeader {
@@ -357,6 +363,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items:center;
+    justify-content: center;
 }
 .menuPage_login>div {
     margin-top: 3%;
@@ -368,7 +375,7 @@ li {
 .userKeyup {
     font-size: larger;
 }
-.userKeyup>span {
+.userTex {
     color: white;
     background-color: #1E2C5C;
 }
@@ -545,8 +552,7 @@ li {
 /* >footer(/footer.php) 영역 */
 .footer {
     background-color: gray;
-    width: 96%;
-    height: 15rem;
+    width: 100%;
     padding: 2%;
     content: "";
 }

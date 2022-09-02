@@ -5,12 +5,12 @@
  
     $userId="";
     $userName="";
-    $grane=""; //회원등급 : 1~5등급 [1등급:관리자, 5등급:신규회원]
+    $grade=""; //회원등급 : 1~5등급 [1등급:관리자, 5등급:신규회원]
     $userPoint="";
  
     if( isset($_SESSION['userId'])) $userId= $_SESSION['userId'];
     if( isset($_SESSION['userName'])) $userName= $_SESSION['userName'];
-    if( isset($_SESSION['grane'])) $grane= $_SESSION['grane'];
+    if( isset($_SESSION['grade'])) $grade= $_SESSION['grade'];
     if( isset($_SESSION['userPoint'])) $userPoint= $_SESSION['userPoint'];
 ?>
 <!-- 헤더 영역의 로고와 회원가입/로그인 표시 영역 -->
@@ -43,12 +43,19 @@
                             echo "<p class='userKeyup'> $userId 님 </p>";
                             ?>
                         </li>
+                        <li>
+                            <?php
+                            $grade = $_SESSION['grade'];
+                             $userPoint = $_SESSION['userPoint'];
+                             echo "등급 $grade ";
+                             ?>
+                        </li>
                         <li><a href="../login/logout.php">로그아웃</a></li>
                     </div>
                 <?php }?>
                     <!-- 관리자모드로 로그인되었을 때 추가로.. -->
-                    <?php if($grane==1){?>
-                    <li><a href="../admin/admin.php">관리자모드</a></li>
+                    <?php if($grade==1){?>
+                    <li><a href="">관리자모드</a></li>
                 <?php } ?>
             </div>
             <div>

@@ -69,6 +69,7 @@
     display: flex;
     flex-direction: column;
     align-items:center;
+    justify-content: center;
 }
 .menuPage_login>div {
     margin-top: 3%;

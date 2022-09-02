@@ -32,7 +32,7 @@
                         <?php include "../lib/header_form.php" ?>
                     </div>
                 </header>
-                    <section class="pop_section2">                                
+                    <section class="pop_section">                                
                         <?php 
                             include('./potoplay_list_view.php');
                         ?>
