@@ -107,6 +107,7 @@ nav {
     font-family: 'Y_Spotlight';
     color: #ea9c2a;
     position: absolute;
+    cursor: pointer;
 }
 .menuberList_li>a:hover {
     font-size: large;
@@ -132,6 +133,7 @@ nav {
     font-size: small;
     color: #ea9c2a;
     font-family: 'Y_Spotlight';
+    cursor: pointer;
 }
 .menuberList_liCh>ul>li:hover {
     font-size: smaller;
