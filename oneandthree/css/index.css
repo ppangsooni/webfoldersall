@@ -153,8 +153,11 @@ nav {
     z-index: 10;
     display: none;
     background-color: #f3f6c8;
-    top: 200%;
+    top: 100%;
     width: 100%;
+    padding: 10% 0;
+    opacity: 95%;
+    box-shadow: 5px 5px 5px 2px #6d4720;
 }
 .menuberList_liCh>ul {
     width: 100%;
