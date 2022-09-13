@@ -54,6 +54,24 @@ function chage_banner_Img() {
     };        
 }
 setInterval(chage_banner_Img, 2000);
+
+
+
+var swiper = new Swiper(".main_ml_bottom_continer", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".main_ml_bottom_RightBnt",
+      prevEl: ".main_ml_bottom_LeftBnt",
+    },
+  });
 // ----wrapTopButton_ 탑버튼 -----
 const topBtn = document.getElementById('topBtn');
 topBtn.onclick = () => {
