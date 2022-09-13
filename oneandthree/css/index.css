@@ -172,6 +172,8 @@ nav {
 .menuberList_liCh>ul>li:hover {
     color: #0f7b3a;
 }
+/* -------------wrapCenter 영역 --------------*/
+
 .wrapCenter {
     width: 100%;
     padding-top: 7rem;
