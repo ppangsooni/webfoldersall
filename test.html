@@ -1,64 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- <div class="iphone"></div>     -->
-    <div class="z">끝<br>자<br>락</div>
-</body>
-</html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
 
-<style>
-    html,body{
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
         width: 100%;
         height: 100%;
-    }
-    .z {
-        width: 45%;
-        height: 100%;
-        background-image: url("https://i.ibb.co/RS1gKh2/image.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        /* background: url(https://i.ibb.co/RS1gKh2/image.jpg) no-repeat center cover; */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color:transparent;
-        top:10%;
-        font-size: 200px;
-        font-weight: bold;
-    }
-/* .iphone {
-    padding: 10px;
-    width: 600px;
-    height: 1061px;
-    background-image:  url("https://s.cdpn.io/6859/iphone.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+      }
 
-@media only screen and (max-width: 600px){	
-	.iphone {
-		width: 500px;
-        height: 900px;
-	}
-}
-@media only screen and (max-width: 500px){	
-	.iphone {
-		width: 400px;
-        height: 700px;
-	}
-}
-@media only screen and (max-width: 400px){	
-	.iphone {
-		width: 300px;
-        height: 600px;
-	}
-}
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
 
-</style>
+      .swiper-slide img {
+        width: 20rem;
+        object-fit: contain;
+      }
+    </style>
+  </head>
 
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="https://i.ibb.co/WFVSkRT/sandwich-cl06-01.jpg" alt="sandwich_에그마요">
+            <div></div>
+        </div>
+        <div class="swiper-slide">
+            <img src="https://i.ibb.co/jTk9Vtf/sandwich-cl01-01.jpg" alt="sandwich_이탈리안 비엔티">
+            <div></div>
+        </div>
+        <div class="swiper-slide">
+            <img src="https://i.ibb.co/d7zFc7j/sandwich-cl02-01.jpg" alt="sandwich_비엔티">
+            <div></div>
+        </div>
+        <div class="swiper-slide">
+            <img src="https://i.ibb.co/HHnq3yv/sandwich-cl04-01.jpg" alt="sandwich_햄">
+            <div></div>
+        </div>
+        <div class="swiper-slide">
+            <img src="https://i.ibb.co/sRGpdN8/sandwich-cl05-01.jpg" alt="sandwich_참치">
+            <div></div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+  </body>
+</html>

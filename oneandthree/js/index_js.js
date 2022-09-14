@@ -1,3 +1,4 @@
+
 // -----width=690(모바일)경우 메뉴변화-----
 let openMenu = document.querySelector('.menu_btn'),
     slide = document.querySelector('nav'),
@@ -55,22 +56,57 @@ function chage_banner_Img() {
 }
 setInterval(chage_banner_Img, 2000);
 
+// -----main_menulistWrap Swiper -----
+let menulistCotroll = document.querySelectorAll('.main_ml_topRight>ul>a>li'),
+        menulistTab_Cl = document.getElementsByClassName('main_ml_bottom_cl')[0],
+        menulistTab_fl = document.getElementsByClassName('main_ml_bottom_fl')[0],
+        menulistTab_pm = document.getElementsByClassName('main_ml_bottom_pm')[0],
+        menulistTab_mo = document.getElementsByClassName('main_ml_bottom_mo')[0];
 
+menulistCotroll[0].addEventListener('click', () => {
+    menulistTab_Cl.style.display = 'block';
+    menulistTab_fl.style.display = 'none';
+    menulistTab_pm.style.display = 'none';
+    menulistTab_mo.style.display = 'none';
+});
 
-var swiper = new Swiper(".main_ml_bottom_continer", {
+menulistCotroll[1].addEventListener('click', () => {
+    menulistTab_fl.style.display = 'block';
+    menulistTab_Cl.style.display = 'none';
+    menulistTab_pm.style.display = 'none';
+    menulistTab_mo.style.display = 'none';
+});
+
+menulistCotroll[2].addEventListener('click', () => {
+    menulistTab_pm.style.display = 'block';
+    menulistTab_Cl.style.display = 'none';
+    menulistTab_fl.style.display = 'none';
+    menulistTab_mo.style.display = 'none';
+
+});
+
+menulistCotroll[3].addEventListener('click', () => {
+    menulistTab_mo.style.display = 'block';
+    menulistTab_Cl.style.display = 'none';
+    menulistTab_fl.style.display = 'none';
+    menulistTab_pm.style.display = 'none';
+});
+
+/*Section 공통> Initialize Swiper */
+var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 10,
     slidesPerGroup: 4,
     loop: true,
     loopFillGroupWithBlank: true,
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
-    navigation: {
-      nextEl: ".main_ml_bottom_RightBnt",
-      prevEl: ".main_ml_bottom_LeftBnt",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
   });
 // ----wrapTopButton_ 탑버튼 -----
 const topBtn = document.getElementById('topBtn');

@@ -256,16 +256,17 @@ main {
 /* -------------section 영역 --------------*/
 section {
     width: 100%;
-    padding: 2% 10%;
     position: relative;
+    border: #ea9c2a 2px solid;
+    margin: 5% 0;
 }
+/* main_menulistWrap Swiper */
 .main_menulistWrap {
     width: 80%;
-    padding: 2%;
-    
+    margin: 2% 10%;
 }
 .main_menulist_top {
-    width: 96%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -315,28 +316,88 @@ section {
     left: 105%;
 }
 .main_menulist_bottom {
-    width: 80%;
-    padding: 5% 5%;
-    background-color: #0f7b3a;
-}
-.main_ml_bottom_continer {
     width: 90%;
-
+    padding: 5% 5%;
 }
-.main_ml_bottom_itmeBox {
+.main_ml_bottom_cl {
+    width: 100%;
+    display: block;
+}
+.main_ml_bottom_fl {
+    display: none;
+}
+.main_ml_bottom_pm {
+    display: none;
+}
+.main_ml_bottom_mo {
+    display: none;
+}
+
+.swiper {
     width: 100%;
     height: 100%;
+  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
-    border: #c31a1f solid 1px; 
 }
-.main_ml_bottom_itme {
-    width: 25%;
 
+.swiper-slide>div {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+    background-color: white;
 }
-.main_ml_bottom_itme>img {
+.swiper-slide>div:hover img:nth-child(1){
+    width: 18rem;
+}
+.swiper-slide>div:hover p{
+    display: none;
+}
+.swiper-slide>div:hover strong {
+    font-size: medium;
+}
+.swiper-slide>div:hover img:nth-child(2) {
+    display: block;
+    z-index: 2;
+}
+.swiper-slide>div>p{
+    font-size: x-small;
+    color: #ea9c2a;
+}
+.swiper-slide>div>strong {
+    display: block;
+    font-family: 'Y_Spotlight';
+    font-size: smaller;
+}
+.swiper-slide>div>img:nth-child(1) {
     width: 15rem;
+    object-fit: contain;
+}
+.swiper-slide>div>img:nth-child(2) {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    width: 5rem;
+
 }
 .wrapBottom {
     width: 96%;
