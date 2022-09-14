@@ -93,12 +93,32 @@ menulistCotroll[3].addEventListener('click', () => {
 });
 
 /*Section 공통> Initialize Swiper */
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 10,
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 5
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 8
+        },
+        // when window width is >= 640px
+        680: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        },
+      },
     slidesPerGroup: 4,
-    loop: true,
-    loopFillGroupWithBlank: true,
+    //loop: true>>반복 
+    //loopFillGroupWithBlank: true, >>공백값
+    // loop: true,
+    // loopFillGroupWithBlank: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
