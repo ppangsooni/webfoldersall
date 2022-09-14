@@ -37,7 +37,7 @@ for(i=0; i<menulistClick.length; i++) {
 }
 
 
-// -----main_Imgbox_ 이미지 슬라이드쇼 -----
+// -----main_Imgbox_ 이미지 슬라이드쇼 ------
 let main_banner_Img= [
     "https://i.ibb.co/QDh4wMc/main-PC-1920x440-20201006040046969.jpg",
     "https://i.ibb.co/fXxC4j1/main-PC-1920x440-20220722110659575.jpg",
