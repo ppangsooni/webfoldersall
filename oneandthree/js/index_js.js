@@ -43,18 +43,22 @@ let main_banner_Img= [
     "https://i.ibb.co/fXxC4j1/main-PC-1920x440-20220722110659575.jpg",
     "https://i.ibb.co/wzG57vQ/main-PC-1920x440-20220829043050726.jpg",
     "https://i.ibb.co/bWHd72n/main-PC-1920x440-20220830013330280.jpg"
-]    
+]   
+
 let cnt = 0;
 function chage_banner_Img() {                       
     document.querySelector('.main_banner_Img').setAttribute('src', main_banner_Img[cnt]);
     // document.querySelector('.main_banner_Imgbox>a').setAttribute('href', 이미지 자세히보기 주소);
-    console.log(cnt);
     cnt = cnt + 1;        
     if( cnt == 4) {
         cnt = 0;
     };        
 }
 setInterval(chage_banner_Img, 2000);
+
+function currentSlide1() {
+    document.querySelector('.main_banner_Img').setAttribute('src', main_banner_Img[1]);
+}
 
 // -----main_menulistWrap Swiper -----
 let menulistCotroll = document.querySelectorAll('.main_ml_topRight>ul>a>li'),
