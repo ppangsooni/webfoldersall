@@ -39,10 +39,10 @@ for(i=0; i<menulistClick.length; i++) {
 
 // -----main_Imgbox_ 이미지 슬라이드쇼 ------
 let main_banner_Img= [
-    "https://i.ibb.co/QDh4wMc/main-PC-1920x440-20201006040046969.jpg",
+    "./img/top_baner1_PC1920x440.png",
     "https://i.ibb.co/fXxC4j1/main-PC-1920x440-20220722110659575.jpg",
     "https://i.ibb.co/wzG57vQ/main-PC-1920x440-20220829043050726.jpg",
-    "https://i.ibb.co/bWHd72n/main-PC-1920x440-20220830013330280.jpg"
+    "./img/top_baner4_PC1920x440.png"
 ]   
 
 let cnt = 0;

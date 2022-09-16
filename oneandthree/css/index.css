@@ -2,8 +2,8 @@
     font-family: 'Do Hyeon', sans-serif;
 }
 @font-face {
-    font-family: 'Y_Spotlight';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-family: 'LeferiPoint-BlackObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -63,7 +63,7 @@ ul {
 }
 .header_rightList>a>li {
     color: #6d4720;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
 }
 /* ----------haeder>menuber-------  */
 .menu_btn {
@@ -102,7 +102,7 @@ ul {
     justify-content: center;
     font-size: x-small;
     color: #ea9c2a;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
 }
 .menuSubCh>img {
     margin-bottom: 5px;
@@ -138,7 +138,7 @@ nav {
 }
 
 .menuberList_li>a {
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     color: #ea9c2a;
     position: absolute;
     cursor: pointer;
@@ -169,7 +169,7 @@ nav {
     margin: 5px 0;
     font-size: small;
     color: #ea9c2a;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     cursor: pointer;
 }
 .menuberList_liCh>ul>li:hover {
@@ -239,7 +239,7 @@ main {
 }
 .main_banner_quick>div>span{
     display: block;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     font-size: larger;
 }
 .main_banner_quick>div:nth-child(1) {
@@ -279,7 +279,7 @@ section {
     position: relative;
 }
 .main_ml_topLeft>h2 {
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     font-size: larger;
     margin: 0;
 }
@@ -310,7 +310,7 @@ section {
 .main_ml_topRight>ul>a>li {
     font-size: small;
     position: relative;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
 }
 .main_ml_topRight>ul>a>li::before {
     position: absolute;
@@ -391,7 +391,7 @@ section {
 }
 .swiper-slide>div>strong {
     display: block;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     font-size: smaller;
 }
 .swiper-slide>div>img:nth-child(1) {
@@ -434,7 +434,7 @@ section {
 }
 .oat_HowToUse>p:nth-child(1) {
     margin: 10% 10%;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     font-size: larger;
     color: #cfcfcf;
 }
@@ -444,7 +444,7 @@ section {
     width: 30%;
     text-align: center;
     padding: 2%;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     color: #cfcfcf;
     border: #cfcfcf solid 1px;
     border-radius: 15px;  
@@ -478,7 +478,7 @@ section {
 }
 .oat_history>div:nth-child(2)>p:nth-child(1) {
     margin: 10% 5%;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     font-size: larger;
     color: #cfcfcf;
 }
@@ -489,7 +489,7 @@ section {
     width: 50%;
     text-align: center;
     padding: 2%;
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     color: #cfcfcf;
     border: #cfcfcf solid 1px;
     border-radius: 15px;  
@@ -528,7 +528,7 @@ section {
     width: 60%;
 }
 .board_head>h2 {
-    font-family: 'Y_Spotlight';
+    font-family: 'LeferiPoint-BlackObliqueA';
     font-size: larger;
     margin: 0;
     z-index: 2;
