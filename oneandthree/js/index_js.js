@@ -38,21 +38,37 @@ for(i=0; i<menulistClick.length; i++) {
 
 
 // -----main_Imgbox_ 이미지 슬라이드쇼 ------
-let main_banner_Img= [
+let main_bannerPC_Img= [
     "./img/top_baner1_PC1920x440.png",
-    "https://i.ibb.co/fXxC4j1/main-PC-1920x440-20220722110659575.jpg",
-    "https://i.ibb.co/wzG57vQ/main-PC-1920x440-20220829043050726.jpg",
+    "./img/top_baner2_PC1920x440.png",
+    "./img/top_baner3_PC1920x440.png",
     "./img/top_baner4_PC1920x440.png"
+]   
+let main_bannerMB_Img= [
+    "./img/top_baner1_MB2048x2048.png",
+    "./img/top_baner2_MB2048x2048.png",
+    "./img/top_baner3_MB2048x2048.png",
+    "./img/top_baner4_MB2048x2048.png"
 ]   
 
 let cnt = 0;
-function chage_banner_Img() {                       
-    document.querySelector('.main_banner_Img').setAttribute('src', main_banner_Img[cnt]);
+function chage_banner_Img() { 
+    if (window.innerWidth>=690 ) {
+        document.querySelector('.main_banner_Img').setAttribute('src', main_bannerPC_Img[cnt]);
+        // document.querySelector('.main_banner_Imgbox>a').setAttribute('href', 이미지 자세히보기 주소);
+        cnt = cnt + 1;        
+        if( cnt == 4) {
+            cnt = 0;
+        };        
+    } else {
+        document.querySelector('.main_banner_Img').setAttribute('src', main_bannerMB_Img[cnt]);
     // document.querySelector('.main_banner_Imgbox>a').setAttribute('href', 이미지 자세히보기 주소);
     cnt = cnt + 1;        
     if( cnt == 4) {
         cnt = 0;
     };        
+    }                      
+    
 }
 setInterval(chage_banner_Img, 2000);
 
