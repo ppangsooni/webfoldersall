@@ -704,7 +704,10 @@ section {
         height: 2rem;
         margin-bottom: 1rem;
     }
-
+    .main_banner_Imgbox>a>img {
+        width: 100%;
+        margin-left: 0%;
+    }
     .wrapCenter {
         padding-top: 4rem;
     }
