@@ -50,8 +50,9 @@ let main_bannerMB_Img= [
     "./img/top_baner3_MB2048x2048.png",
     "./img/top_baner4_MB2048x2048.png"
 ]   
-
 let cnt = 0;
+chage_banner_Img();
+
 function chage_banner_Img() { 
     if (window.innerWidth>=690 ) {
         document.querySelector('.main_banner_Img').setAttribute('src', main_bannerPC_Img[cnt]);
@@ -70,7 +71,10 @@ function chage_banner_Img() {
     }                      
     
 }
-setInterval(chage_banner_Img, 2000);
+setInterval(chage_banner_Img, 3000);
+// window.onresize=function(){
+    
+// }
 
 function currentSlide1() {
     document.querySelector('.main_banner_Img').setAttribute('src', main_banner_Img[1]);
@@ -117,24 +121,27 @@ menulistCotroll[3].addEventListener('click', () => {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 10,
+    slidesPerGroup: 4,
     breakpoints: {
         // when window width is >= 320px
         320: {
           slidesPerView: 2,
-          spaceBetween: 5
+          spaceBetween: 5,
+          slidesPerGroup: 2
         },
         // when window width is >= 480px
         480: {
           slidesPerView: 3,
-          spaceBetween: 8
+          spaceBetween: 8,
+          slidesPerGroup: 3
         },
         // when window width is >= 640px
         680: {
           slidesPerView: 4,
-          spaceBetween: 10
+          spaceBetween: 10,
+          slidesPerGroup: 4
         },
       },
-    slidesPerGroup: 4,
     //loop: true>>반복 
     //loopFillGroupWithBlank: true, >>공백값
     // loop: true,
