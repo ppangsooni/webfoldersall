@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name" >학생이름</label>
+        <input type="text" name="name" id="name">
+        <label for="input">점수</label>
+        <input type="text" name="myinput" id="myinput">
+        <input type="button"  id="inputBtn" onclick="test()">
+        
+    </form>
+    <span id="enterName"></span>님
+    <span id="enter"></span>점
+
+
+    <script>
+        function test () {
+            console.log('test');
+            let testName=document.getElementById('myinput').value;
+            let test=Number(document.getElementById('myinput').value);
+            let a = "c";
+                //document.getElementById('name').value;
+                if ( test >= 90) {
+                    a = 'A';
+                } else if(test >= 80) {
+                    a = 'B';
+                }
+                document.getElementById('enterName').innerText = testName;
+                document.getElementById('enter').innerText = a;
+        }
+    </script>
+</body>
+</html>
