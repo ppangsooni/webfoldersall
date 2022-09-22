@@ -292,12 +292,12 @@ main {
 }
 /* 모바일버전(width: 690px)시 block */
 .section_MBvar {
+    display: flex;
     display: none;
     position: absolute;
     width: 80%;
     background-color: #f3f6c8;
     margin: 0% 10%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     top: 60%;
@@ -1095,6 +1095,7 @@ footer {
     }
     .section_MBvar {
         display: block;
+        display: flex;
     }
     .oatWrap {
         display: none;
