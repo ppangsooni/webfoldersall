@@ -35,8 +35,15 @@ for(i=0; i<menulistClick.length; i++) {
         };
     });
 }
-
-
+// ---- 스크롤시 효과 ------
+ScrollOut({
+    targets: ".oatWrap,.wrapBottom",
+    threshold: 0.5,
+    once: true,
+    onShown(el) {
+        el.classList.add("animated");
+    }
+});
 // -----main_Imgbox_ 이미지 슬라이드쇼 ------
 let main_bannerPC_Img= [
     "./img/top_baner1_PC1920x440.png",

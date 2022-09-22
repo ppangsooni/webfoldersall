@@ -26,7 +26,27 @@ ul {
     margin: 0;
     padding: 0;
 }
+h4 {
+    margin: 0;
+    padding: 0;
+}
+h5 {
+    margin: 0;
+    padding: 0;
+}
+/* ----------스크롤시 효과-------  */
+[data-scroll] {
+    transition: opacity 1.5s;
+}
 
+[data-scroll="in"] {
+    opacity: 1;
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+}
+/* ----------전체-------  */
 .wrapTop {
     width: 96%;
     padding: 0 2%;
@@ -34,6 +54,7 @@ ul {
     position: fixed;
     z-index: 10;
 }
+/* ----------header-------  */
 .wrapTop>header {
     width: 96%;
     padding: 1% 2%;
@@ -66,7 +87,7 @@ ul {
     color: #6d4720;
     font-family: 'LeferiPoint-BlackObliqueA';
 }
-/* ----------haeder>menuber-------  */
+/* ----------haeder>menu ber-------  */
 .menu_btn {
     display: none;
     position: absolute;
@@ -181,6 +202,7 @@ nav {
 .wrapCenter {
     width: 100%;
     padding-top: 9rem;
+    position: relative;
 }
 /* -------------main 영역 --------------*/
 main {
@@ -261,10 +283,39 @@ main {
     width: 1.5rem;
 }
 /* -------------section 영역 --------------*/
-section {
+.section_MBvar,
+ .section_main_menulist,
+ .oatWrap {
     width: 100%;
     position: relative;
     margin: 2% 0;
+}
+/* 모바일버전(width: 690px)시 block */
+.section_MBvar {
+    position: absolute;
+    width: 80%;
+    background-color: #f3f6c8;
+    margin: 0% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 60%;
+    border-radius: 25px 0 25px 0;
+}
+.section_MBvar>div {
+    width: 30%;
+    margin: 0 5%;
+    padding: 5%;
+    text-align: center;
+}
+.section_MBvar>div>img {
+    margin-top: 1rem;
+}
+.section_MBvar>span {
+    content: "";
+    width: 0.1rem;
+    height: 7rem;
+    border-right: dotted 2px #6d4720;
 }
 /* main_menulistWrap Swiper */
 .main_menulistWrap {
@@ -417,6 +468,8 @@ section {
 }
 .swiper-button-next,.swiper-button-prev {
     z-index: 5;
+    color: #ea9c2a;
+    opacity: 20;
 }
 .oat {
     width: 90%;
@@ -536,7 +589,6 @@ section {
     width: 30%;
     padding: 10%;
     text-align: left;
-
 }
 .board_head>h2 {
     font-family: 'LeferiPoint-BlackObliqueA';
@@ -584,12 +636,13 @@ section {
     background-color: #c9cbaf;
     border: transparent 5px solid;
     border-radius: 25px;
-    padding: 0% 1%;
+    padding: 1% 1% 0% 1%;
     text-align: center;
     display: block;
     width: 20%;
     margin: 3%;
-
+    font-family: 'LeferiPoint-BlackObliqueA';
+    color: #fcfcfc;
 }
 
 .oat_banner {
@@ -684,7 +737,7 @@ section {
     display: block;
 }
 footer {
-    background-color: #8d8d83;
+    background-color: #313131;
     width: 80%;
     height: 3rem;
     padding: 2% 10%;
@@ -699,11 +752,13 @@ footer {
     float: left;
     margin: 0 1% ;
     font-size: small;
+    font-family: 'LeferiPoint-BlackObliqueA';
+    color: #777773;
 }
 .footer_bottom {
     float: left;
     padding: 1% 0;
-    border-top: black solid 1px;
+    border-top: #777773 solid 1px;
 }
 .footer_bottom>div:nth-child(2) {
     position: absolute;
@@ -717,8 +772,10 @@ footer {
 .footer_bottom>div>ul>li {
     display: block;
     float: left;
-    font-size: small;
     margin: 0 5px ;
+    font-family: 'LeferiPoint-BlackObliqueA';
+    font-size: small;
+    color: #777773;
 }
 @media all and (max-width:1580px) {
     .footer_top>ul>li {
@@ -879,6 +936,13 @@ footer {
         box-shadow: 5px 11px 4px 0px #c9cbaf;
         
     }
+    .board_head {
+        padding: 5% 10%;
+    }
+    .board_list {
+        width: 40%;
+        padding: 0%;
+    }
     .oat_banner {
         border: transparent solid 1px;
         border-radius: 30px 0 30px 0;
@@ -995,6 +1059,13 @@ footer {
     .wrapCenter {
         padding-top: 4rem;
     }
+    main {
+        margin-bottom: 0;
+    }
+    
+    .section_main_menulist {
+        margin: 27% 0% 2% 0;
+    }
     .main_menulist_top {
         flex-direction: column;
         justify-content: space-between;
@@ -1007,10 +1078,48 @@ footer {
         width: 100%;
         margin-top: 1rem;
     }
+    .swiper-slide>div>p{
+        display: none;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 10%;
+        top: 60%;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 10%;
+        top: 60%;
+    }
     .main_banner_quick {
         display: none;
     }
     .oatWrap {
         display: none;
+    }
+    .wrapBottom {
+        display: none;
+    }
+    .wrapTopButton {
+        bottom: 6%;
+    }
+    .topBtn {
+        border: 5px double transparent;
+    }
+    .topBtn:hover {
+        border: 5px double #c9cbaf;
+    }
+    .topBtn:hover .topBtn_text{
+        font-size: medium;
+    }
+    .topBtn_text {
+        display: block;
+        font-size: smaller;
+    }
+    footer {
+        height: 5rem;
+    }
+}
+@media all and (max-width:620px) {
+    .section_MBvar {
+        top: 58%;
     }
 }
