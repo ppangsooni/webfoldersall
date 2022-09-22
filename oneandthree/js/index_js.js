@@ -157,6 +157,17 @@ var swiper = new Swiper(".mySwiper", {
   });
 // ----wrapTopButton_ 탑버튼 -----
 const topBtn = document.getElementById('topBtn');
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
 topBtn.onclick = () => {
     window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
 }
