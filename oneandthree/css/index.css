@@ -292,6 +292,7 @@ main {
 }
 /* 모바일버전(width: 690px)시 block */
 .section_MBvar {
+    display: none;
     position: absolute;
     width: 80%;
     background-color: #f3f6c8;
@@ -1091,6 +1092,9 @@ footer {
     }
     .main_banner_quick {
         display: none;
+    }
+    .section_MBvar {
+        display: block;
     }
     .oatWrap {
         display: none;
