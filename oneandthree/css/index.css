@@ -1125,12 +1125,12 @@ footer {
 }
 @media all and (max-width:620px) {
     .section_MBvar {
-        top: 50%;
+        top: 58%;
     }
 }
 @media all and (max-width:520px) {
     .section_MBvar {
-        top: 55%;
+        top: 52%;
     }
     .section_main_menulist {
         margin: 42% 0% 2% 0;
