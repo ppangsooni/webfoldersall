@@ -1125,7 +1125,7 @@ footer {
 }
 @media all and (max-width:620px) {
     .section_MBvar {
-        top: 58%;
+        top: 50%;
     }
 }
 @media all and (max-width:520px) {
