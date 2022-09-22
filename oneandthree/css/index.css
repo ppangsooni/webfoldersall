@@ -1123,3 +1123,14 @@ footer {
         top: 58%;
     }
 }
+@media all and (max-width:420px) {
+    .section_MBvar {
+        top: 55%;
+    }
+    .section_main_menulist {
+        margin: 37% 0% 2% 0;
+    }
+    footer {
+        height: 6rem;
+    }
+}
