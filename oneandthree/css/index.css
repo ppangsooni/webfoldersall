@@ -535,8 +535,11 @@ main {
     width: 100%;
 }
 .oat_history>div:nth-child(1) {
-    width: 15rem;
+    width: 12rem;
     height: 15rem;
+    padding: 5%;
+    padding-top: 10%;
+
 }
 .oat_history>div:nth-child(2) {
     width: 15rem;
@@ -567,7 +570,6 @@ main {
 
 .oat_history>div>img {
     width: 100%;
-    height: 100%;
 }
 .oat_bottom {
     clear: both;
@@ -913,6 +915,7 @@ footer {
     .oat_history>div:nth-child(1) {
         width: 10rem;
         height: 10rem;
+        padding: 5% 2%;
     }
     .oat_history>div:nth-child(2) {
         width: 14rem;
